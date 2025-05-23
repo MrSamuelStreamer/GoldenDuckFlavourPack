@@ -1,176 +1,118 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="DrugBase">
-    <defName>MSSG_GoldEgg</defName>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>MSSG_Egg</defName>
     <label>Golden duck egg (of Randorado) (unfert.)</label>
-    <description>An unfertilized Golden Duck of Randorado egg. It can be eaten raw, but it's much, much better cooked. They lose power when taken too far away from the original Golden Duck of Randorado that laid it, so is worthless when sold.</description>
+    <description>An unfertilized Golden Duck of Randorado egg. It can be eaten raw, but it's much, much better cooked. They lose power when taken too far away from the original Golden Duck of Randorado that laid it, so is worthless when sold. \n\nUnfortunately, without the moderating effects of regular Golden eggs every sixty days, thoughts of unbridled violence, rage, and self-destruction occur, causing continuous berserk rages and, eventually, death.\n\nAfter the first dose, there is no way to free yourself of the grasp of the Golden Egg, ever.</description>
     <descriptionHyperlinks>
       <HediffDef>MSSG_EggHigh</HediffDef>
       <HediffDef>MSSG_EggAddiction</HediffDef>
     </descriptionHyperlinks>
-    <tradeability>Sellable</tradeability>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <tickerType>Rare</tickerType>
     <graphicData>
-      <texPath>Things/Item/MSSG_GoldenEgg/MSSG_GoldenEgg</texPath>
+      <texPath>Things/Item/MSSG_GoldenEgg/</texPath>
     </graphicData>
+    <rotatable>false</rotatable>
     <statBases>
       <MarketValue>0</MarketValue>
-      <Mass>1.5</Mass>
-      <DeteriorationRate>0</DeteriorationRate>
-      <Nutrition>0.25</Nutrition>
+      <Mass>1.50</Mass>
     </statBases>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Ultra</techLevel>
     <ingestible>
-      <baseIngestTicks>180</baseIngestTicks>
-      <chairSearchRadius>4</chairSearchRadius>
-      <preferability>DesperateOnly</preferability>
-      <tasteThought></tasteThought>
-      <foodType>AnimalProduct</foodType>
-      <joyKind>Chemical</joyKind>
-      <joy>1.0</joy>
-      <nurseable>true</nurseable>
-      <drugCategory>Social</drugCategory>
-      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <drugCategory>Medical</drugCategory>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>MSSG_EggHigh</hediffDef>
-          <severity>0.50</severity>
-          <toleranceChemical>Ambrosia</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>MSSG_EggAddiction</hediffDef>
-          <toleranceChemical>MSSG_Egg</toleranceChemical>
-          <severity>0.032</severity>
-          <divideByBodySize>true</divideByBodySize>
-          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+          <severity>1.00</severity>
+          <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
         </li>
       </outcomeDoers>
     </ingestible>
     <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
       <li Class="CompProperties_Drug">
-        <chemical>Ambrosia</chemical>
-        <addictiveness>0.010</addictiveness>
-        <minToleranceToAddict>0.15</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+        <chemical>MSSG_Egg</chemical>
+        <addictiveness>1.00</addictiveness>
         <needLevelOffset>0.9</needLevelOffset>
-        <listOrder>30</listOrder>
+        <listOrder>1010</listOrder>
       </li>
     </comps>
-    <allowedArchonexusCount>20</allowedArchonexusCount>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
   </ThingDef>
 
   <HediffDef>
-    <defName>AmbrosiaHigh</defName>
-    <label>ambrosia warmth</label>
-    <description>Ambrosia chemicals in the bloodstream. It lifts the mood.</description>
+    <defName>MSSG_EggHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
+    <label>Golden Blessing</label>
+    <description>This person has consumed a Golden Egg. Their body and mind has been irrevesibly changed, gaining unthinkable power and biological immortality. However, if they do not consume one egg a year they will go insane and eventually die a violent, painful death.</description>
+    <defaultLabelColor>(252, 186, 3)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
     <stages>
-      <li/>
+      <li>
+        <painFactor>0.5</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+      </li>
     </stages>
   </HediffDef>
 
-  <ThoughtDef>
-    <defName>AmbrosiaHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>AmbrosiaHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>ambrosia warmth</label>
-        <description>That ambrosia makes me feel more relaxed, and gives me energy at the same time.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+  <!-- MSSG_Egg addiction -->
 
-  <!-- Ambrosia addiction -->
-  
   <ChemicalDef>
-    <defName>Ambrosia</defName>
-    <label>ambrosia</label>
-    <addictionHediff>AmbrosiaAddiction</addictionHediff>
-    <toleranceHediff>AmbrosiaTolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+    <defName>MSSG_Egg</defName>
+    <label>The Golden Egg</label>
+    <addictionHediff>MSSG_EggAddiction</addictionHediff>
+    <canBinge>false</canBinge>
     <generateAddictionGenes>false</generateAddictionGenes>
   </ChemicalDef>
-  
+
   <NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>Chemical_Ambrosia</defName>
+    <defName>Chemical_MSSG_Egg</defName>
     <needClass>Need_Chemical</needClass>
-    <label>ambrosia</label>
-    <description>Because of an ambrosia addiction, this person needs to regularly consume ambrosia to avoid withdrawal symptoms.</description>
-    <listPriority>20</listPriority>
+    <label>Golden Egg Craving</label>
+    <description>This person's body is enhanced by Golden Egg of Randorado.\n\nWithout a yearly feast of the Golden egg, not only will the benefits begin to fade but this person will go mad, and eventually die.\n\nThis addiction never goes away.</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>0.03</fallPerDay>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
   </NeedDef>
 
-  <HediffDef ParentName="DrugToleranceBase">
-    <defName>AmbrosiaTolerance</defName>
-    <label>ambrosia tolerance</label>
-    <description>A built-up tolerance to ambrosia. The more severe this tolerance is, the more ambrosia it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.020</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>Ambrosia</chemical>
-      </li>
-    </comps>
-  </HediffDef>
-  
   <HediffDef ParentName="AddictionBase">
-    <defName>AmbrosiaAddiction</defName>
-    <label>ambrosia addiction</label>
-    <description>A chemical addiction to ambrosia. Long-term presence of ambrosia has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of ambrosia, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <defName>MSSG_EggAddiction</defName>
+    <label>Golden Egg Craving</label>
+    <defaultLabelColor>(222, 203, 0)</defaultLabelColor>
+    <description>MThis person's body is enhanced by Golden Egg of Randorado.\n\nWithout a yearly feast of the Golden egg, not only will the benefits begin to fade but this person will go mad, and eventually die.\n\nThis addiction never goes away.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>Chemical_Ambrosia</causesNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.1</severityPerDay>
-        <showDaysToRecover>true</showDaysToRecover>
-      </li>
-    </comps>
+    <causesNeed>Chemical_MSSG_Egg</causesNeed>
+    <everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
       </li>
       <li>
-        <label>withdrawal</label>
+        <label>unmet</label>
+        <painOffset>0.4</painOffset>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>50</deathMtbDays>
+        <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>0.4</mtbDays>
+          </li>
+        </mentalStateGivers>
       </li>
     </stages>
   </HediffDef>
-
-  <ThoughtDef>
-    <defName>AmbrosiaWithdrawal</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>AmbrosiaAddiction</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>ambrosia withdrawal</label>
-        <description>I feel heavy and cold all the time. I never thought I'd want a piece of fruit so much.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
 </Defs>
