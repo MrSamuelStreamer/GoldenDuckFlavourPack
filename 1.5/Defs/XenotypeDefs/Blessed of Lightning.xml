@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSSG_BlessedofLightning</defName>
+    <label>Blessed of Lightning</label>
+    <description>Eggblessed are the mighty few who have had the privilege and blessing to consume one of the Golden Eggs of Randorado. In doing so they have transformed physically and mentally into a new form of fantastic and terrifying power, unexplainable by modern science. The cost of this is a crippling addiction to Golden Eggs. Should they not consume an egg yearly then their mind will dissolve and eventually they will die. /n/nThis particular Eggblessed was able to form connections with others at terrifying speeds, gaining a silver tongue and command over lightning abilities.</description>
+    <descriptionShort></descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon1</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>Deathless</li>
+      <li MayRequire="sarg.alphagenes">AG_Foodless</li>
+      <li>DiseaseFree</li>
+      <li MayRequire="sarg.alphagenes">AG_Regeneration</li>
+      <li MayRequire="sarg.alphagenes">AG_Zap</li>
+      <li MayRequire="sarg.alphagenes">AG_SelfSkip</li>
+      <li MayRequire="sarg.alphagenes">AG_ForsakenBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicAbility_Masterful</li>
+      <li MayRequire="sarg.alphagenes">AG_LightStriding</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
+      <li MayRequire="lts.geg">GEG_Eyes_GlowingArchotech</li>
+      <li>Hair_LightBlue</li>
+      <li MayRequire="cookie.genes">LYN_Skin_Golden</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_ExoticOrganism</li>
+      <li>Learning_Slow</li>
+      <li MayRequire="lusty.helltakergenes">LM_Halo</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_AptitudePhenomenal_Social</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_Curiosity_Social</li>
+      <li MayRequire="dimonsever000.genes.specific">Religiosity_Fanatic</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

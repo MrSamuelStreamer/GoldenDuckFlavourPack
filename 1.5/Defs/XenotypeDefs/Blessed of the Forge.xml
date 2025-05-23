@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSSG_BlessedoftheForge</defName>
+    <label>Blessed of the Forge</label>
+    <description>Eggblessed are the mighty few who have had the privilege and blessing to consume one of the Golden Eggs of Randorado. In doing so they have transformed physically and mentally into a new form of fantastic and terrifying power, unexplainable by modern science. The cost of this is a crippling addiction to Golden Eggs. Should they not consume an egg yearly then their mind will dissolve and eventually they will die. /n/nThis particular Eggblessed is an individual who has used their newfound biological longevity and learning advantages to dedicate themselves to the art of crafting, and have evolved even further.</description>
+    <descriptionShort></descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon1</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>Deathless</li>
+      <li MayRequire="sarg.alphagenes">AG_Foodless</li>
+      <li>DiseaseFree</li>
+      <li MayRequire="sarg.alphagenes">AG_Regeneration</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterFireSpew</li>
+      <li MayRequire="sarg.alphagenes">AG_ForsakenBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicAbility_Masterful</li>
+      <li>FireResistant</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
+      <li MayRequire="lts.geg">GEG_Eyes_GlowingRed</li>
+      <li>Hair_BrightRed</li>
+      <li MayRequire="cookie.genes">LYN_Skin_Golden</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_ExoticOrganism</li>
+      <li>Learning_Slow</li>
+      <li MayRequire="lusty.helltakergenes">LM_Halo</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_AptitudePhenomenal_Crafting</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_Curiosity_Crafting</li>
+      <li MayRequire="dimonsever000.genes.specific">Religiosity_Fanatic</li>
+    </genes>
+  </XenotypeDef>
+</Defs>
