@@ -32,12 +32,12 @@
      inkscape:document-units="mm"
      showguides="true"
      showgrid="true"
-     inkscape:zoom="1.4803313"
-     inkscape:cx="218.1944"
-     inkscape:cy="277.30279"
+     inkscape:zoom="0.74016565"
+     inkscape:cx="191.17342"
+     inkscape:cy="-83.089508"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
-     inkscape:window-x="2552"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -117,6 +117,82 @@
          result="result11"
          id="feComposite4" />
     </filter>
+    <filter
+       x="-0.41687635"
+       width="1.8337527"
+       y="-0.31411685"
+       height="1.6282337"
+       inkscape:menu-tooltip="Colorizable filling with flow inside like transparency"
+       inkscape:menu="Overlays"
+       inkscape:label="Shaken Liquid"
+       style="color-interpolation-filters:sRGB"
+       id="filter4-2">
+      <feFlood
+         flood-color="rgb(164,215,252)"
+         result="result9"
+         id="feFlood1-7" />
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="9.2929292929292924"
+         in="SourceGraphic"
+         id="feGaussianBlur1-9" />
+      <feTurbulence
+         baseFrequency="0.05"
+         numOctaves="5"
+         type="fractalNoise"
+         result="result7"
+         seed="0"
+         id="feTurbulence1-5" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 -0.75 "
+         result="result5"
+         id="feColorMatrix1-4" />
+      <feComposite
+         in2="result7"
+         in="result8"
+         operator="out"
+         result="result6"
+         id="feComposite1-3" />
+      <feDisplacementMap
+         in2="result6"
+         result="result4"
+         scale="59.722222"
+         yChannelSelector="A"
+         xChannelSelector="A"
+         in="result5"
+         id="feDisplacementMap1-1" />
+      <feComposite
+         in2="result4"
+         in="result8"
+         operator="arithmetic"
+         result="result2"
+         k1="0.13592233"
+         k3="0.5"
+         id="feComposite2-2"
+         k2="0"
+         k4="0" />
+      <feComposite
+         in2="result2"
+         operator="in"
+         in="SourceGraphic"
+         result="fbSourceGraphic"
+         id="feComposite3-3" />
+      <feMerge
+         result="result10"
+         id="feMerge4-3">
+        <feMergeNode
+           in="result9"
+           id="feMergeNode3-4" />
+        <feMergeNode
+           in="fbSourceGraphic"
+           id="feMergeNode4-1" />
+      </feMerge>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         result="result11"
+         id="feComposite4-1" />
+    </filter>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -129,6 +205,10 @@
        height="135.46666"
        x="0"
        y="0" />
+    <path
+       id="path9-7"
+       style="fill:#ffef0a;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 67.733457,15.253208 c -18.776035,0 -33.996891,37.46445 -33.996892,56.24049 0,0.60959 0.01741,1.21474 0.04909,1.81643 -0.03169,0.64706 -0.04909,1.27816 -0.04909,1.88774 0,7.11359 2.187958,13.71439 5.923153,19.17299 H 34.400091 L 20.235064,106.97112 16.591359,127.9869 H 118.87555 l -3.6437,-21.01578 -14.16503,-12.600262 H 95.8072 c 3.73519,-5.4586 5.92315,-12.0594 5.92315,-19.17299 0,-0.60958 -0.0174,-1.24068 -0.0491,-1.88774 0.0317,-0.60169 0.0491,-1.20684 0.0491,-1.81643 0,-18.77604 -15.22086,-56.24049 -33.996893,-56.24049 z" />
     <path
        style="fill:#ffef0a;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
        d="M 34.399717,94.370765 20.235169,106.97141 16.591275,127.98712 H 118.87539 L 115.2315,106.97141 101.06695,94.370765 Z"
