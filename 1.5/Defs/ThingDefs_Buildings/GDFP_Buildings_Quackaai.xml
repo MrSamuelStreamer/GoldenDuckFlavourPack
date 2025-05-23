@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>GDFP_Travel</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>GDFP_Travel</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+    <SoundDef>
+        <defName>GDFP_Activate</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>GDFP_Activate</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <ThingDef ParentName="BuildingBase" Name="GDFP_Quakkaai">
+        <defName>GDFP_Quakkaai</defName>
+        <label>Quakka'ai</label>
+        <description>An ancient portal constructed by a long forgotten race.</description>
+
+        <inspectorTabs>
+            <li>ITab_ContentsMapPortal</li>
+        </inspectorTabs>
+
+        <graphicData>
+            <texPath>Buildings/Quackaai</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>4</drawSize>
+            <damageData>
+                <!--  no damage marks because they don't move with the door  -->
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <size>(4,4)</size>
+
+        <modExtensions>
+            <li Class="GDFP.GDFPModExtension">
+                <extraGraphicData>
+                    <texPath>Buildings/QuackaaiClosed</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>4</drawSize>
+                    <damageData>
+                        <!--  no damage marks because they don't move with the door  -->
+                        <enabled>false</enabled>
+                    </damageData>
+                </extraGraphicData>
+            </li>
+        </modExtensions>
+
+        <thingClass>GDFP.Building_Quackaai</thingClass>
+        <category>Building</category>
+        <altitudeLayer>DoorMoveable</altitudeLayer>
+        <fillPercent>1</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>1600</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Structure</designationCategory>
+        <uiOrder>2010</uiOrder>
+        <holdsRoof>true</holdsRoof>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <drawerType>RealtimeOnly</drawerType>
+        <building>
+            <isInert>true</isInert>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+            <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+            <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+            <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+            <blueprintClass>Blueprint_Door</blueprintClass>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Door/Door_Blueprint</texPath>
+            </blueprintGraphicData>
+            <ai_chillDestination>false</ai_chillDestination>
+            <paintable>true</paintable>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="GDFP_Quakkaai">
+        <defName>GDFP_QuakkaaiExit</defName>
+        <label>Quakka'ai Return</label>
+        <thingClass>GDFP.Building_QuackaaiExit</thingClass>
+    </ThingDef>
+
+    <JobDef>
+        <defName>GDFP_OpenGate</defName>
+        <driverClass>GDFP.JobDriver_OpenGate</driverClass>
+        <dropThingBeforeJob>false</dropThingBeforeJob>
+        <carryThingAfterJob>true</carryThingAfterJob>
+        <reportString>opening TargetA.</reportString>
+    </JobDef>
+</Defs>
