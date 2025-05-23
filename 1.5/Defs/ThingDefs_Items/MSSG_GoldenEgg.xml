@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <ThingDef ParentName="DrugPillBase">
     <defName>MSSG_Egg</defName>
     <label>Golden duck egg (of Randorado) (unfert.)</label>
@@ -10,7 +9,8 @@
       <HediffDef>MSSG_EggAddiction</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Item/MSSG_GoldenEgg/</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/MSSG_GoldenEgg</texPath>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
@@ -87,7 +87,7 @@
     <defName>MSSG_EggAddiction</defName>
     <label>Golden Egg Craving</label>
     <defaultLabelColor>(222, 203, 0)</defaultLabelColor>
-    <description>MThis person's body is enhanced by Golden Egg of Randorado.\n\nWithout a yearly feast of the Golden egg, not only will the benefits begin to fade but this person will go mad, and eventually die.\n\nThis addiction never goes away.</description>
+    <description>This person's body is enhanced by Golden Egg of Randorado.\n\nWithout a yearly feast of the Golden egg, not only will the benefits begin to fade but this person will go mad, and eventually die.\n\nThis addiction never goes away.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
     <causesNeed>Chemical_MSSG_Egg</causesNeed>
     <everCurableByItem>false</everCurableByItem>

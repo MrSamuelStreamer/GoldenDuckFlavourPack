@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef>
+		<defName>MSSG_GoldenGodsScenario</defName>
+		<label>Golden Gods from Outer Space</label>
+		<description>The three of you packed your bags and travelled to the world of Randorado, an otherwise inhospitable world known only for its lucrative, but dangerous, astroid mining corporations, who hunt the gold deep within. 
+
+The surface is a planet-wide hellscape; a dense jungle packed with more primal human variants, various scattered and long-mad scientists, and vicious animal life. 
+
+But from the planet came one lone rumour, a sighting of a fountain of gold like nothing before seen in the galaxy. Only the bravest, or most stupid, would go to such a world...</description>
+		<scenario>
+			<summary>Three spacefairers land on a planet in search of the fabled GOLDEN DUCK of Randorado!</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>3</pawnChoiceCount>
+					<customSummary>Start with three Eggblessed golden god-like pawns.</customSummary>
+					<overrideKinds>
+						<li>
+							<xenotype>MSSG_Eggblessed</xenotype>
+							<pawnKind>Tribesperson</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>MSSG_Eggblessed</xenotype>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The three of you packed your bags and travelled to the world of Randorado, an otherwise inhospitable world known only for its lucrative, but dangerous, astroid mining corporations, who hunt the gold deep within. 
+
+The surface is a planet-wide hellscape; a dense jungle packed with more primal human variants, various scattered and long-mad scientists, and vicious animal life. 
+
+But from the planet came one lone rumour, a sighting of a fountain of gold like nothing before seen in the galaxy. Only the bravest, or most stupid, would go to such a world...</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>MSSG_Duck</animalKind>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>GoldIngot</thingDef>
+					<count>83</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Gold</thingDef>
+					<count>1500</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BDLG_GoldenDE</thingDef>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<hediff>MSSG_EggAddiction</hediff>
+					<severityRange>1~1</severityRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

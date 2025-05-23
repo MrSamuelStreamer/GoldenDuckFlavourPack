@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Name="SurgeryInstallGoldenEgg" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+    <workAmount>1500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSSG_Egg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSSG_Egg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>MSSG_ImplantEgg</defName>
+    <label>Implanted Golden Egg</label>
+    <labelNoun>an implanted egg</labelNoun>
+    <description>An implanted Golden Egg. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
+    <priceImpact>true</priceImpact>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallGoldenEgg">
+    <defName>MSSG_ImplantEgg</defName>
+    <label>Implant Golden Egg</label>
+    <description>Implant a Golden Egg.</description>
+    <descriptionHyperlinks><ThingDef>MSSG_Egg</ThingDef></descriptionHyperlinks>
+    <jobString>Implanting Golden Egg.</jobString>
+    <addsHediff>MSSG_ImplantEgg</addsHediff>
+    <uiIconThing>MSSG_Egg</uiIconThing>
+  </RecipeDef>
+</Defs>
