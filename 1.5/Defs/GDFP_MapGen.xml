@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <MapGeneratorDef Name="QAPlanet">
+        <defName>GDFP_Planet</defName>
+        <label>remote planet</label>
+        <isUnderground>true</isUnderground>
+        <forceCaves>false</forceCaves>
+        <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+        <disableCallAid>true</disableCallAid>
+        <pocketMapProperties>
+            <biome>TemperateForest</biome>
+            <temperature>15</temperature>
+        </pocketMapProperties>
+        <genSteps>
+            <li>ElevationFertility</li>
+            <!-- <li>Caves</li> -->
+            <li>Terrain</li>
+            <!-- <li>CavesTerrain</li> -->
+            <!-- <li>Roads</li> -->
+            <!-- <li>RockChunks</li> -->
+            <li>ScatterRuinsSimple</li>
+            <li>SteamGeysers</li>
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">ScatterRoadDebris</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">ScatterCaveDebris</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientUtilityBuilding</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">MechanoidRemains</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientTurret</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientMechs</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientFences</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientPipelineSection</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li> -->
+            <!-- <li>FindPlayerStartSpot</li> -->
+            <li>ScenParts</li>
+            <!-- <li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li> -->
+            <!-- <li MayRequire="Ludeon.RimWorld.Biotech">AncientPollutionJunk</li> -->
+            <li>GDFP_FindGateExit</li>
+            <!-- <li>Plants</li> -->
+            <!-- <li>Snow</li> -->
+            <!-- <li>Animals</li> -->
+            <li>GDFP_Fog</li>
+        </genSteps>
+    </MapGeneratorDef>
+
+    <GenStepDef>
+        <defName>GDFP_FindGateExit</defName>
+        <order>300</order>
+        <genStep Class="GDFP.GenStep_FindGateExit"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>GDFP_Fog</defName>
+        <order>300</order>
+        <genStep Class="GDFP.GenStep_Fog"/>
+    </GenStepDef>
+</Defs>

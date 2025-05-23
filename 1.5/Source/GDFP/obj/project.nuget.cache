@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rRiC4bXur0k=",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\GoldenDuckFlavourPack\\1.5\\Source\\GDFP\\GDFP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kieran David Evans\\.nuget\\packages\\lib.harmony\\2.3.6\\lib.harmony.2.3.6.nupkg.sha512",
+    "C:\\Users\\Kieran David Evans\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
