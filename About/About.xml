@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Golden Flavour Pack</name>
+    <author>MrSamuelStreamer</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>MSSG.FlavourPack</packageId>
+    <description>A flavour pack for Mr Samuel Streamer's Golden City Playthrough</description>
+
+    <loadAfter>
+        <li>oskarpotocki.vanillafactionsexpanded.core</li>
+    </loadAfter>
+</ModMetaData>
