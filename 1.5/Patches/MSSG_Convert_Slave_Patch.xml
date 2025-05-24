@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "DKCS_ActionConvert"]/description</xpath>
+        <value>
+          <description>Wardens will attempt to convert this heretic to the correct worship of the Eggblessed, then suppress the slave.</description>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

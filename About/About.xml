@@ -11,5 +11,6 @@
     <loadAfter>
         <li>oskarpotocki.vanillafactionsexpanded.core</li>
         <li>hahkethomemah.prisonerswithjobs</li>
+        <li>dissentkindly.convertslaves</li>
     </loadAfter>
 </ModMetaData>

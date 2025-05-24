@@ -71,6 +71,34 @@
           <description>A warden will execute this zealot where they stand.</description>
         </value>
       </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThoughtDef[defName = "ExpectationsSlave"]/stages</xpath>
+        <value>
+          <stages>
+            <li>
+              <label>destitute zealot expectations</label>
+              <description>I'm a zealot in the service of ascetic and humble gods. I expect nothing.</description>
+              <baseMoodEffect>46</baseMoodEffect>
+            </li>
+            <li>
+              <label>poor zealot expectations</label>
+              <description>I'm a zealot in the service of ascetic and humble gods. I expect very little.</description>
+              <baseMoodEffect>40</baseMoodEffect>
+            </li>
+            <li>
+              <label>meager zealot expectations</label>
+              <description>I'm a zealot in the service of ascetic and humble gods. I expect little.</description>
+              <baseMoodEffect>34</baseMoodEffect>
+            </li>
+            <li>
+              <label>zealot expectations</label>
+              <description>I'm a zealot in service to mighty gods. I don't expect much.</description>
+              <baseMoodEffect>28</baseMoodEffect>
+            </li>
+          </stages>
+        </value>
+      </li>
     </operations>
   </Operation>
 </Patch>
