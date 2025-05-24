@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <MessageSlaveEmancipated>{0_nameDef} has been banished from the sight of the Eggblessed by {1_nameDef}.</MessageSlaveEmancipated>
+  <MessagePrisonerEnslaved>{0_nameDef} has seen the light and splendor of the Eggblessed thanks to {1_nameDef} and is now a zealot.</MessagePrisonerEnslaved>
+  <MessagePrisonerWillBroken>Prisoner {1_nameDef}'s will has been broken by {0_nameDef}.</MessagePrisonerWillBroken>
+  <MessagePrisonerWillBroken_RecruitAttempsWillBegin>Enforcing the majesty of the Eggblessed will follow.</MessagePrisonerWillBroken_RecruitAttempsWillBegin>
+  <MessageNoWardenCapableOfEnslavement>No warden is capable of showing prisoners the light of the Eggblessed.</MessageNoWardenCapableOfEnslavement>
+</LanguageData>

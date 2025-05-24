@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PrisonerInteractionModeDef[defName = "Enslave"]/label</xpath>
+        <value>
+          <label>Enforce worship</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PrisonerInteractionModeDef[defName = "Enslave"]/description</xpath>
+        <value>
+          <description>Wardens will enforce the worship of the Eggblessed, turning this person into a loyal zealot.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HistoryEventDef[defName = "EnslavedPrisoner"]/label</xpath>
+        <value>
+          <label>prisoner was inspired by the glory and splendor of the Eggblessed and became a loyal zealot</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HistoryEventDef[defName = "EnslavedPrisonerNotPreviouslyEnslaved"]/label</xpath>
+        <value>
+          <label>inspired worship in zealot</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "NoInteraction"]/description</xpath>
+        <value>
+          <description>Wardens will not interact with this zealot.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "Suppress"]/label</xpath>
+        <value>
+          <label>Enforce worship</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "Suppress"]/description</xpath>
+        <value>
+          <description>Wardens will periodically intimidate the zealot to increase their worship level and reduce the chance of rebellion.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "Imprison"]/description</xpath>
+        <value>
+          <description>A warden will imprison this zealot.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "Emancipate"]/description</xpath>
+        <value>
+          <description>A warden will force this zealot to leave the sanctity of the Eggblessed, never to return.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/SlaveInteractionModeDef[defName = "Execute"]/description</xpath>
+        <value>
+          <description>A warden will execute this zealot where they stand.</description>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

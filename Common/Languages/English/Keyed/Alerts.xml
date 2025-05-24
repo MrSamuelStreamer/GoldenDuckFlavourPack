@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <NeedSlaveBeds>Need zealot beds</NeedSlaveBeds>
+  <NeedSlaveBedsDesc>You have more zealots than you have zealot beds. Someone will lack a place to sleep.\n\nEither make more beds, or change a colonist or prisoner bed to a zealot bed.\n\nIf you have no resources, sleeping spots are free and can be placed instantly.</NeedSlaveBedsDesc>
+  <SlavesUnsuppressedLabel>Zealots faith waning</SlavesUnsuppressedLabel>
+  <SlavesUnsuppressedDesc>{0_nameDef}'s faith level is dangerously low. There is a good chance {0_pronoun} will rebel.\n\nMake sure there is a colonist assigned to warden work. Wardens will reinforce the glory of the Eggblessed in the eyes of the zealots.</SlavesUnsuppressedDesc>
+  <SlaveUnattendedLabel>Zealot unattended</SlaveUnattendedLabel>
+  <SlaveUnattendedMultipleLabel>Zealots unattended</SlaveUnattendedMultipleLabel>
+  <SlavesUnattendedDesc>Some zealots are alone on a map with no egg-blessed around.\n\nZealots left unattended like this will eventually get delusions of grandeur and rebel.</SlavesUnattendedDesc>
+  <AlertSlaveRebellionLikely>Zealot rebellion likely</AlertSlaveRebellionLikely>
+  <AlertSlaveRebellionLikelyRebelliousCount>There are {REBELLIOUSCOUNT} zealots that have lost faith in the Eggblessed and will rebel imminently!</AlertSlaveRebellionLikelyRebelliousCount>
+  <AlertSlaveRebellionLikelyMostRebellious>A zealot rebellion is possible once every {COMBINEDTIME}. Note that each zealots's rebellion chance is independent, so if any one of them rises up they can take others with them.\n\n{REBEL_labelShort} is the least faithful among the zealots and is expected to inspire rebellions once every {INDIVIDUALTIME}. The following factors are affecting how often they will rebel:</AlertSlaveRebellionLikelyMostRebellious>
+</LanguageData>
