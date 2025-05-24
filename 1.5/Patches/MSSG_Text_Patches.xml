@@ -73,6 +73,20 @@
       </li>
 
       <li Class="PatchOperationReplace">
+        <xpath>Defs/PreceptDef[defName = "Slavery_PenalLabour"]/label</xpath>
+        <value>
+          <label>Zealots</label>
+        </value>
+      </li>
+      
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PreceptDef[defName = "Slavery_PenalLabour"]/description</xpath>
+        <value>
+          <description>Prisoners can be instilled with zeal and become loyal zealots, but will lose faith if not enforced.</description>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
         <xpath>Defs/ThoughtDef[defName = "ExpectationsSlave"]/stages</xpath>
         <value>
           <stages>

@@ -43,5 +43,8 @@
     <jobString>Implanting Golden Egg.</jobString>
     <addsHediff>MSSG_ImplantEgg</addsHediff>
     <uiIconThing>MSSG_Egg</uiIconThing>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
   </RecipeDef>
 </Defs>

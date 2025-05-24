@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Highmate"]</xpath>
+        <value>
+          <inheritable>true</inheritable>
+        </value>
+      </li>
+    </operations>
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/XenotypeDef[defName="Highmate"]/genes/li[text()="VRE_RecessiveGenome"]</xpath>
+	  </Operation>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Genie"]</xpath>
+        <value>
+          <inheritable>true</inheritable>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
