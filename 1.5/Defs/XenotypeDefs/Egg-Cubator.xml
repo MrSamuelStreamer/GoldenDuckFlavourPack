@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <XenotypeDef>
-    <defName>MSSG_Egg-Cubator</defName>
+    <defName>MSSG_Eggcubator</defName>
     <label>Egg-Cubator</label>
     <description>Eggcubators are handpicked individuals who have proven their loyalty and diligent service to the Eggblessed and the Golden Duck of Rimdorado. They have had a Golden Egg placed inside them which enforces a dependence and undying loyalty towards the Eggblessed, in exchange they gain a fraction of the power their overlords possess.</description>
-    <descriptionShort></descriptionShort>
+    <descriptionShort>Eggcubator</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
     <inheritable>true</inheritable>
     <genes>

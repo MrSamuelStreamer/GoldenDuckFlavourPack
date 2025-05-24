@@ -28,6 +28,11 @@
     <labelNoun>an implanted egg</labelNoun>
     <description>An implanted Golden Egg. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
     <priceImpact>true</priceImpact>
+    <comps>
+      <li Class="GDFP.Hediffs.HediffCompProperties_SlaveryWhileActive">
+        <forcedXenotypeDef>MSSG_Eggcubator</forcedXenotypeDef>
+      </li>
+    </comps>
   </HediffDef>
 
   <RecipeDef ParentName="SurgeryInstallGoldenEgg">

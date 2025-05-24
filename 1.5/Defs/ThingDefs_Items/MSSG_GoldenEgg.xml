@@ -26,6 +26,9 @@
           <severity>1.00</severity>
           <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
         </li>
+        <li Class="GDFP.OutcomeDoers.IngestionOutcomeDoer_Coloniser">
+          <forcedXenotypeDef>MSSG_Eggblessed</forcedXenotypeDef>
+        </li>
       </outcomeDoers>
     </ingestible>
     <comps>

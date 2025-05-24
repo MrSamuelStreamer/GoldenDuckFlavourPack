@@ -1,8 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Assemblies\GDFP.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Assemblies\GDFP.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.sourcelink.json
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GoldenDuckFlavourPack\1.5\Source\GDFP\obj\Debug\GDFP.pdb
