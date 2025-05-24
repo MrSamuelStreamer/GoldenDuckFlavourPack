@@ -29,6 +29,7 @@
       <li MayRequire="dimonsever000.genes.specific">Plants_FruitBearing</li>
       <li MayRequire="dimonsever000.genes.specific">Plants_Phytolysis</li>
       <li MayRequire="dimonsever000.genes.specific">Plants_SeasonHairColor</li>
+      <li MayRequire="ebsg.passion">EBSG_Passion_Plants</li>
     </genes>
   </XenotypeDef>
 </Defs>

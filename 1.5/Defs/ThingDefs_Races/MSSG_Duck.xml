@@ -14,7 +14,7 @@
    <comps>
       <li Class="CompProperties_Milkable">
         <milkDef>MSSG_Egg</milkDef>
-        <milkIntervalDays>30</milkIntervalDays>
+        <milkIntervalDays>8</milkIntervalDays>
         <milkAmount>1</milkAmount>
       </li>
     </comps>
