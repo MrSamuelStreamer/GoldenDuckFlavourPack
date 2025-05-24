@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <CommandBedSetForSlavesLabel>For zealots</CommandBedSetForSlavesLabel>
+  <CommandBedSetForOwnerTypeDesc>Whether beds in this room should be used by colonists, prisoners or zealots.</CommandBedSetForOwnerTypeDesc>
+</LanguageData>

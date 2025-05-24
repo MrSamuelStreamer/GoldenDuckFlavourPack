@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <LetterLabelGrandSlaveRebellion>Grand zealot rebellion</LetterLabelGrandSlaveRebellion>
+  <LetterGrandSlaveRebellion>A grand zealot rebellion has begun! All of your zealots have lost faith in the Eggblesed and risen up! They will seek weapons and try to eliminate your Eggblessed.\n\nThese zealots are involved:\n\n{0}</LetterGrandSlaveRebellion>
+  <LetterLabelLocalSlaveRebellion>Splinter zealot rebellion</LetterLabelLocalSlaveRebellion>
+  <LetterLocalSlaveRebellion>A splinter cell of zealots has flown into rebellion! {0_nameDef} and some zealots working nearby have lost faith and conspired to rebel. They will seek weapons and try to eliminate your Eggblessed.\n\nThese zealots are involved:\n\n{1}</LetterLocalSlaveRebellion> 
+  <LetterLabelSingleSlaveRebellion>Zealot rebellion</LetterLabelSingleSlaveRebellion>
+  <LetterSingleSlaveRebellion>{0_nameDef} has lost faith and turned hostile! {0_pronoun} will seek weapons and try to eliminate your Eggblessed.</LetterSingleSlaveRebellion>
+  <LetterLabelGrandSlaveEscape>Grand zealot escape</LetterLabelGrandSlaveEscape>
+  <LetterGrandSlaveEscape>A grand zealot escape has begun! All of your zealots are fleeing from their Eggblessed overlords.\n\nThese zealots are involved:\n\n{0}</LetterGrandSlaveEscape>
+  <LetterLabelLocalSlaveEscape>Small zealot escape</LetterLabelLocalSlaveEscape>
+  <LetterLocalSlaveEscape>A small group of zealots are attempting escape! {0_nameDef} and some zealots working nearby are making a break for it.\n\nThese zealots are involved:\n\n{1}</LetterLocalSlaveEscape>
+  <LetterLabelSingleSlaveEscape>Zealot escape</LetterLabelSingleSlaveEscape>
+  <LetterSingleSlaveEscape>{0_nameDef} has lost faith and is attempting to escape!</LetterSingleSlaveEscape>
+  <SlaveRebellionSuppressionExplanation>Zealots are more likely to rebel when their worship level is low.</SlaveRebellionSuppressionExplanation>
+  <LetterLabelEnslavementSuccess>Embraced the Eggblessed</LetterLabelEnslavementSuccess>
+  <LetterEnslavementSuccess>{0_nameDef} has convinced {1_nameDef} to embrace the Eggblessed as their true gods and overlords.</LetterEnslavementSuccess>
+  <LetterOnlySlaveCaravanColonistsLeft>All non-zealot members of {0} have died. The zealot have walked away, lost and confused. The caravan has disabanded.</LetterOnlySlaveCaravanColonistsLeft>
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <TabSlave>Zealot</TabSlave>
+  <Terror>Glory</Terror>
+  <SlaveReleaseRelationGainsDesc>The faction goodwill you will gain if you release a zealot from their life of worship. This is affected by the zealots's physical and mental health.</SlaveReleaseRelationGainsDesc>
+  <SlaveRebellionMTBDays>Zealot rebellion interval</SlaveRebellionMTBDays>
+  <SlaveRebellionMTBDaysDescription>The average number of days between faithless zealot rebellion attempts. Only time awake is counted. This is affected by suppression, mood, health, proximity to weapons, the number of zealots forced to toil for the Eggblessed, and the presence of Eggblessed on the map.</SlaveRebellionMTBDaysDescription>
+  <Suppression>Worship</Suppression>
+  <SuppressionFallRate>Worship fall rate</SuppressionFallRate>
+  <SuppressionDesc>Worship is the psychological effect of control over a zealot. If worship is low, zealots are more likely to lose faith and rebel.</SuppressionDesc>
+  <SuppressionFallRateDesc>Worship falls over time depending on its current level:\n\n- {1}+ worship: {0} per day\n- {4}-{3} worship: {2} per day\n- {6}- worship: {5} per day\n\nApparel and terror can also affect the worship fall rate. This zealots's fall rate calculation is</SuppressionFallRateDesc>
+  <TerrorDescription>Glory is a way to keep zealots faithful. It rises when the zealot spends time near glorious things like glory sculptures. A zealot can only be affected by three glory sources at a time.\n\nWhile glory is high, worship falls slower as follows</TerrorDescription>
+  <SuppressionSlaveCountFactor>Zealot count</SuppressionSlaveCountFactor>
+  <SuppressionRebellionAnySlave>At least one of the {0} zealots on this map is expected to lose faith and rebel on average every {1}.</SuppressionRebellionAnySlave>
+  <WillLevelDesc>How much the zealot is cynical of the Eggblessed. When this reaches zero, they can will submit to the will of the Eggblessed.</WillLevelDesc>
+</LanguageData>

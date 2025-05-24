@@ -10,5 +10,6 @@
 
     <loadAfter>
         <li>oskarpotocki.vanillafactionsexpanded.core</li>
+        <li>hahkethomemah.prisonerswithjobs</li>
     </loadAfter>
 </ModMetaData>

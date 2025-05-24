@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <CantStartRitualNoConvertee>There is nobody to convert to {0}. You need a colonist or a heretic zealot of a different ideoligion.</CantStartRitualNoConvertee>
+  <CantStartFuneralForSlave>{0_labelShort} is a a zealot. Zealot don't get funerals.</CantStartFuneralForSlave>
+  <NoSlaveBed>Need a zealot bed that is reachable, not reserved, and in safe temperature.</NoSlaveBed>
+  <ReturnToSlaveBed>Return to zealot bed</ReturnToSlaveBed>
+</LanguageData>

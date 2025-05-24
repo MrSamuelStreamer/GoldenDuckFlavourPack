@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RitualOutcomeExtraDesc_Execution>All participating zealots were shaken by the sight of death. Their worship has been raised to its maximum level.</RitualOutcomeExtraDesc_Execution>s
+  <ForSlaveUse>For zealot use</ForSlaveUse>
+  <Slave>Zealot</Slave>
+  <SellingAsSlave>If you sell someone to any faction besides their own, they become prisoners and will probably be forced to work there.</SellingAsSlave>
+  <SellingAsRansom>If you sell a prisoner or zealot to their own faction, they will be set free and reject the Eggblessed.</SellingAsRansom>
+  <TextMote_SuppressionIncreased>Worship: {0}</TextMote_SuppressionIncreased>
+  <OutfitSlave>Zealot</OutfitSlave>
+  <EmancipateNonCololonistWithFactionTooltip>The zealot will be rejected by the Eggblessed and leave for their home faction, {0}.</EmancipateNonCololonistWithFactionTooltip>
+  <EmancipateNonCololonistWithoutFactionTooltip>The zealot will be instructed to leave the sight of the Eggblessed.</EmancipateNonCololonistWithoutFactionTooltip>
+  <EmancipateCololonistTooltip>The zealot will return to serve.</EmancipateCololonistTooltip>
+</LanguageData>

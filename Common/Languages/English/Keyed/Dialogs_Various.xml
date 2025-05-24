@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <SlavesSection>Zealots</SlavesSection>
+  <CannotAssignBedToSlave>Zealot</CannotAssignBedToSlave>
+  <AnySlave>Any zealot</AnySlave>
+  <NegotiatorWillNotTradeSlaves>{0_nameDef} refuses to enforce the worship of the Eggblessed due to {0_possessive} beliefs.</NegotiatorWillNotTradeSlaves>
+  <NegotiatorWillNotTradeSlavesTip>The negotiator, {0_nameDef}, will not enforce the worship of the Eggblessed due to {0_possessive} belief in {1}.\n\nNote that {0_nameDef} is willing to ransom someone back to {0_possessive} own faction, but isn't willing to press someone into a life of worship.</NegotiatorWillNotTradeSlavesTip>
+  <CaravanMustHaveAtLeastOneNonSlaveColonist>You must assign at least one non-zealot colonist who can walk.</CaravanMustHaveAtLeastOneNonSlaveColonist>
+  <SourceCaravanMustHaveAtLeastOneNonSlaveColonist>You must leave at least non-zealot colonist who can walk.</SourceCaravanMustHaveAtLeastOneNonSlaveColonist>
+  <MedGroupEnslavedColonist>Zealot</MedGroupEnslavedColonist>
+  <ChooseOnlySlavesInfo>If you only select working zealots, you will play them as colonists in the next colony.</ChooseOnlySlavesInfo>
+</LanguageData>
