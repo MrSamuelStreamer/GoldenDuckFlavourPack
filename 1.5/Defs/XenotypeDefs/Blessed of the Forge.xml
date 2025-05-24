@@ -29,6 +29,10 @@
       <li MayRequire="vanillaracesexpanded.genie">VRE_Curiosity_Crafting</li>
       <li MayRequire="dimonsever000.genes.specific">Religiosity_Fanatic</li>
       <li MayRequire="ebsg.passion">EBSG_Passion_Social</li>
+      <li MayRequire="biotexpans.mythic">BTEMy_AvariceInstinct</li>
+      <li MayRequire="biotexpans.mythic">BTEMy_AurumThirst</li>
+      <li MayRequire="biotexpans.mythic">BTEMy_PurgeMemory</li>
+      <li MayRequire="biotexpans.mythic">BTEMy_AurumDetonation</li>
     </genes>
   </XenotypeDef>
 </Defs>
