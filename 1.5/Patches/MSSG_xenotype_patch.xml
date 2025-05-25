@@ -8,16 +8,12 @@
           <inheritable>true</inheritable>
         </value>
       </li>
-    </operations>
-    <operations>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Genie"]</xpath>
         <value>
           <inheritable>true</inheritable>
         </value>
       </li>
-    </operations>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/GeneDef[defName="BTEMy_AurumThirst"]/renderNodeProperties</xpath>
       </li>
