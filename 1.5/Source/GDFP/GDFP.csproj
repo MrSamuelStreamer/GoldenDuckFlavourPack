@@ -64,13 +64,5 @@
     <CompatibilityFiles Include="../../../Compatibility/**" />
 
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
-
-    <ReleaseFiles Update="..\..\Defs\GDFP_MapGen.xml">
-      <Link>GDFP\1.5\Defs\GDFP_MapGen.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\GDFP_MapGen.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_MapGen.xml</Link>
-    </ReleaseFiles>
   </ItemGroup>
 </Project>

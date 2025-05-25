@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "ExtractMetalFromSlag"]/ingredients/li/filter/thingDefs</xpath>
+        <value>
+            <li>MSSG_ChunkSlagFoolsGold</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "ExtractMetalFromSlag"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>MSSG_ChunkSlagFoolsGold</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef[defName = "PreciousLump"]/genStep/mineables</xpath>
+        <value>
+            <li>MSSG_MineableFoolsGold</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingSetMakerDef/root/options/li/thingSetMaker[@Class = "ThingSetMaker_RandomOption"][.//thingDefs/li[text()="Gold"]]/options</xpath>
+        <value>
+            <li>
+                <weight>0.4</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                    <fixedParams>
+                        <filter>
+                            <thingDefs>
+                                <li>MSSG_FoolsGold</li>
+                            </thingDefs>
+                        </filter>
+                    </fixedParams>
+                </thingSetMaker>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

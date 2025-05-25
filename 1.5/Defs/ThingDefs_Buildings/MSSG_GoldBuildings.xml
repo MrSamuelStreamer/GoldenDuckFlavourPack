@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef ParentName="RockBase">
+        <defName>MSSG_MineableFoolsGold</defName>
+        <label>gold ore</label>
+        <description>Rock containing bits of gold.</description>
+
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(89,83,68)</color>
+            <colorTwo>(187,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>MSSG_FoolsGold</mineableThing>
+            <mineableYield>40</mineableYield>
+            <mineableScatterCommonality>0.12</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+        </building>
+    </ThingDef>
+
+</Defs>

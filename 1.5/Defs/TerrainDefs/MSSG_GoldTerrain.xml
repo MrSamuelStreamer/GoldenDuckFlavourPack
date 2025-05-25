@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TerrainDef ParentName="FloorBase">
+        <defName>MSSG_FoolsGoldTile</defName>
+        <label>shiny sterile tile</label>
+        <renderPrecedence>244</renderPrecedence>
+        <description>Special sterile tiles, gilded with fool's gold to provide extra beauty with special cleanliness-enhancing properties. Extra-clean rooms improve outcomes in hospitals and research labs. This tile is very slow to build, but quick to clean.</description>
+        <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+        <color>(0.65, 0.65, 0.35)</color>
+        <pollutionTintColor>(0.95, 0.95, 0.93, 1)</pollutionTintColor>
+        <isPaintable>true</isPaintable>
+        <statBases>
+            <WorkToBuild>1600</WorkToBuild>
+            <Cleanliness>0.5</Cleanliness>
+            <CleaningTimeFactor>0.5</CleaningTimeFactor>
+            <Beauty>5</Beauty>
+        </statBases>
+        <costList>
+            <MSSG_FoolsGold>3</MSSG_FoolsGold>
+            <Silver>5</Silver>
+        </costList>
+        <constructEffect>ConstructMetal</constructEffect>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>SterileMaterials</li>
+        </researchPrerequisites>
+        <uiOrder>2051</uiOrder>
+    </TerrainDef>
+</Defs>
