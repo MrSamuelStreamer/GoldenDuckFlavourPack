@@ -17,5 +17,10 @@
         </value>
       </li>
     </operations>
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/GeneDef[defName="BTEMy_AurumThirst"]/renderNodeProperties</xpath>
+      </li>
+    </operations>
   </Operation>
 </Patch>
