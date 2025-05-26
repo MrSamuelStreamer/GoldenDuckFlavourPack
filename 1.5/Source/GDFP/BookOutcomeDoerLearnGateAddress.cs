@@ -5,7 +5,7 @@ namespace GDFP;
 
 public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
 {
-    public BookOutcomeProperties_LearnGateAddress Props
+    public BookOutcomeProperties_LearnGateAddress GateBookProps
     {
         get => (BookOutcomeProperties_LearnGateAddress) props;
     }
@@ -26,7 +26,7 @@ public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
         if(HasProvidedAddress) return;
         HasProvidedAddress = true;
 
-        if(Props == null)
+        if(GateBookProps == null)
         {
             LearnGateAddress(GateAddress.RandomGateAddress());
             return;
@@ -34,30 +34,30 @@ public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
 
         GateAddress address = new()
         {
-            address = string.IsNullOrEmpty(Props.planetAddress) ? GateAddress.RandomGateAddressString() : Props.planetAddress,
-            biome = Props.planetBiome ?? GateAddress.GetBiome(),
-            temperature = Props.planetTemperature ?? Rand.Range(-45, 45),
-            name = string.IsNullOrEmpty(Props.planetName) ? GateAddress.RandomGateName() : Props.planetName,
-            faction = Props.planetFaction,
-            extraGenSteps = Props.ExtraGenSteps()
+            address = string.IsNullOrEmpty(GateBookProps.planetAddress) ? GateAddress.RandomGateAddressString() : GateBookProps.planetAddress,
+            biome = GateBookProps.planetBiome ?? GateAddress.GetBiome(),
+            temperature = GateBookProps.planetTemperature ?? Rand.Range(-45, 45),
+            name = string.IsNullOrEmpty(GateBookProps.planetName) ? GateAddress.RandomGateName() : GateBookProps.planetName,
+            faction = GateBookProps.planetFaction,
+            extraGenSteps = GateBookProps.ExtraGenSteps()
         };
 
-        if (Props.planetIncident != null)
+        if (GateBookProps.planetIncident != null)
         {
-            if (Props.planetIncidentChance.HasValue)
+            if (GateBookProps.planetIncidentChance.HasValue)
             {
-                if (Rand.Chance(Props.planetIncidentChance.Value))
+                if (Rand.Chance(GateBookProps.planetIncidentChance.Value))
                 {
-                    address.incidentToTrigger = Props.planetIncident;
+                    address.incidentToTrigger = GateBookProps.planetIncident;
                 }
             }
             else
             {
-                address.incidentToTrigger = Props.planetIncident;
+                address.incidentToTrigger = GateBookProps.planetIncident;
             }
         }
 
-        address.description = string.IsNullOrEmpty(Props.planetDescription) ? $"Biome = {address.biome.label}; Avg Temperature: {address.temperature}" : Props.planetDescription;
+        address.description = string.IsNullOrEmpty(GateBookProps.planetDescription) ? $"Biome = {address.biome.label}; Avg Temperature: {address.temperature}" : GateBookProps.planetDescription;
 
 
         LearnGateAddress(address);
