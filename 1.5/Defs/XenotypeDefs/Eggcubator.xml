@@ -14,7 +14,6 @@
       <li MayRequire="cookie.genes">LYN_Hair_Golden</li>
       <li MayRequire="sarg.alphagenes">AlphaGenes_ExoticOrganism</li>
       <li MayRequire="dimonsever000.genes.specific">Religiosity_Fanatic</li>
-      <li MayRequire="lusty.helltakergenes">LM_Halo</li>
     </genes>
   </XenotypeDef>
 </Defs>

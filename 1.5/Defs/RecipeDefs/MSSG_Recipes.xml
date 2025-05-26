@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef>
+    <defName>MSSG_Crack_Egg</defName>
+    <label>Crack Egg</label>
+    <description>Crack open a golden egg releasing the wealth and riches inside.</description>
+    <jobString>Cracking egg.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>400</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>50</targetCountAdjustment>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>ButcherTable</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSSG_Egg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSSG_Egg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>1000</Gold>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>0</displayPriority>
+  </RecipeDef>
+</Defs>

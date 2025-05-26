@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <RecipeDef Name="SurgeryInstallGoldenEgg" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+  <!-- <RecipeDef Name="SurgeryInstallGoldenEgg" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
     <workAmount>1500</workAmount>
     <skillRequirements>
-      <Medicine>5</Medicine>
+      <Medicine>3</Medicine>
     </skillRequirements>
     <ingredients>
       <li>
@@ -44,7 +44,68 @@
     <addsHediff>MSSG_ImplantEgg</addsHediff>
     <uiIconThing>MSSG_Egg</uiIconThing>
     <appliedOnFixedBodyParts>
-      <li>Spine</li>
+      <li>Torso</li>
     </appliedOnFixedBodyParts>
+  </RecipeDef> -->
+
+  <!--- New System -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>MSSG_ImplantEggNew</defName>
+    <label>Eggcubator Implant</label>
+    <defaultLabelColor>(252, 186, 3)</defaultLabelColor>
+    <labelNoun>an incubating egg</labelNoun>
+    <description>A golden egg incubating inside this pawn. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
+    <descriptionHyperlinks><ThingDef>Coagulator</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>MSSG_Egg</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <totalBleedFactor>0.5</totalBleedFactor>
+        <naturalHealingFactor>1.5</naturalHealingFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>MSSG_ImplantEggNewSurgery</defName>
+    <label>Incubate Egg</label>
+    <description>Incubate a Golden Egg. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSSG_Egg</ThingDef>
+      <HediffDef>MSSG_ImplantEggNew</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Incubating Golden Egg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSSG_Egg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSSG_Egg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MSSG_ImplantEggNew</addsHediff>
   </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>MSSG_ImplantEggNewSurgeryRemove</defName>
+    <label>remove incubatig egg</label>
+    <description>Remove incubating Golden Egg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSSG_Egg</ThingDef>
+      <HediffDef>MSSG_ImplantEggNew</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing Golden Egg.</jobString>
+    <removesHediff>MSSG_ImplantEggNew</removesHediff>
+  </RecipeDef>
+
 </Defs>
