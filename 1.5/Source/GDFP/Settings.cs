@@ -5,22 +5,28 @@ namespace GDFP;
 
 public class Settings : ModSettings
 {
-    //Use Mod.settings.setting to refer to this setting.
-    public bool setting = true;
+    public int planetWidth = 150;
+    public int planetHeight = 150;
 
     public void DoWindowContents(Rect wrect)
     {
-        var options = new Listing_Standard();
+        Listing_Standard options = new();
         options.Begin(wrect);
-        
-        options.CheckboxLabeled("GDFP_Settings_SettingName".Translate(), ref setting);
+
+        options.Label("GDFP_Settings_DefaultGatePlanetWidth".Translate(planetWidth));
+        options.IntAdjuster(ref planetWidth, 10, 100);
+        options.Gap();
+
+        options.Label("GDFP_Settings_DefaultGatePlanetHeight".Translate(planetHeight));
+        options.IntAdjuster(ref planetHeight, 10, 100);
         options.Gap();
 
         options.End();
     }
-    
+
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref setting, "setting", true);
+        Scribe_Values.Look(ref planetWidth, "planetWidth", 150);
+        Scribe_Values.Look(ref planetHeight, "planetHeight", 150);
     }
 }

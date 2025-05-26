@@ -1,8 +1,10 @@
-﻿using Verse;
+﻿using JetBrains.Annotations;
+using RimWorld;
+using Verse;
 
 namespace GDFP;
 
 public class GDFPModExtension : DefModExtension
 {
-    public GraphicData extraGraphicData;
+    [CanBeNull] public GraphicData openingGraphicData;
 }

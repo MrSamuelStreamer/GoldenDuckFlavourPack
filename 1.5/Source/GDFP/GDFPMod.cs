@@ -17,7 +17,7 @@ public class GDFPMod : Mod
 #if DEBUG
         Harmony.DEBUG = true;
 #endif
-        Harmony harmony = new Harmony("MSSG.FlavourPack.GDFP.main");	
+        Harmony harmony = new Harmony("MSSG.FlavourPack.GDFP.main");
         harmony.PatchAll();
     }
 
@@ -29,6 +29,6 @@ public class GDFPMod : Mod
 
     public override string SettingsCategory()
     {
-        return "GDFP_SettingsCategory".Translate();
+        return "GDFP_Settings".Translate();
     }
 }

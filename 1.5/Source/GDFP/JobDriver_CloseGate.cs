@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using RimWorld;
 using Verse;
 using Verse.AI;
 
 namespace GDFP;
 
-public class JobDriver_OpenGate : JobDriver
+public class JobDriver_CloseGate : JobDriver
 {
     public Building_Quackaai Gate => TargetThingA as Building_Quackaai;
 
@@ -18,14 +19,14 @@ public class JobDriver_OpenGate : JobDriver
     {
         string reportStringOverride = base.GetReport();
 
-        if (Gate.IsOpen)
+        if (!Gate.IsOpen)
         {
-            return "GDFP_ReportString_GateOpened".Translate();
+            return "GDFP_ReportString_GateNotOpened".Translate();
         }
 
-        if (Gate.selectedAddress == null)
+        if (Gate.planetMap.mapPawns.FactionsOnMap().Contains(Faction.OfPlayer))
         {
-            return "GDFP_ReportString_GateNotSelected".Translate();
+            return "GDFP_ReportString_PlayerStillOnMap".Translate();
         }
 
         return reportStringOverride;
@@ -34,8 +35,9 @@ public class JobDriver_OpenGate : JobDriver
     protected override IEnumerable<Toil> MakeNewToils()
     {
         this.FailOnDespawnedOrNull(TargetIndex.A);
-        this.FailOn(() => Gate.IsOpen);
-        this.FailOn(() => Gate.selectedAddress == null);
+        this.FailOn(() => !Gate.IsOpen);
+        this.FailOn(() => Gate.planetMap.mapPawns.FactionsOnMap().Contains(Faction.OfPlayer));
+
         yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch, false);
 
         Toil toilFaceAndWait = Toils_General.Wait(90, TargetIndex.None).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch).WithProgressBarToilDelay(TargetIndex.A, true, -0.5f);
@@ -45,26 +47,18 @@ public class JobDriver_OpenGate : JobDriver
             pawn.rotationTracker.FaceTarget(job.targetA);
         }));
         toilFaceAndWait.handlingFacing = true;
-
         yield return toilFaceAndWait;
 
-        Toil workToOpenGate = Toils_General.Wait(5, TargetIndex.None)
-            .FailOnCannotTouch(TargetIndex.A, PathEndMode.ClosestTouch);
+        Toil workToCloseGate = Toils_General.Wait(300, TargetIndex.None)
+            .FailOnCannotTouch(TargetIndex.A, PathEndMode.ClosestTouch)
+            .WithProgressBarToilDelay(TargetIndex.A, 300, false, -0.5f);
 
-        if(Gate.IsMainGate)
-            workToOpenGate.AddPreInitAction((() =>
-            {
-                LongEventHandler.QueueLongEvent(() =>
-                {
-                    Gate.GenerateNewPlanetMap();
-                }, "GDFP_OpeningPortal", false, null);;
-            }));
-
-        workToOpenGate.AddFinishAction(delegate
+        workToCloseGate.AddFinishAction(delegate
         {
-            Gate.OpenGate();
+            ModLog.Log($"Ensuring Map from Job {this}");
+            Gate.CloseGate();
 
         });
-        yield return workToOpenGate;
+        yield return workToCloseGate;
     }
 }

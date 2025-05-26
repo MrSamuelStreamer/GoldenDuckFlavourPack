@@ -38,54 +38,82 @@
 
         <inspectorTabs>
             <li>ITab_ContentsMapPortal</li>
+            <li>GDFP.ITab_Gate</li>
         </inspectorTabs>
 
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Void</li>
+                </focusTypes>
+            </li>
+            <li Class="GDFP.CompProperties_Animation">
+                <NextStep>
+                    <texPath>Buildings/QuackaaiOpen</texPath>
+                    <graphicClass>GDFP.Graphic_Animated</graphicClass>
+                    <drawSize>(5,5)</drawSize>
+                    <shadowData>
+                        <volume>(2.37, 1, 2.37)</volume>
+                    </shadowData>
+                    <damageData>
+                        <!--  no damage marks because they don't move with the door  -->
+                        <enabled>false</enabled>
+                    </damageData>
+                </NextStep>
+            </li>
+        </comps>
+
         <graphicData>
-            <texPath>Buildings/Quackaai</texPath>
+            <texPath>Buildings/QuackaaiClosed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>4</drawSize>
+            <drawSize>(5,5)</drawSize>
+            <shadowData>
+                <volume>(2.37, 1, 2.37)</volume>
+            </shadowData>
             <damageData>
                 <!--  no damage marks because they don't move with the door  -->
                 <enabled>false</enabled>
             </damageData>
         </graphicData>
-        <size>(4,4)</size>
+        <size>(3,3)</size>
 
         <modExtensions>
             <li Class="GDFP.GDFPModExtension">
-                <extraGraphicData>
-                    <texPath>Buildings/QuackaaiClosed</texPath>
-                    <graphicClass>Graphic_Single</graphicClass>
-                    <drawSize>4</drawSize>
+                <openingGraphicData>
+                    <texPath>Buildings/QuackaaiOpening</texPath>
+                    <graphicClass>GDFP.Graphic_Animated</graphicClass>
+                    <drawSize>(5,5)</drawSize>
+                    <shadowData>
+                        <volume>(2.37, 1, 2.37)</volume>
+                    </shadowData>
                     <damageData>
                         <!--  no damage marks because they don't move with the door  -->
                         <enabled>false</enabled>
                     </damageData>
-                </extraGraphicData>
+                </openingGraphicData>
             </li>
         </modExtensions>
 
         <thingClass>GDFP.Building_Quackaai</thingClass>
-        <category>Building</category>
-        <altitudeLayer>DoorMoveable</altitudeLayer>
-        <fillPercent>1</fillPercent>
-        <useHitPoints>true</useHitPoints>
-        <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-        </statBases>
 
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <selectable>true</selectable>
+        <passability>Impassable</passability>
+        <fillPercent>1</fillPercent>
+        <blockWind>true</blockWind>
+        <altitudeLayer>Building</altitudeLayer>
         <tickerType>Normal</tickerType>
-        <rotatable>false</rotatable>
-        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <pathCost>50</pathCost>
+        <forceDebugSpawnable>true</forceDebugSpawnable>
+        <canOverlapZones>false</canOverlapZones>
+        <selectable>true</selectable>
+        <destroyable>false</destroyable>
+        <useHitPoints>false</useHitPoints>
+        <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+        <uiIconScale>0.75</uiIconScale>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-        <designationCategory>Structure</designationCategory>
-        <uiOrder>2010</uiOrder>
-        <holdsRoof>true</holdsRoof>
-        <staticSunShadowHeight>1.0</staticSunShadowHeight>
-        <blockLight>true</blockLight>
+
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+
         <drawerType>RealtimeOnly</drawerType>
         <building>
             <isInert>true</isInert>
@@ -100,6 +128,11 @@
             </blueprintGraphicData>
             <ai_chillDestination>false</ai_chillDestination>
             <paintable>true</paintable>
+            <deconstructible>false</deconstructible>
+            <repairable>false</repairable>
+            <isTargetable>false</isTargetable>
+            <claimable>false</claimable>
+            <expandHomeArea>false</expandHomeArea>
         </building>
     </ThingDef>
 
@@ -107,6 +140,7 @@
         <defName>GDFP_QuakkaaiExit</defName>
         <label>Quakka'ai Return</label>
         <thingClass>GDFP.Building_QuackaaiExit</thingClass>
+
     </ThingDef>
 
     <JobDef>
@@ -115,5 +149,13 @@
         <dropThingBeforeJob>false</dropThingBeforeJob>
         <carryThingAfterJob>true</carryThingAfterJob>
         <reportString>opening TargetA.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>GDFP_CloseGate</defName>
+        <driverClass>GDFP.JobDriver_CloseGate</driverClass>
+        <dropThingBeforeJob>false</dropThingBeforeJob>
+        <carryThingAfterJob>true</carryThingAfterJob>
+        <reportString>closing TargetA.</reportString>
     </JobDef>
 </Defs>

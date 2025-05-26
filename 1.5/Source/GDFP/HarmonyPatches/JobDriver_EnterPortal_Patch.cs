@@ -32,9 +32,6 @@ public static class JobDriver_EnterPortal_Patch
 
         Toil toilTeleport = ToilMaker.MakeToil();
 
-        if(gate.IsMainGate)
-            toilTeleport.AddPreInitAction(gate.GenerateNewPlanetMap);
-
         // toilTeleport.AddEndCondition(() => door.nextMap != null ? JobCondition.Succeeded : JobCondition.Ongoing);
 
         toilTeleport.initAction =

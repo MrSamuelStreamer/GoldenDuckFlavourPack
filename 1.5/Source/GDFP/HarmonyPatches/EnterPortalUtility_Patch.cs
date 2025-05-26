@@ -79,6 +79,13 @@ public static class EnterPortalUtility_Patch
                 return false;
             }
 
+            if (portal.selectedAddress == null)
+            {
+                __result = new FloatMenuOption("GDFP_NoAddressSelected".Translate(portal.Label), null, MenuOptionPriority.Default,
+                    null, null, 0f, null, null, true, 0);
+                return false;
+            }
+
             __result = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(portal.OpenCommandString, delegate
             {
                 Job job = JobMaker.MakeJob(GDFPDefOf.GDFP_OpenGate, portal);

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.Sound;
@@ -7,18 +8,30 @@ namespace GDFP;
 
 public class Building_Quackaai: MapPortal
 {
+    public static GDFP_WorldComponent WorldComponent => Find.World.GetComponent<GDFP_WorldComponent>();
+
     // Handle alt texture for door closed
     private GDFPModExtension defExtension;
 
-    public Graphic gateClosedGraphic;
+    public Graphic gateOpeningGraphic;
     protected bool HasExtension => defExtension != null;
-    public virtual bool IsMainGate => false;
+    public virtual bool IsMainGate => true;
+
+    public GateAddress selectedAddress;
 
 
-    public bool IsOpen = false;
+    public bool isOpen = false;
+
+    public virtual bool IsOpen
+    {
+        get => isOpen;
+        set=>isOpen = value;
+    }
 
     public void OpenGate()
     {
+        if(selectedAddress == null) return;
+
         IsOpen = true;
         if (Find.CurrentMap == Map)
         {
@@ -32,26 +45,36 @@ public class Building_Quackaai: MapPortal
         }
     }
 
+    public virtual void CloseGate()
+    {
+        IsOpen = false;
+        exitGate = null;
+        selectedAddress = null;
 
-    public override Graphic Graphic => !IsOpen ? AlternateGraphic : base.Graphic;
+        PocketMapUtility.DestroyPocketMap(planetMap);
+        planetMap = null;
+    }
+
+
+    public override Graphic Graphic => IsOpen ? AlternateGraphic : base.Graphic;
 
     protected Graphic AlternateGraphic
     {
         get
         {
-            if (gateClosedGraphic != null)
+            if (gateOpeningGraphic != null)
             {
-                return gateClosedGraphic;
+                return gateOpeningGraphic;
             }
 
-            if (!HasExtension || defExtension.extraGraphicData == null)
+            if (!HasExtension || defExtension.openingGraphicData == null)
             {
                 return BaseContent.BadGraphic;
             }
 
-            gateClosedGraphic = defExtension.extraGraphicData.GraphicColoredFor(this);
+            gateOpeningGraphic = defExtension.openingGraphicData.GraphicColoredFor(this);
 
-            return gateClosedGraphic;
+            return gateOpeningGraphic;
         }
     }
 
@@ -63,6 +86,7 @@ public class Building_Quackaai: MapPortal
     }
 
     public virtual string OpenCommandString => "GDFP_OpenPortal".Translate(Label);
+    public virtual string CloseCommandString => "GDFP_ClosePortal".Translate(Label);
 
 
     public Map planetMap;
@@ -78,9 +102,10 @@ public class Building_Quackaai: MapPortal
     public override void ExposeData()
     {
         base.ExposeData();
-        Scribe_Values.Look(ref IsOpen, "IsOpen");
+        Scribe_Values.Look(ref isOpen, "isOpen");
         Scribe_References.Look(ref planetMap, "planetMap");
         Scribe_References.Look(ref exitGate, "exitGate");
+        Scribe_References.Look(ref selectedAddress, "selectedAddress");
     }
 
     public override IntVec3 GetDestinationLocation()
@@ -107,14 +132,8 @@ public class Building_Quackaai: MapPortal
     public virtual void GenerateNewPlanetMap()
     {
         if(planetMap != null) return;
-        planetMap = PocketMapUtility.GeneratePocketMap(new IntVec3(100, 1, 100), GDFPDefOf.GDFP_Planet, null, Map);
 
-        foreach (IntVec3 allCell in planetMap.AllCells)
-            planetMap.roofGrid.SetRoof(allCell, null);
-
-        exitGate = planetMap.listerThings.ThingsOfDef(GDFPDefOf.GDFP_QuakkaaiExit).First() as Building_QuackaaiExit;
-        if(exitGate != null)
-            exitGate.entryGate = this;
+        GateAddress.GenerateNewPlanetMap(this, out planetMap, out exitGate, selectedAddress);
     }
 
 }

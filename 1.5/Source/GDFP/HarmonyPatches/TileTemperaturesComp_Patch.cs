@@ -16,7 +16,10 @@ public static class TileTemperaturesComp_Patch
     {
         if (tile < 0 || tile > Find.WorldGrid.TilesCount)
         {
-            tile = Find.CurrentMap.Tile;
+            if(Find.CurrentMap.Tile > 0)
+                tile = Find.CurrentMap.Tile;
+            else
+                tile = Rand.Range(0, Find.WorldGrid.TilesCount);
         }
     }
 }

@@ -10,6 +10,7 @@ public static class GDFPDefOf
     public static SoundDef GDFP_Activate;
 
     public static JobDef GDFP_OpenGate;
+    public static JobDef GDFP_CloseGate;
 
     public static ThingDef GDFP_QuakkaaiExit;
 

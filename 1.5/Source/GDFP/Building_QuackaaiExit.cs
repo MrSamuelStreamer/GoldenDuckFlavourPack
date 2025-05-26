@@ -10,6 +10,17 @@ public class Building_QuackaaiExit: Building_Quackaai
 
     public Building_Quackaai entryGate;
 
+    public override bool IsOpen
+    {
+        get => entryGate != null;
+    }
+
+    public override void CloseGate()
+    {
+        return;
+    }
+
+
     public override Map GetOtherMap() => entryGate.Map;
 
     public override IntVec3 GetDestinationLocation() => entryGate.Position;

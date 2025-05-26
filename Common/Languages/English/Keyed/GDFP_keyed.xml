@@ -2,4 +2,16 @@
 <LanguageData>
     <GDFP_CannotOpen>Can't open gate {0}</GDFP_CannotOpen>
     <GDFP_OpenPortal>Open Quakka'ai</GDFP_OpenPortal>
+    <GDFP_ClosePortal>Close Quakka'ai</GDFP_ClosePortal>
+    <GDFP_AddressInspectorDescription>{0} planet; avg temperature {1}°</GDFP_AddressInspectorDescription>
+    <GDFP_GateTab>Quacka'ai</GDFP_GateTab>
+    <GDFP_ReportString_GateOpened>Gate already open</GDFP_ReportString_GateOpened>
+    <GDFP_ReportString_GateNotSelected>No address selected</GDFP_ReportString_GateNotSelected>
+    <GDFP_ReportString_GateNotOpened>Gate already closed</GDFP_ReportString_GateNotOpened>
+    <GDFP_ReportString_PlayerStillOnMap>Members of your faction are still off planet</GDFP_ReportString_PlayerStillOnMap>
+    <GDFP_OpeningPortal>Traversing subspace</GDFP_OpeningPortal>
+    <GDFP_NoAddressSelected>No address selected ({0})</GDFP_NoAddressSelected>
+    <GDFP_Settings>Golden Duck Flavour Pack</GDFP_Settings>
+    <GDFP_Settings_DefaultGatePlanetWidth>Default gate planet width: {0} tiles</GDFP_Settings_DefaultGatePlanetWidth>
+    <GDFP_Settings_DefaultGatePlanetHeight>Default gate planet height: {0} tiles</GDFP_Settings_DefaultGatePlanetHeight>
 </LanguageData>
