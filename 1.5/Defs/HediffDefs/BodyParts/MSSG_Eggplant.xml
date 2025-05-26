@@ -64,6 +64,11 @@
         <naturalHealingFactor>1.5</naturalHealingFactor>
       </li>
     </stages>
+    <comps>
+      <li Class="GDFP.Hediffs.HediffCompProperties_SlaveryWhileActive">
+        <forcedXenotypeDef>MSSG_Eggcubator</forcedXenotypeDef>
+      </li>
+    </comps>
   </HediffDef>
 
   <RecipeDef ParentName="SurgeryInstallImplantBase">
@@ -74,6 +79,9 @@
       <ThingDef>MSSG_Egg</ThingDef>
       <HediffDef>MSSG_ImplantEggNew</HediffDef>
     </descriptionHyperlinks>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
     <jobString>Incubating Golden Egg.</jobString>
     <ingredients>
       <li>
