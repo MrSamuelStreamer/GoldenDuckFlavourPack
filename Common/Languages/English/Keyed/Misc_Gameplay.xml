@@ -10,4 +10,5 @@
   <EmancipateNonCololonistWithFactionTooltip>The zealot will be rejected by the Eggblessed and leave for their home faction, {0}.</EmancipateNonCololonistWithFactionTooltip>
   <EmancipateNonCololonistWithoutFactionTooltip>The zealot will be instructed to leave the sight of the Eggblessed.</EmancipateNonCololonistWithoutFactionTooltip>
   <EmancipateCololonistTooltip>The zealot will return to serve.</EmancipateCololonistTooltip>
+  <MSSG_EggDesc>Golden Egg laid</MSSG_EggDesc>
 </LanguageData>
