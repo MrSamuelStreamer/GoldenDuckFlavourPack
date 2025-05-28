@@ -9,7 +9,7 @@
       <MarketValue>196966570</MarketValue>
       <LeatherAmount>0</LeatherAmount>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
-      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <ComfyTemperatureMax>1064</ComfyTemperatureMax>
       <FilthRate>0</FilthRate>
     </statBases>
    <comps>
