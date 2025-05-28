@@ -32,19 +32,22 @@
       <HintPath>../../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>../../../../../RimWorldWin64_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>../../../../../RimWorldWin64_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        <Private>False</Private>
     </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>../../../../../RimWorldWin64_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Condition="Exists('../../../../../Data')" Include="../../../../../Data/**/*">
       <Link>Attached/Rimworld/%(RecursiveDir)/%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\modList.xml">
+      <Link>GoldenDuckFlavourPack\modList.xml</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -68,5 +71,9 @@
     <CompatibilityFiles Include="../../../Compatibility/**" />
 
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
+
+    <CompatibilityFiles Update="..\..\..\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll">
+      <Link>GoldenDuckFlavourPack\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll</Link>
+    </CompatibilityFiles>
   </ItemGroup>
 </Project>

@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>Library</OutputType>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>GDFP.Hospitality</RootNamespace>
+        <AssemblyName>GDFP.Hospitality</AssemblyName>
+        <OutputPath>../../../Compatibility/Orion.Hospitality/1.5/Assemblies</OutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <SteamModsPath>$(RIMWORLD_STEAM_MODS_PATH)</SteamModsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <Optimize>false</Optimize>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>embedded</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <ProjectReference Include="..\GDFP\GDFP.csproj" >
+            <Private>false</Private>
+        </ProjectReference>
+    </ItemGroup>
+
+    <ItemGroup>
+
+        <Reference Include="Assembly-CSharp">
+            <HintPath Condition="Exists('../../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll')">../../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+            <HintPath Condition="Exists('../../../../../Contents/Resources/Data/Managed/Assembly-CSharp.dll')">../../../../../Contents/Resources/Data/Managed/Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Hospitality">
+            <HintPath Condition="Exists('../../../../Hospitality/1.5/Assemblies/Hospitality.dll')">../../../../Hospitality/1.5/Assemblies/Hospitality.dll</HintPath>
+            <HintPath Condition="Exists('../../../../753498552/1.5/Assemblies/Hospitality.dll')">../../../../753498552/1.5/Assemblies/Hospitality.dll</HintPath>
+            <HintPath Condition="Exists('../../../../../../../workshop/content/294100/753498552/1.5/Assemblies/Hospitality.dll')">../../../../../../../workshop/content/294100/753498552/1.5/Assemblies/Hospitality.dll</HintPath>
+            <HintPath Condition="Exists('../../../../../../../../workshop/content/294100/753498552/1.5/Assemblies/Hospitality.dll')">../../../../../../../../workshop/content/294100/753498552/1.5/Assemblies/Hospitality.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+</Project>
