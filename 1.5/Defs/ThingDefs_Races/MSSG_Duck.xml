@@ -20,20 +20,20 @@
       </li> -->
       <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>MSSG_Egg</resourceDef>
-				<gatheringIntervalDays>6</gatheringIntervalDays>
+				<gatheringIntervalDays>5</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>MSSG_EggDesc</customResourceString>
 			</li>
     </comps>
     <race>
       <body>Bird</body>
-      <baseHungerRate>0.095</baseHungerRate>
-      <baseBodySize>1.0</baseBodySize>
-      <baseHealthScale>2.5</baseHealthScale>
+      <baseHungerRate>0.01</baseHungerRate>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>5.0</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <trainability>Advanced</trainability>
       <wildness>0</wildness>
-      <roamMtbDays>60</roamMtbDays>
+      <roamMtbDays>1000</roamMtbDays>
       <mateMtbHours>1000</mateMtbHours>
       <lifeExpectancy>9000</lifeExpectancy>
       <lifeStageAges>
@@ -78,7 +78,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>23</power>
+        <power>100</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
       </li>
@@ -87,7 +87,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>54</power>
+        <power>250</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
       </li>
@@ -96,7 +96,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>32</power>
+        <power>150</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -126,19 +126,19 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/GoldenDuck/GoldenDuck</texPath>
-          <drawSize>1.75</drawSize>
+          <drawSize>2.5</drawSize>
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/GoldenDuck/GoldenDuck</texPath>
-          <drawSize>1.73</drawSize>
+          <drawSize>2.5</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-          <drawSize>1.75</drawSize>
+          <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-          <drawSize>1.73</drawSize>
+          <drawSize>2.5</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
       <li>
