@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <LetterDef ParentName="NegativeEvent">
+        <defName>GDFP_DeathQuestionMark</defName>
+        <letterClass>GDFP.DeathLetter</letterClass>
+    </LetterDef>
+</Defs>
