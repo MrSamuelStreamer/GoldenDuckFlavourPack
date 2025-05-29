@@ -75,5 +75,13 @@
     <CompatibilityFiles Update="..\..\..\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll">
       <Link>GoldenDuckFlavourPack\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll</Link>
     </CompatibilityFiles>
+
+    <ReleaseFiles Update="..\..\Defs\GDFP_LetterDefs.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_LetterDefs.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_CuckRoom.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_CuckRoom.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

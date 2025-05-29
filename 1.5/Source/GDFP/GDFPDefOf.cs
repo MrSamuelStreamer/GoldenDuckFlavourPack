@@ -16,5 +16,7 @@ public static class GDFPDefOf
 
     public static MapGeneratorDef GDFP_Planet;
 
+    public static LetterDef GDFP_DeathQuestionMark;
+
     static GDFPDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(GDFPDefOf));
 }
