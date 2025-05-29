@@ -193,4 +193,46 @@
             </li>
         </comps>
     </ThingDef>
+
+    <ThingDef ParentName="BookBase">
+        <defName>GDFP_GateAddressBookCuck</defName>
+        <label>ancient treasure book</label>
+        <description>A book which describes different planets. Reading this book may yield a new gate address.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+        <statBases>
+            <MarketValue>150</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>Namer_Schematic</nameMaker>
+                <descriptionMaker>Description_Schematic</descriptionMaker>
+                <ageYearsRange>2000~4000</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
+                        <extraGenSteps>
+                            <li>
+                                <step>GDFP_CuckRoom</step>
+                                <chance>1</chance>
+                            </li>
+                        </extraGenSteps>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>
