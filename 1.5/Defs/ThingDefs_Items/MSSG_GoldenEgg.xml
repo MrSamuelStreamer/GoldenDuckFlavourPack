@@ -35,7 +35,7 @@
       <li Class="CompProperties_Drug">
         <chemical>MSSG_Egg</chemical>
         <addictiveness>1.00</addictiveness>
-        <needLevelOffset>0.9</needLevelOffset>
+        <needLevelOffset>1.0</needLevelOffset>
         <listOrder>1010</listOrder>
       </li>
     </comps>
