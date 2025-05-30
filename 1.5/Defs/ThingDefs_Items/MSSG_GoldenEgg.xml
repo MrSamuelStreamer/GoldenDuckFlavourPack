@@ -96,17 +96,33 @@
     <everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
+        <label>Satisfied</label>
+      </li> 
+      <li>
+        <label>Mild Egg Craving</label>
       </li>
       <li>
-        <label>unmet</label>
-        <painOffset>0.4</painOffset>
-        <lifeThreatening>true</lifeThreatening>
-        <deathMtbDays>50</deathMtbDays>
-        <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        <label>Gnawing Egg Hunger</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <setMax>0.8</setMax>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>5.0</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+        <label>Major Egg Madness</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
           </li>
         </capMods>
         <mentalStateGivers>
@@ -115,6 +131,16 @@
             <mtbDays>2.0</mtbDays>
           </li>
         </mentalStateGivers>
+      </li>
+      <li>
+        <label>Shellshock</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
       </li>
     </stages>
   </HediffDef>
