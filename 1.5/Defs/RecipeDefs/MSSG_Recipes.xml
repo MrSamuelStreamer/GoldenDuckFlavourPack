@@ -13,7 +13,7 @@
     <targetCountAdjustment>50</targetCountAdjustment>
     <recipeUsers>
       <li>CraftingSpot</li>
-      <li>ButcherTable</li>
+      <li>TableButcher</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -32,6 +32,44 @@
     </fixedIngredientFilter>
     <products>
       <Gold>1000</Gold>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>0</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MSSG_SmeltFeather</defName>
+    <label>Smelt Golden Feather</label>
+    <description>Smelt a Golden Feather and turn it into heaps of usable gold.</description>
+    <jobString>Smelting feathers.</jobString>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>400</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>50</targetCountAdjustment>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSSG_GoldenFeather</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSSG_GoldenFeather</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>75</Gold>
     </products>
     <workSkill>Crafting</workSkill>
     <displayPriority>0</displayPriority>

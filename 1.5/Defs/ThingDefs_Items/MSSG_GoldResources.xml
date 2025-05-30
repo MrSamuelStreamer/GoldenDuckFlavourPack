@@ -77,4 +77,25 @@
         </smeltProducts>
     </ThingDef>
 
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSG_GoldenFeather</defName>
+        <label>Golden Duck Feather</label>
+        <description>An inexplicably solid gold feather. How any creature could fly with feathers of solid gold is a mystery.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Item/MSSG_GoldenFeather</texPath>
+        </graphicData>
+        <soundInteract>Silver_Drop</soundInteract>
+        <soundDrop>Silver_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>15</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <stackLimit>500</stackLimit>
+    </ThingDef>
 </Defs>

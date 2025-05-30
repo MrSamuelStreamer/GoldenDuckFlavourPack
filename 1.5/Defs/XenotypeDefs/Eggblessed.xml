@@ -18,7 +18,6 @@
       <li MayRequire="sarg.alphagenes">AG_PsychicAbility_Masterful</li>
       <li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
       <li MayRequire="lts.geg">GEG_Eyes_GlowingArchotech</li>
-      <li MayRequire="cookie.genes">LYN_Hair_Golden</li>
       <li MayRequire="cookie.genes">LYN_Skin_Golden</li>
       <li MayRequire="sarg.alphagenes">AlphaGenes_ExoticOrganism</li>
       <li MayRequire="dimonsever000.genes.specific">Religiosity_Fanatic</li>
@@ -26,6 +25,7 @@
       <li MayRequire="biotexpans.mythic">BTEMy_AurumThirst</li>
       <li MayRequire="biotexpans.mythic">BTEMy_PurgeMemory</li>
       <li MayRequire="biotexpans.mythic">BTEMy_AurumDetonation</li>
+      <li MayRequire="lusty.helltakergenes">LM_Halo</li>
     </genes>
   </XenotypeDef>
 </Defs>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- <RecipeDef Name="SurgeryInstallGoldenEgg" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+  <RecipeDef Name="SurgeryInstallGoldenEgg" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
     <workAmount>1500</workAmount>
     <skillRequirements>
       <Medicine>3</Medicine>
@@ -24,33 +24,44 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>MSSG_ImplantEgg</defName>
-    <label>Implanted Golden Egg</label>
-    <labelNoun>an implanted egg</labelNoun>
-    <description>An implanted Golden Egg. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
+    <label>Incubating Golden Egg</label>
+    <labelNoun>an incubating egg</labelNoun>
+    <description>An incubating Golden Egg. Grants the victim powerful physical strengths, at the cost of enforced loyalty to their eggblessed overlords.</description>
     <priceImpact>true</priceImpact>
     <comps>
       <li Class="GDFP.Hediffs.HediffCompProperties_SlaveryWhileActive">
         <forcedXenotypeDef>MSSG_Eggcubator</forcedXenotypeDef>
       </li>
     </comps>
+     <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.1</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <totalBleedFactor>0.5</totalBleedFactor>
+          <naturalHealingFactor>1.5</naturalHealingFactor>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <RecipeDef ParentName="SurgeryInstallGoldenEgg">
     <defName>MSSG_ImplantEgg</defName>
-    <label>Implant Golden Egg</label>
-    <description>Implant a Golden Egg.</description>
+    <label>Incubate Golden Egg</label>
+    <description>Incubate a Golden Egg within this person, given them a fraction of its power but instilling a magical loyalty in the golden gods.</description>
     <descriptionHyperlinks><ThingDef>MSSG_Egg</ThingDef></descriptionHyperlinks>
-    <jobString>Implanting Golden Egg.</jobString>
+    <jobString>Incubating Golden Egg.</jobString>
     <addsHediff>MSSG_ImplantEgg</addsHediff>
     <uiIconThing>MSSG_Egg</uiIconThing>
     <appliedOnFixedBodyParts>
-      <li>Torso</li>
+      <li>Kidney</li>
     </appliedOnFixedBodyParts>
-  </RecipeDef> -->
+  </RecipeDef>
 
-  <!--- New System -->
-
-  <HediffDef ParentName="ImplantHediffBase">
+  <!-- <HediffDef ParentName="ImplantHediffBase">
     <defName>MSSG_ImplantEggNew</defName>
     <label>Eggcubator Implant</label>
     <defaultLabelColor>(252, 186, 3)</defaultLabelColor>
@@ -114,6 +125,6 @@
     </descriptionHyperlinks>
     <jobString>Removing Golden Egg.</jobString>
     <removesHediff>MSSG_ImplantEggNew</removesHediff>
-  </RecipeDef>
+  </RecipeDef> -->
 
 </Defs>
