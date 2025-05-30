@@ -28,7 +28,7 @@ public static class JobGiver_Work_Patch_Patch
                 // Pop the this (Faction) reference
                 yield return new CodeInstruction(OpCodes.Pop);
                 // Push constant 100 onto the stack
-                yield return new CodeInstruction(OpCodes.Ldc_R4, 100);
+                yield return new CodeInstruction(OpCodes.Ldc_I4, 100);
             }
             else
             {

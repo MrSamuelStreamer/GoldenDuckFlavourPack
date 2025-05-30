@@ -83,5 +83,21 @@
     <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_CuckRoom.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_CuckRoom.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_FroggeSanctuary.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_FroggeSanctuary</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\GDFP_Filters.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Filters.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\GDFP_Namers.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Namers.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>
