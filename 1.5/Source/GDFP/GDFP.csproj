@@ -83,5 +83,9 @@
     <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_CuckRoom.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_CuckRoom.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

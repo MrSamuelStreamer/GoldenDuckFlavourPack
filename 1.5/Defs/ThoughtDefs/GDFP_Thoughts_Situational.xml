@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>GDFP_GoldenClothing</defName>
+        <workerClass>GDFP.ThoughtWorker_GoldenClothing</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>golden {0}</label>
+                <description>I am wearing a piece of golden apparel. It's great!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>glowing {0} (+1)</label>
+                <description>I am wearing two pieces of golden apparel. My self worth is validated.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>shining {0} (+2)</label>
+                <description>I am wearing three pieces of golden apparel. I'm so shiny!</description>
+                <baseMoodEffect>11</baseMoodEffect>
+            </li>
+            <li>
+                <label>gleaming {0} etc</label>
+                <description>I am clad in all golden apparel! I am gleaming!</description>
+                <baseMoodEffect>14</baseMoodEffect>
+            </li>
+        </stages>
+        <nullifyingHediffs>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+        </nullifyingHediffs>
+    </ThoughtDef>
+</Defs>
