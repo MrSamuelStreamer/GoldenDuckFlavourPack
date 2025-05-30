@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <SpecialThingFilterDef>
+        <defName>GDFP_AllowNonGold</defName>
+        <label>allow non-gold apparel</label>
+        <description>Allow clothing that is not made from gold.</description>
+        <parentCategory>Apparel</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowNonGoldApparel</saveKey>
+        <workerClass>GDFP.SpecialThingFilterWorker_NonGoldApparel</workerClass>
+    </SpecialThingFilterDef>
+
+    <SpecialThingFilterDef>
+        <defName>GDFP_AllowGold</defName>
+        <label>allow golden apparel</label>
+        <description>Allow clothing that is made from gold.</description>
+        <parentCategory>Apparel</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowGoldApparel</saveKey>
+        <workerClass>GDFP.SpecialThingFilterWorker_GoldApparel</workerClass>
+    </SpecialThingFilterDef>
+</Defs>

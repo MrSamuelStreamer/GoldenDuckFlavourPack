@@ -31,8 +31,12 @@
                 <doers>
                     <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
                         <planetIncident>NoxiousHaze</planetIncident>
-                        <planetIncidentChance>0.5</planetIncidentChance>
+                        <planetIncidentChance>0.1</planetIncidentChance>
                         <extraGenSteps>
+                            <li>
+                                <step>GDFP_FroggeOasis</step>
+                                <chance>0.01</chance>
+                            </li>
                             <li>
                                 <step>Settlement</step>
                                 <chance>0.2</chance>
@@ -227,6 +231,52 @@
                         <extraGenSteps>
                             <li>
                                 <step>GDFP_CuckRoom</step>
+                                <chance>1</chance>
+                            </li>
+                        </extraGenSteps>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BookBase">
+        <defName>GDFP_GateAddressBookFrogge</defName>
+        <label>ancient frogge tome</label>
+        <description>a tome containing writings on the mysteries of frogge</description>
+        <graphicData>
+            <texPath>Things/Item/Book/MSS_FP_FroggeTome</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/MSS_FP_FroggeTome</uiIconPath>
+        <statBases>
+            <MarketValue>150</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>Namer_Schematic</nameMaker>
+                <descriptionMaker>Description_Schematic</descriptionMaker>
+                <ageYearsRange>2000~4000</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/MSS_FP_FroggeTome</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
+                        <planetBiome>Desert</planetBiome>
+                        <planetTemperature>40</planetTemperature>
+                        <planetName>frogge oasis</planetName>
+                        <planetDescription>a frogge oasis</planetDescription>
+                        <extraGenSteps>
+                            <li>
+                                <step>GDFP_FroggeOasis</step>
                                 <chance>1</chance>
                             </li>
                         </extraGenSteps>
