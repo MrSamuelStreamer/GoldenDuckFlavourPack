@@ -95,5 +95,9 @@
     <ReleaseFiles Update="..\..\Defs\GDFP_Filters.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Filters.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\GDFP_Namers.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Namers.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

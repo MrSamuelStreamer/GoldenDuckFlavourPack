@@ -105,16 +105,16 @@
         </statBases>
         <comps>
             <li Class="CompProperties_Book">
-                <nameMaker>Namer_Schematic</nameMaker>
+                <nameMaker>GDFP_Namer_FroggeTome</nameMaker>
                 <descriptionMaker>Description_Schematic</descriptionMaker>
                 <ageYearsRange>2000~4000</ageYearsRange>
                 <openGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+                    <texPath>Things/Item/Book/Tome/Tome_Open</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>0.7</drawSize>
                 </openGraphic>
                 <verticalGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+                    <texPath>Things/Item/Book/Tome/Tome_Vertical</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <addTopAltitudeBias>true</addTopAltitudeBias>
                 </verticalGraphic>
