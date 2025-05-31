@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DA_Goldilox"]/race</xpath>
+                <value>
+					        <packAnimal>true</packAnimal> <!-- Allows Goldilox to carry items in a caravan -->
+                </value>
+   </Operation>
+</Patch>
