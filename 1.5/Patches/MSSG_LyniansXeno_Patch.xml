@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!-- <Patch>
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction[onlyUseRaceRestrictedXenotypes="true"]/whiteXenotypeList/li[text()="Sanguophage"]</xpath>
+			<order>Append</order>
+            <value>
+					<li>MSSG_Eggcubator</li>
+					<li>MSSG_Eggblessed</li>
+            </value>
+	</Operation>
+</Patch>
+ -->
+
 <Patch>
-	 <Operation Class="PatchOperationInsert">
-                <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction[onlyUseRaceRestrictedXenotypes="true"]/whiteXenotypeList/li[text()="Sanguophage"]</xpath>
-				<order>Append</order>
-                <value>
-					    <li>MSSG_Eggcubator</li>
-						<li>MSSG_Eggblessed</li>
-                </value>
-	 </Operation>
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteXenotypeList</xpath>
+            <value>
+					<li>MSSG_Eggcubator</li>
+					<li>MSSG_Eggblessed</li>
+            </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/onlyUseRaceRestrictedXenotypes</xpath>
+            <value>
+				<onlyUseRaceRestrictedXenotypes>false</onlyUseRaceRestrictedXenotypes>   <!-- Fallback just in case we do anything fancy -->
+            </value>
+	</Operation>
 </Patch>
