@@ -13,16 +13,22 @@
       <FilthRate>0</FilthRate>
     </statBases>
    <comps>
-      <li Class="CompProperties_Milkable">
+      <!-- <li Class="CompProperties_Milkable">
         <milkDef>MSSG_GoldenFeather</milkDef>
         <milkIntervalDays>8</milkIntervalDays>
         <milkAmount>10</milkAmount>
-      </li>
+      </li> -->
       <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>MSSG_Egg</resourceDef>
 				<gatheringIntervalDays>5</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>MSSG_EggDesc</customResourceString>
+			</li>
+      <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>MSSG_GoldenFeather</resourceDef>
+				<gatheringIntervalDays>8</gatheringIntervalDays>
+				<resourceAmount>10</resourceAmount>
+				<customResourceString>MSSG_FeatherDesc</customResourceString>
 			</li>
     </comps>
     <race>
