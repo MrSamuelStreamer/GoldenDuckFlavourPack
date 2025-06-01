@@ -15,4 +15,5 @@
     <GDFP_Settings_DefaultGatePlanetWidth>Default gate planet width: {0} tiles</GDFP_Settings_DefaultGatePlanetWidth>
     <GDFP_Settings_DefaultGatePlanetHeight>Default gate planet height: {0} tiles</GDFP_Settings_DefaultGatePlanetHeight>
     <GDFP_Alive>Nope, don't worry, {PAWN_labelShort} is still alive and kicking.</GDFP_Alive>
+    <GDFP_ApparelLockedToXenotype>Incorrect xenotype</GDFP_ApparelLockedToXenotype>
 </LanguageData>

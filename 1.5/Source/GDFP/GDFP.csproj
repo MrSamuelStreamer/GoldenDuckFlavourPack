@@ -99,5 +99,21 @@
     <ReleaseFiles Update="..\..\Defs\GDFP_Namers.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Namers.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\ThingDefs_Items\GDFP_KaraKesh.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\ThingDefs_Items\GDFP_KaraKesh.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\Research\GDFP_EggResearch.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\Research\GDFP_EggResearch.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\HediffDefs\BodyParts\GDFP_KaraKesh.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\HediffDefs\BodyParts\GDFP_KaraKesh.xml</Link>
+    </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\Abilities\GDFP_KaraKesh.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\Abilities\GDFP_KaraKesh.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

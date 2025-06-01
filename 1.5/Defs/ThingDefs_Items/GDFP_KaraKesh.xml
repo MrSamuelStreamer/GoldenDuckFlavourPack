@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ApparelLayerDef>
+        <defName>GDFP_Glove</defName>
+        <label>hands</label>
+        <drawOrder>600</drawOrder>
+    </ApparelLayerDef>
+
+    <ThingDef ParentName="ApparelBase">
+    <defName>GDFP_Apparel_KaraKesh</defName>
+    <label>Quakka-kesh</label>
+    <description>A mysterious hand device, usable by the egg-blessed. Has many powers, including a personal shield.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData IsNull="true" Inherit="False" />
+    <graphicData>
+        <texPath>Things/Item/GDFP_KaraKesh</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <uiIconPath>Things/Item/GDFP_KaraKesh</uiIconPath>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0</Flammability>
+      <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Steel>150</Steel>
+      <Plasteel>120</Plasteel>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <researchPrerequisite>GDFP_EggResearch</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Hand</li>
+      </bodyPartGroups>
+      <layers>
+        <li>GDFP_Glove</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+
+    <modExtensions>
+        <li Class="GDFP.GDFPModExtension">
+            <apparelAllowOnlyXenotypes>
+                <li>MSSG_BlessedofHarvest</li>
+                <li>MSSG_BlessedofLightning</li>
+                <li>MSSG_BlessedoftheForge</li>
+                <li>MSSG_Eggblessed</li>
+            </apparelAllowOnlyXenotypes>
+        </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Shield" />
+      <li Class="CompProperties_CauseHediff_Apparel">
+          <hediff>GDFP_KaraKesh</hediff>
+          <part>Hand</part>
+      </li>
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+
+  </ThingDef>
+
+</Defs>

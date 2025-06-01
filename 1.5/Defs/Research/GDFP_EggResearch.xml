@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>GDFP_EggResearch</defName>
+        <label>golden egg technology</label>
+        <description>Craft special technology wieldable only by the egg-blessed.</description>
+        <knowledgeCost>2500</knowledgeCost>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <researchViewX>9.00</researchViewX>
+        <researchViewY>2.30</researchViewY>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->egg technology</li>
+
+                <li>subject_story->computer-modelled eggs</li>
+                <li>subject_story->contemplated eggs</li>
+                <li>subject_story->pondered the egg</li>
+                <li>subject_story->fondled the egg</li>
+                <li>subject_story->licked the egg</li>
+
+                <li>subject_gerund->manifesting egg tech</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+</Defs>

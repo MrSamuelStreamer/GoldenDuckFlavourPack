@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>GDFP_KaraKesh</defName>
+        <label>quakka kesh</label>
+        <description>Imbued with the power of the quakka kesh</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDefs>
+                    <li>GDFP_Terror</li>
+                    <li>GDFP_Torture</li>
+                    <li>UnnaturalHealing</li>
+                </abilityDefs>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+</Defs>

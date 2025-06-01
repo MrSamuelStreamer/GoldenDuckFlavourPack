@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <AbilityDef>
+        <defName>GDFP_Torture</defName>
+        <label>psychic torture</label>
+        <description>Generate a pulse of psychic pain in the targets brain.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>UI/Abilities/GDFP_Torture</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>900</cooldownTicksRange> <!-- 15 seconds -->
+        <statBases>
+            <Ability_EffectRadius>1.2</Ability_EffectRadius>
+        </statBases>
+        <warmupEffecter>HoraxianSpellLight_Warmup</warmupEffecter>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <defaultProjectile>Bullet_FleshmelterBolt</defaultProjectile>
+            <range>24.9</range>
+            <warmupTime>1.0</warmupTime>
+            <soundCast>AgonyPulse_Cast</soundCast>
+            <ai_IsWeapon>false</ai_IsWeapon>
+            <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediffPsychic">
+                <compClass>CompAbilityEffect_GiveHediffPsychic</compClass>
+                <durationSecondsOverride>2000~4000</durationSecondsOverride> <!-- 2 to 4 days -->
+                <replaceExisting>true</replaceExisting>
+                <hediffDef>AgonyPulse</hediffDef>
+                <onlyBrain>true</onlyBrain>
+                <ignoreSelf>true</ignoreSelf>
+                <severity>0</severity>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsycastPsychicEffect</fleckDef>
+            </li>
+            <!-- <li Class="CompProperties_AbilityEffecterOnTarget"> -->
+            <!--     <effecterDef>AgonyPulseExplosion</effecterDef> -->
+            <!-- </li> -->
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>GDFP_Terror</defName>
+        <label>egg terror</label>
+        <description>Psychically induce terrifying hallucinations, causing a person to flee in terror.</description>
+        <iconPath>UI/Abilities/GDFP_EggTerror</iconPath>
+        <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
+        <warmupEffecter>HoraxianSpellDark_Warmup</warmupEffecter>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <writeCombatLog>true</writeCombatLog>
+        <cooldownPerCharge>true</cooldownPerCharge>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <range>31.9</range>
+            <drawAimPie>true</drawAimPie>
+            <requireLineOfSight>true</requireLineOfSight>
+            <soundCast>VoidTerrorCast</soundCast>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetMutants>false</canTargetMutants>
+                <neverTargetIncapacitated>true</neverTargetIncapacitated>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveMentalState">
+                <compClass>CompAbilityEffect_GiveMentalState</compClass>
+                <stateDef>TerrifyingHallucinations</stateDef>
+                <goodwillImpact>-25</goodwillImpact>
+                <forced>true</forced>
+            </li>
+            <li Class="CompProperties_AbilityConnectingFleckLine">
+                <fleckDef>PsycastPsychicLine</fleckDef>
+            </li>
+            <li Class="CompProperties_AbilityEffecterOnTarget">
+                <effecterDef>VoidTerror_Target</effecterDef>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>
