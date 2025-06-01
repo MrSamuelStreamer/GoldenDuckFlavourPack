@@ -107,7 +107,7 @@
         <canOverlapZones>false</canOverlapZones>
         <selectable>true</selectable>
         <destroyable>true</destroyable>
-        <useHitPoints>false</useHitPoints>
+        <useHitPoints>true</useHitPoints>
         <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
         <uiIconScale>0.75</uiIconScale>
         <thingCategories>
@@ -134,6 +134,12 @@
         <techLevel>Spacer</techLevel>
 
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+
+        <designationCategory>Structure</designationCategory>
+        <rotatable>false</rotatable>
+        <category>Building</category>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <minifiedDef>MinifiedThing</minifiedDef>
 
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 
@@ -164,6 +170,7 @@
         <label>Quakka'ai Return</label>
         <thingClass>GDFP.Building_QuackaaiExit</thingClass>
         <deconstructible>false</deconstructible>
+        <designationCategory IsNull="true" />
     </ThingDef>
 
     <JobDef>
