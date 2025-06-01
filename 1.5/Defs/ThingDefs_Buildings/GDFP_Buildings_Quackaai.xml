@@ -106,10 +106,33 @@
         <forceDebugSpawnable>true</forceDebugSpawnable>
         <canOverlapZones>false</canOverlapZones>
         <selectable>true</selectable>
-        <destroyable>false</destroyable>
+        <destroyable>true</destroyable>
         <useHitPoints>false</useHitPoints>
         <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
         <uiIconScale>0.75</uiIconScale>
+        <thingCategories>
+            <li>BuildingsSpecial</li>
+        </thingCategories>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <MSSG_Egg>1</MSSG_Egg>
+        </costList>
+        <statBases>
+            <MarketValue>15000</MarketValue>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Beauty>5</Beauty>
+            <Mass>150</Mass>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <researchPrerequisites>
+            <li>GDFP_EggResearch</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        <techLevel>Spacer</techLevel>
+
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -128,11 +151,11 @@
             </blueprintGraphicData>
             <ai_chillDestination>false</ai_chillDestination>
             <paintable>true</paintable>
-            <deconstructible>false</deconstructible>
-            <repairable>false</repairable>
+            <deconstructible>true</deconstructible>
+            <repairable>true</repairable>
             <isTargetable>false</isTargetable>
-            <claimable>false</claimable>
-            <expandHomeArea>false</expandHomeArea>
+            <claimable>true</claimable>
+            <expandHomeArea>true</expandHomeArea>
         </building>
     </ThingDef>
 
@@ -140,7 +163,7 @@
         <defName>GDFP_QuakkaaiExit</defName>
         <label>Quakka'ai Return</label>
         <thingClass>GDFP.Building_QuackaaiExit</thingClass>
-
+        <deconstructible>false</deconstructible>
     </ThingDef>
 
     <JobDef>
