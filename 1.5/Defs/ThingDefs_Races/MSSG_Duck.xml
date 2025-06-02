@@ -109,6 +109,24 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<statToAdd>
+					<li>VAERoy_PrimaryRole</li>
+
+				</statToAdd>
+				<statValues>
+					<li>VAERoy_UtilitySocial</li>
+
+				</statValues>
+				<statDescriptions>
+					<li>VAERoy_UtilitySocialDesc</li>
+
+				</statDescriptions>
+
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
