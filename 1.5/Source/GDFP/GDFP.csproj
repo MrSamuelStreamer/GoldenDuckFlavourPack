@@ -115,5 +115,9 @@
     <ReleaseFiles Update="..\..\Defs\Abilities\GDFP_KaraKesh.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\Abilities\GDFP_KaraKesh.xml</Link>
     </ReleaseFiles>
+
+    <ReleaseFiles Update="..\..\Defs\ThingDefs_Buildings\MSSG_KnowledgeRepo.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\ThingDefs_Buildings\MSSG_KnowledgeRepo.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

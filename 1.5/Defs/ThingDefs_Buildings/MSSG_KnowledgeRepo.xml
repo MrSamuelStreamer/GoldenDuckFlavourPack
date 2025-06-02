@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef ParentName="AncientTerminalBase">
+        <defName>GDFP_KnowledgeRepo</defName>
+        <label>gene repository</label>
+        <description>an ancient repository of genes.</description>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(1,0,0)</interactionCellOffset>
+        <graphicData>
+            <texPath>Things/Building/GDFP_KnowledgeRepository</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <designationCategory IsNull="true" />
+        <comps>
+            <li Class="CompProperties_Hackable">
+                <defence>5000</defence>
+                <effectHacking>HackingTerminal</effectHacking>
+            </li>
+            <li Class="GDFP.CompProperties_HackableGeneGiver">
+                <GenePool>
+                    <li MayRequire="df.goldenrace">Gene_goldFinger</li>
+                    <li MayRequire="df.goldenrace">Gene_goldPregnancy</li>
+                    <li MayRequire="df.goldenrace">Gene_goldSkin</li>
+                    <li MayRequire="df.goldenrace">Gene_goldHair</li>
+                    <li MayRequire="df.goldenrace">Gene_goldHead</li>
+                    <li MayRequire="df.goldenrace">Gene_goldStrength</li>
+                    <li MayRequire="df.goldenrace">Gene_goldSpeed</li>
+                    <li MayRequire="df.goldenrace">Gene_goldTemperature</li>
+                    <li MayRequire="df.goldenrace">Gene_goldTough</li>
+                    <li MayRequire="df.goldenrace">Gene_goldBlood</li>
+                    <li MayRequire="df.goldenrace">Gene_goldGold</li>
+                    <li MayRequire="df.goldenrace">Gene_goldSocial</li>
+                    <li MayRequire="df.goldenrace">Gene_goldColorSkin</li>
+                    <li MayRequire="df.goldenrace">Gene_goldFertility</li>
+                    <li MayRequire="df.goldenrace">Gene_goldToxic</li>
+                    <li MayRequire="df.goldenrace">Gene_goldPsycaster</li>
+                    <li MayRequire="df.goldenrace">Gene_goldHighLibidio</li>
+                    <li MayRequire="df.goldenrace">Gene_goldStandard</li>
+                    <li MayRequire="df.goldenrace">Gene_goldBeardless</li>
+                    <li MayRequire="df.goldenrace">Gene_goldWholeOfBody</li>
+                    <li MayRequire="df.goldenrace">Gene_goldGod</li>
+                    <li MayRequire="df.goldenrace">Gene_GoldRegeneration</li>
+                </GenePool>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
