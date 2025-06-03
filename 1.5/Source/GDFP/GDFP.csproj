@@ -73,5 +73,14 @@
     <ReleaseFiles Update="..\..\Defs\JobDefs\GDFP_JobDefs.xml">
       <Link>GoldenDuckFlavourPack\1.5\Defs\JobDefs\GDFP_JobDefs.xml</Link>
     </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\vanora.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\vanora.xml</Link>
+    </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\soaringturtle\ruined_castle.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\soaringturtle\soaringturtle.xml</Link>
+    </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\soaringturtle\duck.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\soaringturtle\duck.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>
