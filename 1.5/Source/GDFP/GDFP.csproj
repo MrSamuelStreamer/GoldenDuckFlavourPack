@@ -70,5 +70,8 @@
     <CommonFiles Include="../../../Common/**" />
     <CompatibilityFiles Include="../../../Compatibility/**" />
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
+    <ReleaseFiles Update="..\..\Defs\JobDefs\GDFP_JobDefs.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\JobDefs\GDFP_JobDefs.xml</Link>
+    </ReleaseFiles>
   </ItemGroup>
 </Project>

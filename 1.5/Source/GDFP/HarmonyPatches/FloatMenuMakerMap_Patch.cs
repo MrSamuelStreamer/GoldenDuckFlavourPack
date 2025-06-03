@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
@@ -73,7 +70,20 @@ public static class FloatMenuMakerMap_Patch
 
             matches.ForEach(match=>opts.Remove(match));
 
-            opts.Add((new FloatMenuOption((string) ("CannotWear".Translate((NamedArgument) apparel.Label, (NamedArgument) (Thing) apparel) + ": " + "GDFP_ApparelLockedToXenotype".Translate().CapitalizeFirst()), (Action) null)));
+            opts.Add((new FloatMenuOption("CannotWear".Translate((NamedArgument) apparel.Label, (NamedArgument) (Thing) apparel) + ": " + "GDFP_ApparelLockedToXenotype".Translate().CapitalizeFirst(), null)));
+        }
+        foreach (Building building in pawn.Map.thingGrid.ThingsAt(clickCell).OfType<Building>().Where(bld=>bld.HasComp<CompHackableGeneGiver>()))
+        {
+            string menuOptLabel = "CannotHack".Translate((NamedArgument) building.Label);
+            List<FloatMenuOption> matches = opts.Where(fmo=> fmo.Label.StartsWith(menuOptLabel)).ToList();
+
+            menuOptLabel = "Hack".Translate((NamedArgument) building.Label);
+            matches.AddRange(opts.Where(fmo => fmo.Label.StartsWith(menuOptLabel)));
+
+            if(matches.NullOrEmpty()) continue;
+            matches.ForEach(match=>opts.Remove(match));
+
+            opts.Add(FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("GDFP_GetGene".Translate((NamedArgument) building.Label), () => pawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(GDFPDefOf.GDFP_GetGene, (LocalTargetInfo) building))), pawn, new LocalTargetInfo(building)));
         }
     }
 

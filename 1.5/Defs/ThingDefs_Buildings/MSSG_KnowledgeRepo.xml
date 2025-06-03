@@ -6,11 +6,13 @@
         <label>gene repository</label>
         <description>an ancient repository of genes.</description>
         <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellOffset>(1,0,0)</interactionCellOffset>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <graphicData>
             <texPath>Things/Building/GDFP_KnowledgeRepository</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
         </graphicData>
+        <size>(5,5)</size>
         <statBases>
             <MaxHitPoints>2000</MaxHitPoints>
             <WorkToBuild>1000</WorkToBuild>
@@ -18,11 +20,9 @@
         </statBases>
         <designationCategory IsNull="true" />
         <comps>
-            <li Class="CompProperties_Hackable">
+            <li Class="GDFP.CompProperties_HackableGeneGiver">
                 <defence>5000</defence>
                 <effectHacking>HackingTerminal</effectHacking>
-            </li>
-            <li Class="GDFP.CompProperties_HackableGeneGiver">
                 <GenePool>
                     <li MayRequire="df.goldenrace">Gene_goldFinger</li>
                     <li MayRequire="df.goldenrace">Gene_goldPregnancy</li>

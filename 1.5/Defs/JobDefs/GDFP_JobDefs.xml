@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <JobDef>
+        <defName>GDFP_GetGene</defName>
+        <driverClass>JobDriver_Hack</driverClass>
+        <reportString>absorbing knowledge from TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

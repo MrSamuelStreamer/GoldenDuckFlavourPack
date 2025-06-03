@@ -18,5 +18,7 @@ public static class GDFPDefOf
 
     public static LetterDef GDFP_DeathQuestionMark;
 
+    public static JobDef GDFP_GetGene;
+
     static GDFPDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(GDFPDefOf));
 }

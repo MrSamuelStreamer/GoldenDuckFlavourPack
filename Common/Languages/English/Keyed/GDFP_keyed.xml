@@ -17,4 +17,5 @@
     <GDFP_Alive>Nope, don't worry, {PAWN_labelShort} is still alive and kicking.</GDFP_Alive>
     <GDFP_ApparelLockedToXenotype>Incorrect xenotype</GDFP_ApparelLockedToXenotype>
     <GDFP_GotNewGene>{PAWN_labelShort} got the gene {1}</GDFP_GotNewGene>
+    <GDFP_GetGene>Absorb ancient knowledge from {0}</GDFP_GetGene>
 </LanguageData>
