@@ -2,8 +2,8 @@
 
 <Defs>
   <BackstoryDef>
-    <defName>MSSG_Golem_Backstory</defName>
-    <identifier>MSSGolemBackstory</identifier>
+    <defName>MSSG_Golem_Backstory_Adulthood</defName>
+    <identifier>MSSGolemBackstory_Adulthood</identifier>
     <slot>Adulthood</slot>
     <title>Artificial Construct</title>
     <titleShort>Construct</titleShort>
@@ -11,13 +11,6 @@
     <skillGains>
       <Construction>12</Construction>
     </skillGains>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Golem</li>
-        </categories>
-      </li>
-    </backstoryFilters>
     <workDisables>
       <li>Mining</li>
       <li>Caring</li>
@@ -36,15 +29,15 @@
     </workDisables>
     <requiredWorkTags>Hauling, Constructing</requiredWorkTags>
     <spawnCategories>
-      <li>Golem</li>
+      <li>GDFP_GoldGolem</li>
     </spawnCategories>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
-    <defName>MSSG_Golem_Backstory</defName>
-    <identifier>MSSGolemBackstory</identifier>
+    <defName>MSSG_Golem_Backstory_Childhood</defName>
+    <identifier>MSSGolemBackstory_Childhood</identifier>
     <slot>Childhood</slot>
     <title>Artificial Construct</title>
     <titleShort>Construct</titleShort>
@@ -52,13 +45,6 @@
     <skillGains>
       <Construction>12</Construction>
     </skillGains>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Golem</li>
-        </categories>
-      </li>
-    </backstoryFilters>
     <workDisables>
       <li>Mining</li>
       <li>Caring</li>
@@ -77,7 +63,7 @@
     </workDisables>
     <requiredWorkTags>Hauling, Constructing</requiredWorkTags>
     <spawnCategories>
-      <li>Golem</li>
+      <li>GDFP_GoldGolem</li>
     </spawnCategories>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>

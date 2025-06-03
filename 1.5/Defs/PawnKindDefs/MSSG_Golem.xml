@@ -1,57 +1,85 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  <PawnKindDef Name="MSSG_Golem_Base" Abstract="True">
-    <label>Golem</label>
-    <race>MSS_Golem_Race</race>
-    <xenotypeSet>
-      <xenotypeChances>
-        <MSSG_Golem_Xeno>999</MSSG_Golem_Xeno>
-      </xenotypeChances>
-    </xenotypeSet>
-    <useFactionXenotypes>false</useFactionXenotypes>
-    <combatPower>100</combatPower>
-    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
-    <chemicalAddictionChance>0.00</chemicalAddictionChance>
-    <isFighter>true</isFighter>
-    <chronologicalAgeRange>21~21</chronologicalAgeRange>
-    <initialResistanceRange>0~0</initialResistanceRange>
-    <initialWillRange>0~0</initialWillRange>
-    <apparelRequired>
-    </apparelRequired>
-    <requiredWorkTags>
-    </requiredWorkTags>
-    <disallowedTraits>
-    </disallowedTraits>
-  </PawnKindDef>
+<?xml version="1.0" encoding="utf-8"?>
 
-  <PawnKindDef ParentName="MSSG_Golem_Base">
-    <defName>MSSG_GolemKind</defName>
-    <invNutrition>0.0</invNutrition>
-    <combatEnhancingDrugsChance>0.0</combatEnhancingDrugsChance>
-    <combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
-    <apparelMoney>0~0</apparelMoney>
-    <techHediffsChance>0.0</techHediffsChance>
-    <techHediffsMoney>0~0</techHediffsMoney>
-    <techHediffsTags>
-    </techHediffsTags>
-    <weaponMoney>0~0</weaponMoney>
-    <weaponTags>
-    </weaponTags>
-    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelRequired Inherit="False">
-    </apparelRequired>
-    <apparelDisallowTags>
-      <li>Western</li>
-    </apparelDisallowTags>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Golem</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-  </PawnKindDef>
+<Defs>
+    <PawnKindDef Name="MSSG_Golem_Base" Abstract="True">
+        <label>Golem</label>
+        <race>MSS_Golem_Race</race>
+        <xenotypeSet>
+            <xenotypeChances>
+                <MSSG_Golem_Xeno>1</MSSG_Golem_Xeno>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <combatPower>100</combatPower>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+        <chemicalAddictionChance>0.00</chemicalAddictionChance>
+        <combatEnhancingDrugsChance>0.0</combatEnhancingDrugsChance>
+        <isFighter>true</isFighter>
+        <chronologicalAgeRange>21~21</chronologicalAgeRange>
+        <initialResistanceRange>0~0</initialResistanceRange>
+        <initialWillRange>0~0</initialWillRange>
+        <apparelRequired>
+        </apparelRequired>
+        <disallowedTraits>
+        </disallowedTraits>
+
+        <forcedTraits>
+            <li>PerfectMemory</li>
+            <li>BodyMastery</li>
+            <li>Ascetic</li>
+            <li>QuickSleeper</li>
+        </forcedTraits>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>GDFP_GoldGolem</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+
+        <fixedChildBackstories>
+            <li>MSSG_Golem_Backstory_Childhood</li>
+        </fixedChildBackstories>
+        <fixedAdultBackstories>
+            <li>MSSG_Golem_Backstory_Adulthood</li>
+        </fixedAdultBackstories>
+        <canBeScattered>false</canBeScattered>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <weaponStuffOverride>Gold</weaponStuffOverride>
+        <apparelColor>(1, 0.92156863, 0.015686275)</apparelColor>
+        <favoriteColor>(1, 0.92156863, 0.015686275)</favoriteColor>
+        <generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
+        <ignoresPainShock>true</ignoresPainShock>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="MSSG_Golem_Base">
+        <defName>MSSG_GolemKind</defName>
+        <invNutrition>0.0</invNutrition>
+        <combatEnhancingDrugsChance>0.0</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+        <apparelMoney>0~0</apparelMoney>
+        <techHediffsChance>0.0</techHediffsChance>
+        <techHediffsMoney>0~0</techHediffsMoney>
+        <techHediffsTags>
+        </techHediffsTags>
+        <weaponMoney>0~0</weaponMoney>
+        <weaponTags>
+        </weaponTags>
+        <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelRequired Inherit="False">
+        </apparelRequired>
+        <itemQuality>Masterwork</itemQuality>
+        <minApparelQuality>Masterwork</minApparelQuality>
+        <maxApparelQuality>Masterwork</maxApparelQuality>
+        <gearHealthRange>0.9~1.1</gearHealthRange>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+
+    </PawnKindDef>
 </Defs>

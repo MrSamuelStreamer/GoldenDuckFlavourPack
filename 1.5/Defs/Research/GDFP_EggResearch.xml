@@ -3,14 +3,14 @@
     <ResearchProjectDef>
         <defName>GDFP_EggResearch</defName>
         <label>golden egg technology</label>
-        <techLevel>industrial</techLevel>
+        <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Electricity</li>
         </prerequisites>
         <description>Craft special technology wieldable only by the egg-blessed.</description>
         <baseCost>2500</baseCost>
         <!-- <knowledgeCost>2500</knowledgeCost> -->
-        <!-- <knowledgeCategory>Basic</knowledgeCategory> I think unintentional, otherwise makes it a 2500 point anomaly research, which is quite a lot of entity study --> 
+        <!-- <knowledgeCategory>Basic</knowledgeCategory> I think unintentional, otherwise makes it a 2500 point anomaly research, which is quite a lot of entity study -->
         <researchViewX>9.00</researchViewX>
         <researchViewY>2.30</researchViewY>
         <generalRules>

@@ -11,8 +11,7 @@
     <label>Quakka-kesh</label>
     <description>A mysterious hand device, usable by the egg-blessed. Has many powers, including a personal shield.</description>
     <thingClass>Apparel</thingClass>
-    <graphicData IsNull="true" Inherit="False" />
-    <graphicData>
+    <graphicData Inherit="False">
         <texPath>Things/Item/GDFP_KaraKesh</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(0.7,0.7)</drawSize>

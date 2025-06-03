@@ -69,55 +69,6 @@
     <AboutFiles Include="../../../About/**" Exclude="../../../About/*.png~"/>
     <CommonFiles Include="../../../Common/**" />
     <CompatibilityFiles Include="../../../Compatibility/**" />
-
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
-
-    <CompatibilityFiles Update="..\..\..\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll">
-      <Link>GoldenDuckFlavourPack\Compatibility\Orion.Hospitality\1.5\Assemblies\GDFP.Hospitality.dll</Link>
-    </CompatibilityFiles>
-
-    <ReleaseFiles Update="..\..\Defs\GDFP_LetterDefs.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_LetterDefs.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_CuckRoom.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_CuckRoom.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\ThoughtDefs\GDFP_Thoughts_Situational.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\StructureDefs\GDFP_FroggeSanctuary.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\GDFP_FroggeSanctuary</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\GDFP_Filters.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Filters.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\GDFP_Namers.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\GDFP_Namers.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\ThingDefs_Items\GDFP_KaraKesh.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\ThingDefs_Items\GDFP_KaraKesh.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\Research\GDFP_EggResearch.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\Research\GDFP_EggResearch.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\HediffDefs\BodyParts\GDFP_KaraKesh.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\HediffDefs\BodyParts\GDFP_KaraKesh.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\Abilities\GDFP_KaraKesh.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\Abilities\GDFP_KaraKesh.xml</Link>
-    </ReleaseFiles>
-
-    <ReleaseFiles Update="..\..\Defs\ThingDefs_Buildings\MSSG_KnowledgeRepo.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\ThingDefs_Buildings\MSSG_KnowledgeRepo.xml</Link>
-    </ReleaseFiles>
   </ItemGroup>
 </Project>

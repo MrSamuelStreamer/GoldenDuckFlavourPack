@@ -169,8 +169,11 @@
         <defName>GDFP_QuakkaaiExit</defName>
         <label>Quakka'ai Return</label>
         <thingClass>GDFP.Building_QuackaaiExit</thingClass>
-        <deconstructible>false</deconstructible>
         <designationCategory IsNull="true" />
+        <building>
+            <deconstructible>false</deconstructible>
+
+        </building>
     </ThingDef>
 
     <JobDef>
