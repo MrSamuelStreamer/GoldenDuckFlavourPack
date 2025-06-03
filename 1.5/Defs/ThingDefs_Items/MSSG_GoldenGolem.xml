@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="EggFertBase">
+    <defName>MSSG_Golem_Hatcher</defName>
+    <label>Inert Golden Golem</label>
+    <description>A micro-containment system combining vague and esoteric concepts of robotics, far beyond human comprehension, and the latent power of the Golden egg. When used, this device will spawn a Golden Golem, an artifcial being with inteligence and free will comparable to that of a regular baseline human. They will not join automatically and will need to be convinced to stay.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MSSG_EggHigh</HediffDef>
+      <HediffDef>MSSG_EggAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/MSSG_GoldenEgg</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.15</Mass>
+      <MaxHitPoints>500</MaxHitPoints>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>25</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GDFP_EggResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <MSSG_Egg>1</MSSG_Egg>
+      <Gold>1000</Gold>
+      <Plasteel>200</Plasteel>
+      <Uranium>20</Uranium>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList> 
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+        <disableIfHatcher>true</disableIfHatcher>
+      </li>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>0.001</hatcherDaystoHatch>
+        <hatcherPawn>MSSG_GolemKind</hatcherPawn>
+      </li>
+       <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>-100</minSafeTemperature>
+        <maxSafeTemperature>250</maxSafeTemperature>
+        <progressPerDegreePerTick>0.01</progressPerDegreePerTick>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

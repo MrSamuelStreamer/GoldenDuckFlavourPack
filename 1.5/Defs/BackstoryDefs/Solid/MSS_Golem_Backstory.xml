@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <BackstoryDef>
+    <defName>MSSG_Golem_Backstory</defName>
+    <identifier>MSSGolemBackstory</identifier>
+    <slot>Adulthood</slot>
+    <title>Artificial Construct</title>
+    <titleShort>Construct</titleShort>
+    <description>[PAWN_nameDef] is a Golem and [PAWN_possessive] existence is that of servitude. [PAWN_nameDef] does not sleep, eat, want for recreation, or experience the world like a human. [PAWN_pronoun] is forbidden to commit acts of violence.</description>
+    <skillGains>
+      <Construction>12</Construction>
+    </skillGains>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Scientist</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <workDisables>
+      <li>Mining</li>
+      <li>Caring</li>
+      <li>Social</li>
+      <li>Firefighting</li>
+      <li>Crafting</li>
+      <li>PlantWork</li>
+      <li>Cooking</li>
+      <li>Cleaning</li>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+      <li>Violent</li>
+      <li>Animals</li>
+      <li>Shooting</li>
+      <li>Hunting</li>
+    </workDisables>
+    <requiredWorkTags>Hauling, Constructing</requiredWorkTags>
+    <spawnCategories>
+      <li>Golem</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>MSSG_Golem_Backstory</defName>
+    <identifier>MSSGolemBackstory</identifier>
+    <slot>Childhood</slot>
+    <title>Artificial Construct</title>
+    <titleShort>Construct</titleShort>
+    <description>[PAWN_nameDef] is a Golem and [PAWN_possessive] existence is that of servitude. [PAWN_nameDef] does not sleep, eat, want for recreation, or experience the world like a human. [PAWN_pronoun] is forbidden to commit acts of violence.</description>
+    <skillGains>
+      <Construction>12</Construction>
+    </skillGains>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Scientist</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <workDisables>
+      <li>Mining</li>
+      <li>Caring</li>
+      <li>Social</li>
+      <li>Firefighting</li>
+      <li>Crafting</li>
+      <li>PlantWork</li>
+      <li>Cooking</li>
+      <li>Cleaning</li>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+      <li>Violent</li>
+      <li>Animals</li>
+      <li>Shooting</li>
+      <li>Hunting</li>
+    </workDisables>
+    <requiredWorkTags>Hauling, Constructing</requiredWorkTags>
+    <spawnCategories>
+      <li>Golem</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+</Defs>
