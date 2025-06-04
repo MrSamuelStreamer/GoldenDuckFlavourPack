@@ -5,6 +5,11 @@
         <defName>seanbaeg_is_this</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>seanbaeg</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Boomalope,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

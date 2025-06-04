@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
     <RulePackDef>
+        <defName>GDFP_Namer_Gate</defName>
+        <include>
+            <li>ArtNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>title->[maybeThe] [book] of [qa]</li>
+
+                <li>maybeThe-></li>
+                <li>maybeThe->The</li>
+
+                <li>book->Tome</li>
+                <li>book->Codex</li>
+                <li>book->Writings</li>
+                <li>book->Record</li>
+                <li>book->Secrets</li>
+                <li>book->Chronicles</li>
+                <li>book->Cipher</li>
+                <li>book->Whispers</li>
+                <li>book->Lamentations</li>
+                <li>book->Almanac</li>
+                <li>book->Manuscript</li>
+                <li>book->Annals</li>
+                <li>book->Revelations</li>
+                <li>book->Manifesto</li>
+                <li>book->Testament</li>
+
+                <li>qa->Quakka'ai</li>
+                <li>qa->the Quakka'ai</li>
+                <li>qa->the Gate one</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
         <defName>GDFP_Namer_FroggeTome</defName>
         <include>
             <li>ArtNameUtility</li>

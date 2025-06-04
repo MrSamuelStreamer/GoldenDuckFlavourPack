@@ -16,6 +16,13 @@
 
     <KCSG.StructureLayoutDef>
         <defName>GDFP_CuckRoom</defName>
+
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>keyz</author>
+            </li>
+        </modExtensions>
+
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

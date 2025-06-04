@@ -5,6 +5,11 @@
         <defName>unme99_emeraldgods</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>unme99</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

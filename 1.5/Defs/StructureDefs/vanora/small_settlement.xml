@@ -5,6 +5,11 @@
         <defName>vanora_small_settlement_v1</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>vanora</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_BlocksGranite,Barricade_BlocksGranite,Turret_MiniTurret_Plasteel,HiddenConduit,HiddenConduit,HiddenConduit,Barricade_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,AncientWarwalkerFoot,.</li>

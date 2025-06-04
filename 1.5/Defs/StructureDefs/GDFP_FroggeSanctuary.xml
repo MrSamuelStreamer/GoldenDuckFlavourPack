@@ -18,6 +18,12 @@
         <defName>GDFP_FroggeOasis</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>keyz</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

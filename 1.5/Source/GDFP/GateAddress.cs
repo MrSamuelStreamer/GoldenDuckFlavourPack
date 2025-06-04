@@ -14,6 +14,8 @@ public class GateAddress: IExposable, ILoadReferenceable
     public static GDFP_WorldComponent WorldComponent => Find.World.GetComponent<GDFP_WorldComponent>();
     public static readonly char[] GateAddressSymbols = "öøÿĂƋƍƎƔƛƱƼǂƿƾȣȸɁɄɣɞɸɷʘʭʢʞ".ToCharArray();
 
+    public bool Visited = false;
+
     public string address;
     public BiomeDef biome;
     public float temperature;

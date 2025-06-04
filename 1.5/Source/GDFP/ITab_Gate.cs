@@ -20,7 +20,7 @@ public class ITab_Gate: ITab
     protected Vector2 ScrollPosition = Vector2.zero;
     public float scrollHeight = 0;
 
-    protected const float LineHeight = 40f;
+    protected const float LineHeight = 60f;
 
     protected QuickSearchWidget QuickSearchWidget = new();
 
@@ -57,8 +57,9 @@ public class ITab_Gate: ITab
             foreach (GateAddress address in worldComponent.LearnedAddresses.Where(FindSearchMatch))
             {
                 Rect row = new(5, scrollHeight, viewRect.width - 26f, LineHeight);
-                Rect name = new(5, scrollHeight, viewRect.width - 26f, LineHeight / 2);
-                Rect decription = new(5, scrollHeight + (LineHeight / 2), viewRect.width - 26f, LineHeight / 2);
+                Rect name = new(5, scrollHeight, viewRect.width - 26f, LineHeight / 3);
+                Rect decription = new(5, scrollHeight + (LineHeight / 3), viewRect.width - 26f, LineHeight / 3);
+                Rect visited = new(5, scrollHeight + 2*(LineHeight / 3), viewRect.width - 26f, LineHeight / 3);
 
                 Widgets.DrawHighlightIfMouseover(row);
 
@@ -74,12 +75,17 @@ public class ITab_Gate: ITab
                 Text.Anchor = TextAnchor.UpperLeft;
                 GUI.color = Color.white;
 
+                Text.Font = GameFont.Tiny;
+                Widgets.LabelEllipses(visited, address.Visited ? "Visited" : "Unvisited");;
+                Text.Anchor = TextAnchor.UpperLeft;
+                GUI.color = Color.white;
+
                 TooltipHandler.TipRegion(row, address.Description);
 
                 bool checkOn = Parent.selectedAddress == address;
                 bool flag = checkOn;
 
-                Widgets.Checkbox(new Vector2(name.xMax, scrollHeight), ref flag, LineHeight, paintable: true, disabled: Parent.IsOpen);
+                Widgets.Checkbox(new Vector2(name.xMax, scrollHeight), ref flag, 40, paintable: true, disabled: Parent.IsOpen);
                 if (!Parent.IsOpen && checkOn != flag)
                     Parent.selectedAddress = address;
 

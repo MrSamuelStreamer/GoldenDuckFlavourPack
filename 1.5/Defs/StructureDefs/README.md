@@ -15,3 +15,11 @@ This was a VERY melee oriented colony.
 I don't know if you're using your own factions for these encounters, but if you want, i left 2 pawns of what the enemies should look like. Most of them should be melee users.
 
 For the items on the map: It should mostly be textiles, food and rarely formal vests and trooper armors (I left some stuff on the shelves as an example)
+
+
+## kreeft
+Popebster for the main guy
+Crabgi's as the clergi
+And shrimpvants as simple workers
+And maybe put taff or me in the sarcophagus
+Or the graves

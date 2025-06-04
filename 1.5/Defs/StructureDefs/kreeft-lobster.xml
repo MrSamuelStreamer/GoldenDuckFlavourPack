@@ -5,6 +5,12 @@
         <defName>kreeft-lobster</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>kreeft</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

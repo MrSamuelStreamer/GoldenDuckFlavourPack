@@ -72,6 +72,7 @@ public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
         }
 
         worldComponent.LearnedAddresses.Add(address);
+        Messages.Message("GDFP_LearnedAddress".Translate(address.address), MessageTypeDefOf.PositiveEvent);
         return true;
     }
 }

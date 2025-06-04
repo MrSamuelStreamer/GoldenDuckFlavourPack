@@ -2,119 +2,29 @@
 <Defs>
     <ThingDef ParentName="BookBase">
         <defName>GDFP_GateAddressBook</defName>
-        <label>ancient gate book</label>
-        <description>A book which describes different planets. Reading this book may yield a new gate address.</description>
-        <graphicData>
-            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
-        </graphicData>
-        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
-        <statBases>
-            <MarketValue>150</MarketValue>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Book">
-                <nameMaker>Namer_Schematic</nameMaker>
-                <descriptionMaker>Description_Schematic</descriptionMaker>
-                <ageYearsRange>2000~4000</ageYearsRange>
-                <openGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>0.7</drawSize>
-                </openGraphic>
-                <verticalGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <addTopAltitudeBias>true</addTopAltitudeBias>
-                </verticalGraphic>
-                <doers>
-                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
-                        <planetIncident>NoxiousHaze</planetIncident>
-                        <planetIncidentChance>0.1</planetIncidentChance>
-                        <extraGenSteps>
-                            <li>
-                                <step>GDFP_FroggeOasis</step>
-                                <chance>0.01</chance>
-                            </li>
-                            <li>
-                                <step>Settlement</step>
-                                <chance>0.2</chance>
-                                <requires>
-                                    <li>SettlementPower</li>
-                                </requires>
-                                <conflictsWith>
-                                    <li>BanditCamp</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>AmbushEdge</step>
-                                <chance>0.2</chance>
-                                <conflictsWith>
-                                    <li>AmbushHidden</li>
-                                    <li>BanditCamp</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>AmbushHidden</step>
-                                <chance>0.2</chance>
-                                <conflictsWith>
-                                    <li>AmbushEdge</li>
-                                    <li>BanditCamp</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>ItemStash</step>
-                                <chance>1</chance>
-                                <conflictsWith>
-                                    <li>Settlement</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>BanditCamp</step>
-                                <requires>
-                                    <li>BanditCampPower</li>
-                                </requires>
-                                <chance>0.2</chance>
-                                <conflictsWith>
-                                    <li>Settlement</li>
-                                    <li>AmbushEdge</li>
-                                    <li>AmbushHidden</li>
-                                </conflictsWith>
-                            </li>
-                        </extraGenSteps>
-                    </li>
-                </doers>
-            </li>
-        </comps>
-    </ThingDef>
-
-
-    <ThingDef ParentName="BookBase">
-        <defName>GDFP_GateAddressBookSettlement</defName>
         <label>ancient civilization book</label>
         <description>A book which describes different planets. Reading this book may yield a new gate address.</description>
         <graphicData>
-            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+            <texPath>Things/Item/Book/GDFP_GateAddressBook/GDFP_GateAddressBook</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.8</drawSize>
         </graphicData>
-        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+        <uiIconPath>Things/Item/Book/GDFP_GateAddressBook/GDFP_GateAddressBook</uiIconPath>
         <statBases>
             <MarketValue>150</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Book">
-                <nameMaker>GDFP_Namer_FroggeTome</nameMaker>
-                <descriptionMaker>Description_Schematic</descriptionMaker>
+                <nameMaker>GDFP_Namer_Gate</nameMaker>
+                <descriptionMaker>Description_Novel</descriptionMaker>
                 <ageYearsRange>2000~4000</ageYearsRange>
                 <openGraphic>
-                    <texPath>Things/Item/Book/Tome/Tome_Open</texPath>
+                    <texPath>Things/Item/Book/GDFP_GateAddressBook/GDFP_GateAddressBook_Open</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>0.7</drawSize>
                 </openGraphic>
                 <verticalGraphic>
-                    <texPath>Things/Item/Book/Tome/Tome_Vertical</texPath>
+                    <texPath>Things/Item/Book/GDFP_GateAddressBook/GDFP_GateAddressBook_Vertical</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <addTopAltitudeBias>true</addTopAltitudeBias>
                 </verticalGraphic>
@@ -122,11 +32,28 @@
                     <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
                         <extraGenSteps>
                             <li>
-                                <step>Settlement</step>
-                                <chance>1</chance>
+                                <step>ItemStash</step>
+                                <chance>0.75</chance>
+                            </li>
+                            <li>
+                                <step>GDFP_Any</step>
+                                <chance>0.75</chance>
                                 <requires>
                                     <li>SettlementPower</li>
                                 </requires>
+                                <conflictsWith>
+                                    <li>Settlement</li>
+                                </conflictsWith>
+                            </li>
+                            <li>
+                                <step>Settlement</step>
+                                <chance>0.25</chance>
+                                <requires>
+                                    <li>SettlementPower</li>
+                                </requires>
+                                <conflictsWith>
+                                    <li>GDFP_Any</li>
+                                </conflictsWith>
                             </li>
                             <li>
                                 <step>AmbushEdge</step>
@@ -142,96 +69,18 @@
                                     <li>AmbushEdge</li>
                                 </conflictsWith>
                             </li>
-                        </extraGenSteps>
-                    </li>
-                </doers>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <ThingDef ParentName="BookBase">
-        <defName>GDFP_GateAddressBookItems</defName>
-        <label>ancient treasure book</label>
-        <description>A book which describes different planets. Reading this book may yield a new gate address.</description>
-        <graphicData>
-            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
-        </graphicData>
-        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
-        <statBases>
-            <MarketValue>150</MarketValue>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Book">
-                <nameMaker>Namer_Schematic</nameMaker>
-                <descriptionMaker>Description_Schematic</descriptionMaker>
-                <ageYearsRange>2000~4000</ageYearsRange>
-                <openGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>0.7</drawSize>
-                </openGraphic>
-                <verticalGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <addTopAltitudeBias>true</addTopAltitudeBias>
-                </verticalGraphic>
-                <doers>
-                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
-                        <extraGenSteps>
-                            <li>
-                                <step>ItemStash</step>
-                                <chance>1</chance>
-                            </li>
                             <li>
                                 <step>BanditCamp</step>
                                 <requires>
                                     <li>BanditCampPower</li>
                                 </requires>
                                 <chance>0.2</chance>
-                            </li>
-                        </extraGenSteps>
-                    </li>
-                </doers>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <ThingDef ParentName="BookBase">
-        <defName>GDFP_GateAddressBookCuck</defName>
-        <label>ancient treasure book</label>
-        <description>A book which describes different planets. Reading this book may yield a new gate address.</description>
-        <graphicData>
-            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
-        </graphicData>
-        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
-        <statBases>
-            <MarketValue>150</MarketValue>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Book">
-                <nameMaker>Namer_Schematic</nameMaker>
-                <descriptionMaker>Description_Schematic</descriptionMaker>
-                <ageYearsRange>2000~4000</ageYearsRange>
-                <openGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>0.7</drawSize>
-                </openGraphic>
-                <verticalGraphic>
-                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <addTopAltitudeBias>true</addTopAltitudeBias>
-                </verticalGraphic>
-                <doers>
-                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
-                        <extraGenSteps>
-                            <li>
-                                <step>GDFP_CuckRoom</step>
-                                <chance>1</chance>
+                                <conflictsWith>
+                                    <li>GDFP_Any</li>
+                                    <li>Settlement</li>
+                                    <li>AmbushEdge</li>
+                                    <li>AmbushHidden</li>
+                                </conflictsWith>
                             </li>
                         </extraGenSteps>
                     </li>

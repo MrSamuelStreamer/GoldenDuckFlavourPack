@@ -5,8 +5,8 @@ namespace GDFP;
 
 public class Settings : ModSettings
 {
-    public int planetWidth = 150;
-    public int planetHeight = 150;
+    public int planetWidth = 275;
+    public int planetHeight = 275;
 
     public void DoWindowContents(Rect wrect)
     {
@@ -14,11 +14,11 @@ public class Settings : ModSettings
         options.Begin(wrect);
 
         options.Label("GDFP_Settings_DefaultGatePlanetWidth".Translate(planetWidth));
-        options.IntAdjuster(ref planetWidth, 10, 100);
+        options.IntAdjuster(ref planetWidth, 10, 275);
         options.Gap();
 
         options.Label("GDFP_Settings_DefaultGatePlanetHeight".Translate(planetHeight));
-        options.IntAdjuster(ref planetHeight, 10, 100);
+        options.IntAdjuster(ref planetHeight, 10, 275);
         options.Gap();
 
         options.End();
@@ -26,7 +26,29 @@ public class Settings : ModSettings
 
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref planetWidth, "planetWidth", 150);
-        Scribe_Values.Look(ref planetHeight, "planetHeight", 150);
+        if (Scribe.mode == LoadSaveMode.Saving)
+        {
+            if(planetHeight < 275)
+            {
+                planetHeight = 275;
+            }
+            if(planetWidth < 275)
+            {
+                planetWidth = 275;
+            }
+        }
+        Scribe_Values.Look(ref planetWidth, "planetWidth", 275);
+        Scribe_Values.Look(ref planetHeight, "planetHeight", 275);
+        if (Scribe.mode == LoadSaveMode.PostLoadInit)
+        {
+            if(planetHeight < 275)
+            {
+                planetHeight = 275;
+            }
+            if(planetWidth < 275)
+            {
+                planetWidth = 275;
+            }
+        }
     }
 }

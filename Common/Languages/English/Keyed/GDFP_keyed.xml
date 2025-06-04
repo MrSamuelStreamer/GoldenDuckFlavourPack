@@ -18,4 +18,6 @@
     <GDFP_ApparelLockedToXenotype>Incorrect xenotype</GDFP_ApparelLockedToXenotype>
     <GDFP_GotNewGene>{PAWN_labelShort} got the gene {1}</GDFP_GotNewGene>
     <GDFP_GetGene>Absorb ancient knowledge from {0}</GDFP_GetGene>
+    <GDFP_LearnedAddress>Learned gate address {0}</GDFP_LearnedAddress>
+    <GDFP_Author>Map generation by {0}</GDFP_Author>
 </LanguageData>

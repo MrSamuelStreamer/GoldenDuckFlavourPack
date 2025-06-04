@@ -5,6 +5,11 @@
         <defName>soaringturtle_ruined_castle</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>soaringturtle</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,Filth_RubbleRock,Filth_RubbleRock,Filth_RubbleRock,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Filth_RubbleRock,.,Filth_RubbleRock,.,.,.,.,.,.,.,.,.,.</li>

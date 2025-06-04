@@ -5,6 +5,11 @@
         <defName>twelve_h_stingray_resort</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>twelve_h</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>

@@ -117,6 +117,7 @@ public class Building_Quackaai: MapPortal
     {
         base.OnEntered(pawn);
 
+        selectedAddress.Visited = true;
         if (Find.CurrentMap == Map)
         {
             GDFPDefOf.GDFP_Travel.PlayOneShot((SoundInfo) (Thing) this);

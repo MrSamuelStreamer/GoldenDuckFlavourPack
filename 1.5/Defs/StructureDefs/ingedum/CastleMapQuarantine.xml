@@ -5,6 +5,11 @@
         <defName>ingedum_CastleMapQuarantine</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
+        <modExtensions>
+            <li Class="GDFP.StructureDefModExtension">
+                <author>ingedum</author>
+            </li>
+        </modExtensions>
         <layouts>
             <li>
                 <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.</li>

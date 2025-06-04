@@ -113,6 +113,7 @@
         <stuff>WoodLog</stuff>
         <styleCategory>AM_Cubic</styleCategory>
         <rotation>East</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
     </KCSG.SymbolDef>
 
     <KCSG.SymbolDef>
@@ -475,5 +476,1416 @@
         <thing>MSSFP_OskarianBed_Quadruple</thing>
         <stuff>Jade</stuff>
         <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_BrickFence_BlocksGranite</defName>
+        <thing>VFEArch_BrickFence</thing>
+        <stuff>BlocksGranite</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_BlocksMarble_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>BlocksMarble</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredDoor_Steel</defName>
+        <thing>VFEArch_ArmoredDoor</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Altar_Grand_BlocksMarble_Morbid_North</defName>
+        <thing>Altar_Grand</thing>
+        <stuff>BlocksMarble</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_HMGComplex_South</defName>
+        <thing>VFES_Turret_HMGComplex</thing>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Misc_FileCabinet_Steel_South</defName>
+        <thing>Misc_FileCabinet</thing>
+        <stuff>Steel</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Radio_Spacer_North</defName>
+        <thing>Radio_Spacer</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Steel_West</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Steel</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SecurityDoor_East</defName>
+        <thing>SecurityDoor</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Cooler_Over_North</defName>
+        <thing>Cooler_Over</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>TorchLamp_Morbid</defName>
+        <thing>TorchLamp</thing>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Barricade_Steel_Pastelred</defName>
+        <thing>Barricade</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_RedPastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Barricade_Steel_Subtlered</defName>
+        <thing>Barricade</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_RedSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_WoodLog_Morbid_East</defName>
+        <thing>Table1x2c</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Large_WoodLog_Pastelgreen</defName>
+        <thing>NatureShrine_Large</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_GreenPastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>StandingLamp_Morbid</defName>
+        <thing>StandingLamp</thing>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_BlocksSandstone_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>BlocksSandstone</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WoodLog_Red_South</defName>
+        <thing>Shelf</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Red</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WoodLog_Skyblue_South</defName>
+        <thing>Shelf</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueSky</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WoodLog_Cream_South</defName>
+        <thing>Shelf</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WoodLog_Mustard_South</defName>
+        <thing>Shelf</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Mustard</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Uranium_Lightgray</defName>
+        <thing>Wall</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Lightgray</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksSandstone_Lightgray</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureLarge_WoodLog_Animalist</defName>
+        <thing>SculptureLarge</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PlantPot_Bonsai_WoodLog_Pastelorange</defName>
+        <thing>PlantPot_Bonsai</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ShelfSmall_WoodLog_Iceblue_North</defName>
+        <thing>ShelfSmall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Altar_Grand_WoodLog_Pastelorange_Morbid_South</defName>
+        <thing>Altar_Grand</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Cream_Morbid_South</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_WoodLog_Cream_Morbid_West</defName>
+        <thing>Table1x2c</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Barricade_WoodLog_Cream</defName>
+        <thing>Barricade</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_WoodLog_Cream_Morbid_East</defName>
+        <thing>Table1x2c</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Jade_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Jade</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Iceblue</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Steel_Subtlered</defName>
+        <thing>Wall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_RedSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Uranium_Darkgrey</defName>
+        <thing>Wall</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_GreyDark</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Subtleblue</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Steel_Morbid_North</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SmoothedGranite_Granite</defName>
+        <thing>SmoothedGranite</thing>
+        <color>Structure_Granite</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Steel_Iceblue</defName>
+        <thing>Wall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Granite</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Granite</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Silver_Islamic</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Silver</stuff>
+        <styleCategory>Islamic</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SmoothedGranite_Lightgray</defName>
+        <thing>SmoothedGranite</thing>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ToolCabinet_East</defName>
+        <thing>ToolCabinet</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Morbid_North</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Scarlet</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Scarlet</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksSandstone_Iceblue</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Subtlered</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_RedSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Silver_Iceblue</defName>
+        <thing>Wall</thing>
+        <stuff>Silver</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureGrand_Steel_Islamic</defName>
+        <thing>SculptureGrand</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Islamic</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_Steel_Iceblue_South</defName>
+        <thing>Shelf</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_BlueIce</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksSandstone_Lightbrown</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_BrownLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Subtlered</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_RedSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_WoodLog_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Morbid_West</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Iceblue</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Plasteel_Darkgrey</defName>
+        <thing>Wall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_GreyDark</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Door_WoodLog_Iceblue</defName>
+        <thing>Door</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Lightgray</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PlantPot_Bonsai_WoodLog_Iceblue</defName>
+        <thing>PlantPot_Bonsai</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Lightbrown</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BrownLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksSandstone_Pastelorange</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureLarge_Silver_Animalist</defName>
+        <thing>SculptureLarge</thing>
+        <stuff>Silver</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Uranium_Cream_North</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Uranium_Cream_West</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_Cream</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureGrand_Steel_Animalist</defName>
+        <thing>SculptureGrand</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Steel_Cream_East</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_BlocksGranite_Morbid_South</defName>
+        <thing>Stool</thing>
+        <stuff>BlocksGranite</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ShelfSmall_WoodLog_Iceblue_South</defName>
+        <thing>ShelfSmall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Ideogram_Hindu_North</defName>
+        <thing>Ideogram</thing>
+        <styleCategory>Hindu</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Pastelorange_Morbid_North</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SchoolDesk_Jade_Pastelgreen_South</defName>
+        <thing>SchoolDesk</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_GreenPastel</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Jade_Palelime</defName>
+        <thing>Wall</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_LimePale</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Jade_Pastelgreen</defName>
+        <thing>Wall</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_GreenPastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_BlocksGranite_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>BlocksGranite</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Dresser_BlocksGranite_Cream_South</defName>
+        <thing>Dresser</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ShelfSmall_WoodLog_Cream_South</defName>
+        <thing>ShelfSmall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PlantPot_Bonsai_Steel_Cream</defName>
+        <thing>PlantPot_Bonsai</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_BlocksGranite_Iceblue_South</defName>
+        <thing>Shelf</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_BlueIce</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PlantPot_WoodLog_Cream</defName>
+        <thing>PlantPot</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Barricade_Plasteel_Cream</defName>
+        <thing>Barricade</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DoubleBed_Jade_Viridian_West</defName>
+        <thing>DoubleBed</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_Viridian</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Lightbrown</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_BrownLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Barricade_WoodLog_Pastelorange</defName>
+        <thing>Barricade</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Fence_WoodLog_Pastelorange</defName>
+        <thing>Fence</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_WoodLog_Pastelorange_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SlabDoubleBed_BlocksSandstone_Cream_East</defName>
+        <thing>SlabDoubleBed</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_Cream</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DoubleBed_Jade_Cream_East</defName>
+        <thing>DoubleBed</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_Cream</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PenMarker_WoodLog_Pastelorange</defName>
+        <thing>PenMarker</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Morbid_East</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>FenceGate_WoodLog_Pastelorange</defName>
+        <thing>FenceGate</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Silver_Morbid_East</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Silver</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_BlocksGranite_Morbid_East</defName>
+        <thing>Stool</thing>
+        <stuff>BlocksGranite</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>FabricationBench_West</defName>
+        <thing>FabricationBench</thing>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>FabricationBench_East</defName>
+        <thing>FabricationBench</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_White</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_White</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Door_WoodLog_White</defName>
+        <thing>Door</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_White</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_WoodLog_Pastelgreen</defName>
+        <thing>Wall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_GreenPastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Plasteel_White_West</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_White</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_BlocksMarble_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>BlocksMarble</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_Jade_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>Jade</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Plasteel_White_East</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_White</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Steel_Lightbrown</defName>
+        <thing>Wall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_BrownLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_BlocksGranite_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>BlocksGranite</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DoubleBed_WoodLog_Pastelorange_East</defName>
+        <thing>DoubleBed</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Throne_WoodLog_Cream_North</defName>
+        <thing>Throne</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_Jade_Viridian_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_Viridian</color>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureGrand_Steel_White_Islamic</defName>
+        <thing>SculptureGrand</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_White</color>
+        <styleCategory>Islamic</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_Steel_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SmoothedGranite_White</defName>
+        <thing>SmoothedGranite</thing>
+        <color>Structure_White</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Steel_Lightgray</defName>
+        <thing>Wall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_GrayLight</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DarklightBrazier_Jade_Subtleviridian</defName>
+        <thing>DarklightBrazier</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_ViridianSubtle</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Plasteel_Pastelorange</defName>
+        <thing>Wall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>GrandThrone_Jade_Pastelorange_West</defName>
+        <thing>GrandThrone</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_OrangePastel</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_Silver_Morbid</defName>
+        <thing>Column</thing>
+        <stuff>Silver</stuff>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Plasteel_Cream</defName>
+        <thing>Wall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Steel_Morbid_South</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DoubleBed_WoodLog_Pastelorange_North</defName>
+        <thing>DoubleBed</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SmoothedGranite_Cream</defName>
+        <thing>SmoothedGranite</thing>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DoubleBed_WoodLog_Pastelorange_South</defName>
+        <thing>DoubleBed</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_OrangePastel</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Steel_Limestone_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Limestone</color>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Silver_Marshgreen_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Silver</stuff>
+        <color>Structure_GreenMarsh</color>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Silver_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Silver</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ElectricTailoringBench_Steel_Cream_South</defName>
+        <thing>ElectricTailoringBench</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ShelfSmall_WoodLog_Cream_West</defName>
+        <thing>ShelfSmall</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <rotation>West</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>GrandThrone_Jade_Viridian_South</defName>
+        <thing>GrandThrone</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_Viridian</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Steel_Morbid_East</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureSmall_Jade_Viridian_Animalist</defName>
+        <thing>SculptureSmall</thing>
+        <stuff>Jade</stuff>
+        <color>Structure_Viridian</color>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SlabDoubleBed_Steel_Cream_South</defName>
+        <thing>SlabDoubleBed</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Throne_WoodLog_Cream_South</defName>
+        <thing>Throne</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Cream</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ElectricTailoringBench_Steel_Cream_North</defName>
+        <thing>ElectricTailoringBench</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Swampgreen</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_GreenSwamp</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Uranium_Cream</defName>
+        <thing>Wall</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Door_Steel_Cream</defName>
+        <thing>Door</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Cream</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Plasteel_Black</defName>
+        <thing>Wall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Cream_Morbid_West</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ToolCabinet_South</defName>
+        <thing>ToolCabinet</thing>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>TableSculpting_WoodLog_Iceblue_South</defName>
+        <thing>TableSculpting</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Morbid_South</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>Morbid</styleCategory>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_Uranium_Swampgreen</defName>
+        <thing>Wall</thing>
+        <stuff>Uranium</stuff>
+        <color>Structure_GreenSwamp</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Stool_WoodLog_Cream_Morbid_North</defName>
+        <thing>Stool</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_WoodLog_Cream_Morbid_North</defName>
+        <thing>Table1x2c</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_Cream</color>
+        <styleCategory>Morbid</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Small_Steel_Woodbrown</defName>
+        <thing>NatureShrine_Small</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_BrownWood</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Small_Steel_Burntumber</defName>
+        <thing>NatureShrine_Small</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_UmberBurnt</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Large_BlocksGranite_Fadedgreen</defName>
+        <thing>NatureShrine_Large</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_GreenFaded</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Small_BlocksSandstone_Muddygreen</defName>
+        <thing>NatureShrine_Small</thing>
+        <stuff>BlocksSandstone</stuff>
+        <color>Structure_GreenMuddy</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Small_WoodLog_Pastelgreen</defName>
+        <thing>NatureShrine_Small</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_GreenPastel</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>NatureShrine_Small_WoodLog_Iceblue</defName>
+        <thing>NatureShrine_Small</thing>
+        <stuff>WoodLog</stuff>
+        <color>Structure_BlueIce</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_RusticWall_WoodLog</defName>
+        <thing>RB_RusticWall</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_Diag_WoodLog_East</defName>
+        <thing>oracle_Diag</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_Diag_WoodLog_North</defName>
+        <thing>oracle_Diag</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_Diag_WoodLog_West</defName>
+        <thing>oracle_Diag</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_Diag_WoodLog_South</defName>
+        <thing>oracle_Diag</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageMediumCrate_WoodLog_North</defName>
+        <thing>BasicStorageMediumCrate</thing>
+        <stuff>WoodLog</stuff>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageLargeCrate_WoodLog_North</defName>
+        <thing>BasicStorageLargeCrate</thing>
+        <stuff>WoodLog</stuff>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageFuelTank_Steel_East</defName>
+        <thing>BasicStorageFuelTank</thing>
+        <stuff>Steel</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageStonePile_BlocksGranite_East</defName>
+        <thing>ReelStorageStonePile</thing>
+        <stuff>BlocksGranite</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageLargeLocker_Steel_East</defName>
+        <thing>ReelStorageLargeLocker</thing>
+        <stuff>Steel</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_Steel_Techist_South</defName>
+        <thing>Shelf</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Techist</styleCategory>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageCask_WoodLog_East</defName>
+        <thing>BasicStorageCask</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_LargeOrnateDoor_WoodLog_East</defName>
+        <thing>RB_LargeOrnateDoor</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_DiagBrick_BlocksMarble_North</defName>
+        <thing>oracle_DiagBrick</thing>
+        <stuff>BlocksMarble</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_DiagBrick_BlocksMarble_East</defName>
+        <thing>oracle_DiagBrick</thing>
+        <stuff>BlocksMarble</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_DiagBrick_BlocksMarble_South</defName>
+        <thing>oracle_DiagBrick</thing>
+        <stuff>BlocksMarble</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_BrickFence_BlocksMarble</defName>
+        <thing>VFEArch_BrickFence</thing>
+        <stuff>BlocksMarble</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStoragePalletLarge_WoodLog_North</defName>
+        <thing>BasicStoragePalletLarge</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_DiagBrick_BlocksMarble_West</defName>
+        <thing>oracle_DiagBrick</thing>
+        <stuff>BlocksMarble</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageTanningRack_WoodLog_South</defName>
+        <thing>ReelStorageTanningRack</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageAnimalFeeder_Steel_East</defName>
+        <thing>ReelStorageAnimalFeeder</thing>
+        <stuff>Steel</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageAnimalFeeder_Steel_South</defName>
+        <thing>ReelStorageAnimalFeeder</thing>
+        <stuff>Steel</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageLargeWoodPile_WoodLog_North</defName>
+        <thing>ReelStorageLargeWoodPile</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageAnimalFeeder_Steel_West</defName>
+        <thing>ReelStorageAnimalFeeder</thing>
+        <stuff>Steel</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Spacer_OutdoorLamp</defName>
+        <thing>Spacer_OutdoorLamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageMealStorage_WoodLog_North</defName>
+        <thing>BasicStorageMealStorage</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_TableDrugLabElectric_Steel_West</defName>
+        <thing>VFE_TableDrugLabElectric</thing>
+        <stuff>Steel</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_ModularCouch_Cloth_North</defName>
+        <thing>VFE_ModularCouch</thing>
+        <stuff>Cloth</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageAnimalFeeder_Steel_North</defName>
+        <thing>ReelStorageAnimalFeeder</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_AdvDoubleBed_WoodLog_West</defName>
+        <thing>Bed_AdvDoubleBed</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Gold_South</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ReelStorageFridge_South</defName>
+        <thing>ReelStorageFridge</thing>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageFoodBarrel_WoodLog_North</defName>
+        <thing>BasicStorageFoodBarrel</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>oracle_TireWall</defName>
+        <thing>oracle_TireWall</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_PortableWoodFiredGenerator</defName>
+        <thing>VFE_PortableWoodFiredGenerator</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_Simple_WoodLog_East</defName>
+        <thing>Bed_Simple</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_LogDoor_WoodLog</defName>
+        <thing>oracle_LogDoor</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>WallLamp_Steel_Techist_North</defName>
+        <thing>WallLamp</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Techist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_AdvancedBattery_East</defName>
+        <thing>VFE_AdvancedBattery</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_LargeAdvancedBattery_North</defName>
+        <thing>VFE_LargeAdvancedBattery</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>StandingLamp_Techist</defName>
+        <thing>StandingLamp</thing>
+        <styleCategory>Techist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Autodoor_Gold_Techist</defName>
+        <thing>Autodoor</thing>
+        <stuff>Gold</stuff>
+        <styleCategory>Techist</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Gold_West</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Gold</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Gold_East</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Gold</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_interactive_2x2c_Gold_North</defName>
+        <thing>Table_interactive_2x2c</thing>
+        <stuff>Gold</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Gold_North</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Gold</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_DoubleErgonomic_Gold_South</defName>
+        <thing>Bed_DoubleErgonomic</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Gold_South</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>oracle_ChasmWall</defName>
+        <thing>oracle_ChasmWall</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_Plinth_Steel</defName>
+        <thing>VFE_Plinth</thing>
+        <stuff>Steel</stuff>
     </KCSG.SymbolDef>
 </Defs>
