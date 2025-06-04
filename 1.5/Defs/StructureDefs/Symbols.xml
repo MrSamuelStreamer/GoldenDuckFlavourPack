@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_MilitaryTurret_Steel</defName>
+        <thing>VFES_Turret_MilitaryTurret</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_AutocannonDouble</defName>
+        <thing>VFES_Turret_AutocannonDouble</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_Searchlight_Steel</defName>
+        <thing>VFES_Turret_Searchlight</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_StatueLarge_BlocksGranite</defName>
+        <thing>VFE_StatueLarge</thing>
+        <stuff>BlocksGranite</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_StatueLarge_Uranium</defName>
+        <thing>VFE_StatueLarge</thing>
+        <stuff>Uranium</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalEndTable_WoodLog_South</defName>
+        <thing>Table_RoyalEndTable</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalDresser_WoodLog_South</defName>
+        <thing>Table_RoyalDresser</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredWall_Bioferrite_Black</defName>
+        <thing>VFEArch_ArmoredWall</thing>
+        <stuff>Bioferrite</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Door_BlocksSlate_Black</defName>
+        <thing>Door</thing>
+        <stuff>BlocksSlate</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_HedgeWall</defName>
+        <thing>VFEArch_HedgeWall</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalEndTable_WoodLog_North</defName>
+        <thing>Table_RoyalEndTable</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalArmchair_Cloth_South</defName>
+        <thing>Seat_RoyalArmchair</thing>
+        <stuff>Cloth</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_Piano_WoodLog_West</defName>
+        <thing>Joy_Piano</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Royal2x2c_WoodLog</defName>
+        <thing>Table_Royal2x2c</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Royal1x1c_WoodLog</defName>
+        <thing>Table_Royal1x1c</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Autodoor_WoodLog_Cubic</defName>
+        <thing>Autodoor</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>AM_Cubic</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_LogWall</defName>
+        <thing>VFEArch_LogWall</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WoodLog_Cubic_East</defName>
+        <thing>Shelf</thing>
+        <stuff>WoodLog</stuff>
+        <styleCategory>AM_Cubic</styleCategory>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_CuckChair_North</defName>
+        <thing>MSSFP_CuckChair</thing>
+        <rotation>North</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>StandingLamp_Cubic</defName>
+        <thing>StandingLamp</thing>
+        <styleCategory>AM_Cubic</styleCategory>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_OskarianBed_Triple_WoodLog_South</defName>
+        <thing>MSSFP_OskarianBed_Triple</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_IlluminatedEndTable_WoodLog_South</defName>
+        <thing>Table_IlluminatedEndTable</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSS_FP_Plant_Mushris</defName>
+        <thing>MSS_FP_Plant_Mushris</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_PumpkinFrogge</defName>
+        <pawnKindDef>MSSFP_PumpkinFrogge</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_Frogge</defName>
+        <pawnKindDef>MSSFP_Frogge</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_CoalFroggeBiter</defName>
+        <pawnKindDef>MSSFP_CoalFroggeBiter</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_CoalFroggePete</defName>
+        <pawnKindDef>MSSFP_CoalFroggePete</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_CoalFroggeLigna</defName>
+        <pawnKindDef>MSSFP_CoalFroggeLigna</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_CoalFroggeAnt</defName>
+        <pawnKindDef>MSSFP_CoalFroggeAnt</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Light_Streetlamp</defName>
+        <thing>Light_Streetlamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_OskarianBed_Quadruple_Gold_South</defName>
+        <thing>MSSFP_OskarianBed_Quadruple</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Radio_Spacer_South</defName>
+        <thing>Radio_Spacer</thing>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>WallLamp_North</defName>
+        <thing>WallLamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>WallLamp_West</defName>
+        <thing>WallLamp</thing>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>WallLamp_East</defName>
+        <thing>WallLamp</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>WallLamp_South</defName>
+        <thing>WallLamp</thing>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Cooler_Over_East</defName>
+        <thing>Cooler_Over</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ChainlinkFence_Steel</defName>
+        <thing>VFEArch_ChainlinkFence</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_FloorLamp</defName>
+        <thing>VFE_FloorLamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Steel_South</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Steel</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ToolCabinet_West</defName>
+        <thing>ToolCabinet</thing>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>FabricationBench_North</defName>
+        <thing>FabricationBench</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>ToolCabinet_North</defName>
+        <thing>ToolCabinet</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalChair_Cloth_North</defName>
+        <thing>Seat_RoyalChair</thing>
+        <stuff>Cloth</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalArmchair_Cloth_East</defName>
+        <thing>Seat_RoyalArmchair</thing>
+        <stuff>Cloth</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Royal1x1c_Gold</defName>
+        <thing>Table_Royal1x1c</thing>
+        <stuff>Gold</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Royal2x2c_Gold</defName>
+        <thing>Table_Royal2x2c</thing>
+        <stuff>Gold</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_RoyalLamp</defName>
+        <thing>VFE_RoyalLamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalChair_Cloth_East</defName>
+        <thing>Seat_RoyalChair</thing>
+        <stuff>Cloth</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalChair_Cloth_West</defName>
+        <thing>Seat_RoyalChair</thing>
+        <stuff>Cloth</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_RoyalChair_Cloth_South</defName>
+        <thing>Seat_RoyalChair</thing>
+        <stuff>Cloth</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalDresser_Gold_South</defName>
+        <thing>Table_RoyalDresser</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_OskarianBed_Double_Gold_South</defName>
+        <thing>MSSFP_OskarianBed_Double</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalEndTable_Gold_South</defName>
+        <thing>Table_RoyalEndTable</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_RoyalWardrobe_Gold_South</defName>
+        <thing>VFE_RoyalWardrobe</thing>
+        <stuff>Gold</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_Lounger_WoodLog_South</defName>
+        <thing>VFE_Lounger</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_1x1c_WoodLog</defName>
+        <thing>Table_1x1c</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_FineWall_BlocksGranite</defName>
+        <thing>VFEArch_FineWall</thing>
+        <stuff>BlocksGranite</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_WoodLog_North</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_Piano_WoodLog_North</defName>
+        <thing>Joy_Piano</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_WoodLog_West</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_WoodLog_East</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_DartsBoard_WoodLog_North</defName>
+        <thing>Joy_DartsBoard</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_PunchingBag_Cloth_North</defName>
+        <thing>Joy_PunchingBag</thing>
+        <stuff>Cloth</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_DoubleErgonomic_WoodLog_South</defName>
+        <thing>Bed_DoubleErgonomic</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_Bench_WoodLog</defName>
+        <thing>Seat_Bench</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalEndTable_WoodLog_East</defName>
+        <thing>Table_RoyalEndTable</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalEndTable_WoodLog_West</defName>
+        <thing>Table_RoyalEndTable</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_Kingsize_WoodLog_East</defName>
+        <thing>Bed_Kingsize</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_Kingsize_WoodLog_West</defName>
+        <thing>Bed_Kingsize</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalDresser_WoodLog_West</defName>
+        <thing>Table_RoyalDresser</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_RoyalDresser_WoodLog_East</defName>
+        <thing>Table_RoyalDresser</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_KitchenSinkCabinet_North</defName>
+        <thing>VFE_KitchenSinkCabinet</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_TableStoveLarge_North</defName>
+        <thing>VFE_TableStoveLarge</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_TailorCabinet_East</defName>
+        <thing>VFE_TailorCabinet</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Counter_WoodLog</defName>
+        <thing>Table_Counter</thing>
+        <stuff>WoodLog</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>MSSFP_OskarianBed_Quadruple_Jade_South</defName>
+        <thing>MSSFP_OskarianBed_Quadruple</thing>
+        <stuff>Jade</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+</Defs>

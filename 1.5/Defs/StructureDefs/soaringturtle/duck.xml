@@ -59,18 +59,4 @@
             <li>vanillaexpanded.vfearchitect</li>
         </modRequirements>
     </KCSG.StructureLayoutDef>
-
-    <KCSG.SymbolDef>
-        <defName>VFEArch_ArmoredWall_Bioferrite_Black</defName>
-        <thing>VFEArch_ArmoredWall</thing>
-        <stuff>Bioferrite</stuff>
-        <color>Structure_Black</color>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Door_BlocksSlate_Black</defName>
-        <thing>Door</thing>
-        <stuff>BlocksSlate</stuff>
-        <color>Structure_Black</color>
-    </KCSG.SymbolDef>
 </Defs>

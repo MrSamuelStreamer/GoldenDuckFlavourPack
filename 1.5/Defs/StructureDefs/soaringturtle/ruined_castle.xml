@@ -291,41 +291,4 @@
         </modRequirements>
     </KCSG.StructureLayoutDef>
 
-    <KCSG.SymbolDef>
-        <defName>VFEArch_HedgeWall</defName>
-        <thing>VFEArch_HedgeWall</thing>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Table_RoyalEndTable_WoodLog_North</defName>
-        <thing>Table_RoyalEndTable</thing>
-        <stuff>WoodLog</stuff>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Seat_RoyalArmchair_Cloth_South</defName>
-        <thing>Seat_RoyalArmchair</thing>
-        <stuff>Cloth</stuff>
-        <rotation>South</rotation>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Joy_Piano_WoodLog_West</defName>
-        <thing>Joy_Piano</thing>
-        <stuff>WoodLog</stuff>
-        <rotation>West</rotation>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Table_Royal2x2c_WoodLog</defName>
-        <thing>Table_Royal2x2c</thing>
-        <stuff>WoodLog</stuff>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>Table_Royal1x1c_WoodLog</defName>
-        <thing>Table_Royal1x1c</thing>
-        <stuff>WoodLog</stuff>
-    </KCSG.SymbolDef>
-
 </Defs>

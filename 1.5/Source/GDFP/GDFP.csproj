@@ -49,6 +49,9 @@
     <Content Include="..\..\..\modList.xml">
       <Link>GoldenDuckFlavourPack\modList.xml</Link>
     </Content>
+    <Content Include="..\..\Defs\StructureDefs\README.md">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\README.md</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
@@ -70,17 +73,26 @@
     <CommonFiles Include="../../../Common/**" />
     <CompatibilityFiles Include="../../../Compatibility/**" />
     <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
-    <ReleaseFiles Update="..\..\Defs\JobDefs\GDFP_JobDefs.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\JobDefs\GDFP_JobDefs.xml</Link>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\ingedum\CastleMap.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\ingedum\CastleMap.xml</Link>
     </ReleaseFiles>
-    <ReleaseFiles Update="..\..\Defs\StructureDefs\vanora.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\vanora.xml</Link>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\ingedum\CastleMapQuarantine.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\ingedum\CastleMapQuarantine.xml</Link>
     </ReleaseFiles>
-    <ReleaseFiles Update="..\..\Defs\StructureDefs\soaringturtle\ruined_castle.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\soaringturtle\soaringturtle.xml</Link>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\Symbols.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\Symbols.xml</Link>
     </ReleaseFiles>
-    <ReleaseFiles Update="..\..\Defs\StructureDefs\soaringturtle\duck.xml">
-      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\soaringturtle\duck.xml</Link>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\twelve_h_stingray_resort.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\twelve_h_stingray_resort.xml</Link>
+    </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\seanbaeg_is_this.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\seanbaeg_is_this.xml</Link>
+    </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\unme99_emeraldgods.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\unme99_emeraldgods.xml</Link>
+    </ReleaseFiles>
+    <ReleaseFiles Update="..\..\Defs\StructureDefs\kreeft-lobster.xml">
+      <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\kreeft-lobster.xml</Link>
     </ReleaseFiles>
   </ItemGroup>
 </Project>

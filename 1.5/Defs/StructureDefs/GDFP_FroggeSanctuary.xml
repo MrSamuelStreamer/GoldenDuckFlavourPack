@@ -378,39 +378,4 @@
             <li>mss.flavourpack</li>
         </modRequirements>
     </KCSG.StructureLayoutDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSS_FP_Plant_Mushris</defName>
-        <thing>MSS_FP_Plant_Mushris</thing>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_PumpkinFrogge</defName>
-        <pawnKindDef>MSSFP_PumpkinFrogge</pawnKindDef>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_Frogge</defName>
-        <pawnKindDef>MSSFP_Frogge</pawnKindDef>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_CoalFroggeBiter</defName>
-        <pawnKindDef>MSSFP_CoalFroggeBiter</pawnKindDef>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_CoalFroggePete</defName>
-        <pawnKindDef>MSSFP_CoalFroggePete</pawnKindDef>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_CoalFroggeLigna</defName>
-        <pawnKindDef>MSSFP_CoalFroggeLigna</pawnKindDef>
-    </KCSG.SymbolDef>
-
-    <KCSG.SymbolDef>
-        <defName>MSSFP_CoalFroggeAnt</defName>
-        <pawnKindDef>MSSFP_CoalFroggeAnt</pawnKindDef>
-    </KCSG.SymbolDef>
 </Defs>
