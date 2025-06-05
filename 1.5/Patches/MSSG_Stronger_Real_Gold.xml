@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gold"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                <value>
+					        <MaxHitPoints>1</MaxHitPoints> <!-- Makes gold slightly stronger -->
+                </value>
+   </Operation>
+</Patch>
