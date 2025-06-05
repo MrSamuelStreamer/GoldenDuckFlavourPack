@@ -38,9 +38,6 @@
                             <li>
                                 <step>GDFP_Any</step>
                                 <chance>0.75</chance>
-                                <requires>
-                                    <li>SettlementPower</li>
-                                </requires>
                                 <conflictsWith>
                                     <li>Settlement</li>
                                 </conflictsWith>
@@ -52,7 +49,7 @@
                                     <li>SettlementPower</li>
                                 </requires>
                                 <conflictsWith>
-                                    <li>GDFP_Any</li>
+                                    <li>GenStep_GDCustomGen</li>
                                 </conflictsWith>
                             </li>
                             <li>

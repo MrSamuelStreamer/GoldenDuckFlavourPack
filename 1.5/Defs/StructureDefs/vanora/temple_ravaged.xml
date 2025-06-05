@@ -2,12 +2,13 @@
 
 <Defs>
     <KCSG.StructureLayoutDef>
-        <defName>temple_ravaged</defName>
+        <defName>vanora_temple_ravaged</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>vanora</author>
+                <standalone>true</standalone>
             </li>
         </modExtensions>
         <layouts>

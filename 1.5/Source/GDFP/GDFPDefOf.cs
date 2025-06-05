@@ -17,6 +17,7 @@ public static class GDFPDefOf
     public static MapGeneratorDef GDFP_Planet;
 
     public static LetterDef GDFP_DeathQuestionMark;
+    public static LetterDef GDFP_MapAuthor;
 
     public static JobDef GDFP_GetGene;
 

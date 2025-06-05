@@ -4,4 +4,8 @@
         <defName>GDFP_DeathQuestionMark</defName>
         <letterClass>GDFP.DeathLetter</letterClass>
     </LetterDef>
+    <LetterDef ParentName="PositiveEvent">
+        <defName>GDFP_MapAuthor</defName>
+        <letterClass>GDFP.AuthorLetter</letterClass>
+    </LetterDef>
 </Defs>

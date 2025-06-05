@@ -20,4 +20,7 @@
     <GDFP_GetGene>Absorb ancient knowledge from {0}</GDFP_GetGene>
     <GDFP_LearnedAddress>Learned gate address {0}</GDFP_LearnedAddress>
     <GDFP_Author>Map generation by {0}</GDFP_Author>
+    <GDFP_Author_Title>Map Makers 💌</GDFP_Author_Title>
+    <GDFP_Author_More>Big thanks to the following people for their contributions to this planet:\n{0}</GDFP_Author_More>
+    <GDFP_LoadingBy>Loading content by {0}</GDFP_LoadingBy>
 </LanguageData>

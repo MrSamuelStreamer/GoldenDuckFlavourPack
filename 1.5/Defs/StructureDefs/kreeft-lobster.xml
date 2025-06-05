@@ -2,13 +2,14 @@
 
 <Defs>
     <KCSG.StructureLayoutDef>
-        <defName>kreeft-lobster</defName>
+        <defName>kreeft_lobster</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
 
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>kreeft</author>
+                <standalone>true</standalone>
             </li>
         </modExtensions>
         <layouts>

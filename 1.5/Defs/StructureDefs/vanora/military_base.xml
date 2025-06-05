@@ -2,12 +2,13 @@
 
 <Defs>
     <KCSG.StructureLayoutDef>
-        <defName>military_base</defName>
+        <defName>vanora_military_base</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>vanora</author>
+                <standalone>true</standalone>
             </li>
         </modExtensions>
         <layouts>

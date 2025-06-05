@@ -57,7 +57,7 @@ public class JobDriver_OpenGate : JobDriver
                 LongEventHandler.QueueLongEvent(() =>
                 {
                     Gate.GenerateNewPlanetMap();
-                }, "GDFP_OpeningPortal", false, null);;
+                }, "GDFP_OpeningPortal", true, null);;
             }));
 
         workToOpenGate.AddFinishAction(delegate

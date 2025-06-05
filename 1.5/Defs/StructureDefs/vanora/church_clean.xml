@@ -2,12 +2,13 @@
 
 <Defs>
     <KCSG.StructureLayoutDef>
-        <defName>church_clean</defName>
+        <defName>vanora_church_clean</defName>
         <isStorage>true</isStorage>
         <spawnConduits>false</spawnConduits>
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>vanora</author>
+                <standalone>true</standalone>
             </li>
         </modExtensions>
         <layouts>

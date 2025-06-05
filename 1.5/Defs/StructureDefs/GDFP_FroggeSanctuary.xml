@@ -3,7 +3,7 @@
     <GenStepDef>
         <defName>GDFP_FroggeOasis</defName>
         <order>460</order>
-        <genStep Class="KCSG.GenStep_CustomStructureGen">
+        <genStep Class="GDFP.GenStep_GDCustomStructureGen">
             <structureLayoutDefs>
                 <li>GDFP_FroggeOasis</li>
             </structureLayoutDefs>
@@ -22,6 +22,7 @@
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>keyz</author>
+                <standalone>true</standalone>
             </li>
         </modExtensions>
         <layouts>

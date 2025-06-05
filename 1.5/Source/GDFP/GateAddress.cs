@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using KCSG;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
@@ -28,6 +29,7 @@ public class GateAddress: IExposable, ILoadReferenceable
     public Map mapReference;
 
     public List<GenStepDef> extraGenSteps;
+    public List<GenStepDef> chosenStructures;
 
     public Map Map => map ?? mapReference;
     public static string RandomGateAddressString()
@@ -102,6 +104,8 @@ public class GateAddress: IExposable, ILoadReferenceable
         Scribe_References.Look(ref mapReference, "mapReference");
         Scribe_Defs.Look(ref incidentToTrigger, "incidentToTrigger");
         Scribe_Defs.Look(ref faction, "faction");
+        Scribe_Collections.Look(ref extraGenSteps, "extraGenSteps", LookMode.Def);
+        Scribe_Collections.Look(ref chosenStructures, "chosenStructures", LookMode.Def);
     }
 
     public static void GenerateNewPlanetMap(Building_Quackaai entryGate, out Map planetMap, out Building_QuackaaiExit exitGate, GateAddress address = null)
@@ -116,7 +120,7 @@ public class GateAddress: IExposable, ILoadReferenceable
         mapParent.sourceMap = entryGate.Map;
         planetMap = MapGenerator.GenerateMap(new IntVec3(GDFPMod.settings.planetWidth, 1, GDFPMod.settings.planetHeight), mapParent, GDFPDefOf.GDFP_Planet, gtwp, isPocketMap: true, extraInitBeforeContentGen: (Map map) =>
         {
-            if (gtwp.Any(s => s.def.defName.ToLower().Contains("settlement")))
+            if (gtwp.Any(s => s.def?.defName?.ToLower().Contains("settlement") ?? false))
             {
                 SelectedFaction = Find.FactionManager.RandomNonHostileFaction();
             }
