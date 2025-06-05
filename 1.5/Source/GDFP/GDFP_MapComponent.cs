@@ -116,6 +116,8 @@ public class GDFP_MapComponent : MapComponent
                     saveStream.Seek(0, SeekOrigin.Begin);
                     StreamReader sr = new(saveStream, Encoding.UTF8);
                     string xml = sr.ReadToEnd();
+
+                    // Hack to put the xml into the clipboard
                     TextEditor te = new() { text = xml };
                     te.SelectAll();
                     te.Copy();
@@ -139,52 +141,31 @@ public class GDFP_MapComponent : MapComponent
             }
         }
     }
-    //
-    // [DebugAction(
-    //     "Map",
-    //     "Export Colonists",
-    //     false,
-    //     false,
-    //     false,
-    //     false,
-    //     0,
-    //     false,
-    //     actionType = DebugActionType.Action,
-    //     allowedGameStates = AllowedGameStates.PlayingOnMap,
-    //     requiresIdeology = false)]
-    // public static void ExportColonists()
-    // {
-    //     InitMemorySaving(Scribe.saver, "Pawns");
-    //
-    //     foreach (Pawn t in Find.CurrentMap.mapPawns.FreeColonists)
-    //     {
-    //         Pawn pawn = t;
-    //         Scribe_Deep.Look(ref pawn, "pawn");
-    //     }
-    //
-    //     FinalizeSaving(Scribe.saver);
-    // }
-    //
-    // [DebugAction(
-    //     "Map",
-    //     "Export Selected Colonist",
-    //     false,
-    //     false,
-    //     false,
-    //     false,
-    //     0,
-    //     false,
-    //     actionType = DebugActionType.Action,
-    //     allowedGameStates = AllowedGameStates.PlayingOnMap,
-    //     requiresIdeology = false)]
-    // public static void ExportColonist(Pawn p)
-    // {
-    //     if (p == null) return;
-    //
-    //     InitMemorySaving(Scribe.saver, "Pawns");
-    //     Scribe_Deep.Look(ref p, "pawn");
-    //     FinalizeSaving(Scribe.saver);
-    // }
+
+    [DebugAction(
+        "Map",
+        "Export Colonists",
+        false,
+        false,
+        false,
+        false,
+        0,
+        false,
+        actionType = DebugActionType.Action,
+        allowedGameStates = AllowedGameStates.PlayingOnMap,
+        requiresIdeology = false)]
+    public static void ExportColonists()
+    {
+        InitMemorySaving(Scribe.saver, "spawnedPawns");
+
+        foreach (Pawn pawn in Find.CurrentMap.mapPawns.FreeColonists)
+        {
+            PawnRepr repr = PawnRepr.FromPawn(pawn);
+            Scribe_Deep.Look(ref repr, "li");
+        }
+
+        FinalizeSaving(Scribe.saver);
+    }
 
     public static void DeathLetter(Map map)
     {

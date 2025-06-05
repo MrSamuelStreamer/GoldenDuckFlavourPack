@@ -1888,4 +1888,552 @@
         <thing>VFE_Plinth</thing>
         <stuff>Steel</stuff>
     </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredWall_Steel_Black</defName>
+        <thing>VFEArch_ArmoredWall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_FloorLamp_Steel</defName>
+        <thing>RB_FloorLamp</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Column_BlocksGranite_Black</defName>
+        <thing>Column</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Door_Steel_Black</defName>
+        <thing>Door</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_CarPickupBlack_Black_East</defName>
+        <thing>VFEPD_CarPickupBlack</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_ReinforcedGlassWall_Plasteel_Black</defName>
+        <thing>RB_ReinforcedGlassWall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_ReinforcedGlassAutodoor_Plasteel_Black</defName>
+        <thing>RB_ReinforcedGlassAutodoor</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Bed_Steel_Black_West</defName>
+        <thing>Bed</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>EndTable_Steel_Black_West</defName>
+        <thing>EndTable</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>PlantPot_BlocksMarble_Black</defName>
+        <thing>PlantPot</thing>
+        <stuff>BlocksMarble</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Steel_Black_West</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_CellWall_Steel_Black</defName>
+        <thing>VFEArch_CellWall</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_Black_East</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_Steel_Black_West</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DiningChair_Steel_Black_East</defName>
+        <thing>DiningChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Steel_Black_North</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DiningChair_Steel_Black_West</defName>
+        <thing>DiningChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_CellDoor_Steel_Black</defName>
+        <thing>VFEArch_CellDoor</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_CarVintageBlack_Magenta_West</defName>
+        <thing>VFEPD_CarVintageBlack</thing>
+        <color>Structure_Magenta</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Dresser_Steel_Black_South</defName>
+        <thing>Dresser</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_CarVintageBlack_Pinegreen_South</defName>
+        <thing>VFEPD_CarVintageBlack</thing>
+        <color>Structure_GreenPine</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_CarForklift_Black_South</defName>
+        <thing>VFEPD_CarForklift</thing>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SecurityDoor_Black_East</defName>
+        <thing>SecurityDoor</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Steel_Black_North</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DiningChair_Steel_Black_North</defName>
+        <thing>DiningChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table1x2c_Steel_Black_East</defName>
+        <thing>Table1x2c</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_Black_South</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_Black_North</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DiningChair_Steel_Black_South</defName>
+        <thing>DiningChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Joy_ModernComputer_Steel_Black_South</defName>
+        <thing>Joy_ModernComputer</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFE_DeskLamp</defName>
+        <thing>VFE_DeskLamp</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_WeaponRack_Steel_Black_South</defName>
+        <thing>Shelf_WeaponRack</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HospitalBed_Steel_Black_North</defName>
+        <thing>HospitalBed</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>EndTable_Steel_Black_North</defName>
+        <thing>EndTable</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_MopBucket_Black</defName>
+        <thing>VFEPD_MopBucket</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_Steel_East</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>Steel</stuff>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_KitchenSink_Black_North</defName>
+        <thing>VFEPD_KitchenSink</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredWall_Plasteel_Black</defName>
+        <thing>VFEArch_ArmoredWall</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_South</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_Steel_Black_South</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Misc_FileCabinet_Steel_Black_South</defName>
+        <thing>Misc_FileCabinet</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Misc_FileCabinet_Steel_North</defName>
+        <thing>Misc_FileCabinet</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_Steel_Black_North</defName>
+        <thing>Shelf</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_North</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_LargeSecurityDoor_Black_East</defName>
+        <thing>RB_LargeSecurityDoor</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_Steel_Black_East</defName>
+        <thing>Shelf</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_PlanningTable_Black</defName>
+        <thing>VFEPD_PlanningTable</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_West</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_ReinforcedGlassAutodoor_Plasteel</defName>
+        <thing>RB_ReinforcedGlassAutodoor</thing>
+        <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SecurityDoor_Black_North</defName>
+        <thing>SecurityDoor</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Shelf_Steel_Black_South</defName>
+        <thing>Shelf</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_DataConsole_Black_North</defName>
+        <thing>VFEPD_DataConsole</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Misc_FileCabinet_Steel_Black_West</defName>
+        <thing>Misc_FileCabinet</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HiTechResearchBench_Steel_Black_East</defName>
+        <thing>HiTechResearchBench</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_SwitchPanel_Black_East</defName>
+        <thing>VFEPD_SwitchPanel</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_DataConsole_Black_East</defName>
+        <thing>VFEPD_DataConsole</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_Steel_North</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_HMGComplex_North</defName>
+        <thing>VFES_Turret_HMGComplex</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>HiTechResearchBench_Steel_Black_North</defName>
+        <thing>HiTechResearchBench</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>DrugLab_Steel_Black_North</defName>
+        <thing>DrugLab</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredDoor_Plasteel_Black</defName>
+        <thing>VFEArch_ArmoredDoor</thing>
+        <stuff>Plasteel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_FloorLamp_Steel_Black</defName>
+        <thing>RB_FloorLamp</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Table_Wardrobe_Steel_South</defName>
+        <thing>Table_Wardrobe</thing>
+        <stuff>Steel</stuff>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>GDFP_QuakkaaiExit</defName>
+        <thing>GDFP_QuakkaaiExit</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_LargeDecalWordArmory_Black_East</defName>
+        <thing>VFEPD_LargeDecalWordArmory</thing>
+        <color>Structure_Black</color>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_LargeDecalLineThin_Black_West</defName>
+        <thing>VFEPD_LargeDecalLineThin</thing>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>BasicStorageWeaponRack_Steel_Black_North</defName>
+        <thing>BasicStorageWeaponRack</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_PalletBoxes_Black</defName>
+        <thing>VFEPD_PalletBoxes</thing>
+        <color>Structure_Black</color>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_PalletBarrelGreen_Black_North</defName>
+        <thing>VFEPD_PalletBarrelGreen</thing>
+        <color>Structure_Black</color>
+        <thingSetMakerDef>MapGen_AncientTempleContents</thingSetMakerDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_LargeDecalLineThinCornerInner_Black_North</defName>
+        <thing>VFEPD_LargeDecalLineThinCornerInner</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_BarrelGreen_Black_North</defName>
+        <thing>VFEPD_BarrelGreen</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_BoxLarge_Black_South</defName>
+        <thing>VFEPD_BoxLarge</thing>
+        <color>Structure_Black</color>
+        <rotation>South</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>RB_ReinforcedClerestoryWall_BlocksGranite</defName>
+        <thing>RB_ReinforcedClerestoryWall</thing>
+        <stuff>BlocksGranite</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Radio_Spacer_East</defName>
+        <thing>Radio_Spacer</thing>
+        <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Seat_ModernChair_Steel_Black_West</defName>
+        <thing>Seat_ModernChair</thing>
+        <stuff>Steel</stuff>
+        <color>Structure_Black</color>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEPD_DecalWarningStripes_Black_North</defName>
+        <thing>VFEPD_DecalWarningStripes</thing>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Wall_BlocksGranite_Black</defName>
+        <thing>Wall</thing>
+        <stuff>BlocksGranite</stuff>
+        <color>Structure_Black</color>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>Cooler_Over_West</defName>
+        <thing>Cooler_Over</thing>
+        <rotation>West</rotation>
+    </KCSG.SymbolDef>
 </Defs>

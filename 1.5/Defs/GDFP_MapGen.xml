@@ -16,7 +16,6 @@
             <li>Caves</li>
             <li>Terrain</li>
             <li>CavesTerrain</li>
-            <li>RockChunks</li>
             <li>ScatterRuinsSimple</li>
             <li>SteamGeysers</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">ScatterCaveDebris</li>
@@ -30,6 +29,7 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li>
             <!-- <li>FindPlayerStartSpot</li> -->
             <li>ScenParts</li>
+            <li>RocksFromGrid</li>
             <li MayRequire="Ludeon.RimWorld.Biotech">GDFP_Pollution</li>
             <li MayRequire="Ludeon.RimWorld.Biotech">AncientPollutionJunk</li>
             <li>GDFP_FindGateExit</li>

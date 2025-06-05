@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using KCSG;
 using RimWorld;
 using Verse;
 
@@ -69,6 +70,19 @@ public class GenStep_GDCustomGen : GenStep
             try
             {
                 genStepDef.genStep.Generate(map, parms);
+                // if (genStepDef.genStep is GenStep_GDCustomStructureGen genStep)
+                // {
+                //     foreach (StructureLayoutDef structureLayoutDef in genStep.structureLayoutDefs.Where(sd => sd.HasModExtension<StructureDefModExtension>()))
+                //     {
+                //         StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
+                //         if(mde.spawnedPawns.NullOrEmpty()) continue;
+                //         foreach (Pawn mdeSpawnedPawn in mde.spawnedPawns)
+                //         {
+                //             ModLog.Debug($"Attempring to spawn pawn {mdeSpawnedPawn}");
+                //             GenSpawn.Spawn(mdeSpawnedPawn, mdeSpawnedPawn.Position, map);
+                //         }
+                //     }
+                // }
             }
             finally
             {

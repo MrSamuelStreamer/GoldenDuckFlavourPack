@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using KCSG;
+using RimWorld;
 using RimWorld.BaseGen;
 using Verse;
 
@@ -15,12 +16,6 @@ public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
 
     public override void Generate(Map map, GenStepParams parms)
     {
-        // foreach (StructureLayoutDef structureLayoutDef in DefDatabase<StructureLayoutDef>.AllDefs.Where(d => d.HasModExtension<StructureDefModExtension>()))
-        // {
-        //     structureLayoutDefs.Add(structureLayoutDef);
-        // }
-
-
         GenOption.customGenExt = new CustomGenOption
         {
             symbolResolvers = symbolResolvers, filthTypes = filthTypes, scatterThings = scatterThings, scatterChance = scatterChance,
@@ -52,6 +47,13 @@ public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
                     }
 
                     PostGenerate(cellRect, map, parms);
+
+                    StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
+                    if(mde.spawnedPawns.NullOrEmpty()) continue;
+                    foreach (PawnRepr mdeSpawnedPawn in mde.spawnedPawns)
+                    {
+                        mdeSpawnedPawn.SpawnPawn(map, Faction.OfAncientsHostile);
+                    }
                 }
                 else
                 {

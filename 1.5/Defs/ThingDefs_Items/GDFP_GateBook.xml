@@ -131,4 +131,50 @@
             </li>
         </comps>
     </ThingDef>
+    <!-- -->
+    <!-- <ThingDef ParentName="BookBase"> -->
+    <!--     <defName>GDFP_GateAddressBookIsThis</defName> -->
+    <!--     <label>ancient isthis tome</label> -->
+    <!--     <description>a tome containing writings on the mysteries of frogge</description> -->
+    <!--     <graphicData> -->
+    <!--         <texPath>Things/Item/Book/MSS_FP_FroggeTome</texPath> -->
+    <!--         <graphicClass>Graphic_Single</graphicClass> -->
+    <!--         <drawSize>0.8</drawSize> -->
+    <!--     </graphicData> -->
+    <!--     <uiIconPath>Things/Item/Book/MSS_FP_FroggeTome</uiIconPath> -->
+    <!--     <statBases> -->
+    <!--         <MarketValue>150</MarketValue> -->
+    <!--     </statBases> -->
+    <!--     <comps> -->
+    <!--         <li Class="CompProperties_Book"> -->
+    <!--             <nameMaker>Namer_Schematic</nameMaker> -->
+    <!--             <descriptionMaker>Description_Schematic</descriptionMaker> -->
+    <!--             <ageYearsRange>2000~4000</ageYearsRange> -->
+    <!--             <openGraphic> -->
+    <!--                 <texPath>Things/Item/Book/MSS_FP_FroggeTome</texPath> -->
+    <!--                 <graphicClass>Graphic_Multi</graphicClass> -->
+    <!--                 <drawSize>0.7</drawSize> -->
+    <!--             </openGraphic> -->
+    <!--             <verticalGraphic> -->
+    <!--                 <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath> -->
+    <!--                 <graphicClass>Graphic_Multi</graphicClass> -->
+    <!--                 <addTopAltitudeBias>true</addTopAltitudeBias> -->
+    <!--             </verticalGraphic> -->
+    <!--             <doers> -->
+    <!--                 <li Class="GDFP.BookOutcomeProperties_LearnGateAddress"> -->
+    <!--                     <planetBiome>Desert</planetBiome> -->
+    <!--                     <planetTemperature>40</planetTemperature> -->
+    <!--                     <planetName>sgc</planetName> -->
+    <!--                     <planetDescription>sgc</planetDescription> -->
+    <!--                     <extraGenSteps> -->
+    <!--                         <li> -->
+    <!--                             <step>GDFP_IsThis</step> -->
+    <!--                             <chance>1</chance> -->
+    <!--                         </li> -->
+    <!--                     </extraGenSteps> -->
+    <!--                 </li> -->
+    <!--             </doers> -->
+    <!--         </li> -->
+    <!--     </comps> -->
+    <!-- </ThingDef> -->
 </Defs>
