@@ -12,7 +12,6 @@
       <li MayRequire="sarg.alphagenes">AG_Foodless</li>
       <li>DiseaseFree</li>
       <li>PerfectImmunity</li>
-      <li MayRequire="sarg.alphagenes">AG_Mood_Unfeeling</li>
       <li MayRequire="sarg.alphagenes">AG_SmallerBodySize</li>
       <li MayRequire="sarg.alphagenes">AG_ForsakenBlood</li>
       <li MayRequire="sarg.alphagenes">AG_Clean</li>
