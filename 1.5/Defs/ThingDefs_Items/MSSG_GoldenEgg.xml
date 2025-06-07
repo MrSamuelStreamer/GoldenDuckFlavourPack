@@ -91,15 +91,12 @@
     <label>Golden Egg Craving</label>
     <defaultLabelColor>(222, 203, 0)</defaultLabelColor>
     <description>This person's body is enhanced by Golden Egg of Randorado.\n\nWithout a yearly feast of the Golden egg, not only will the benefits begin to fade but this person will go mad, and eventually die.\n\nThis addiction never goes away.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
+    <hediffClass>GDFP.Hediff_TieredAddiction</hediffClass>
     <causesNeed>Chemical_MSSG_Egg</causesNeed>
     <everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
         <label>Satisfied</label>
-      </li> 
-      <li>
-        <label>Mild Egg Craving</label>
       </li>
       <li>
         <label>Gnawing Egg Hunger</label>
@@ -113,22 +110,6 @@
           <li>
             <mentalState>Berserk</mentalState>
             <mtbDays>5.0</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-      <li>
-        <label>Major Egg Madness</label>
-        <lifeThreatening>true</lifeThreatening>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.25</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Berserk</mentalState>
-            <mtbDays>2.0</mtbDays>
           </li>
         </mentalStateGivers>
       </li>

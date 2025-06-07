@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension" MayRequire="ludeon.rimworld.ideology">
+        <xpath>/Defs/PreceptDef [defName="IdeoRole_Moralist" or defName="AM_IdeoRole_MasterStylist" or defName="AM_IdeoRole_OcularPriest" or defName="VME_IdeoRole_Commissar" or defName="VME_IdeoRole_Nurse"]</xpath>
+        <value>
+            <li Class="SpecialistSlaves.SpecialistSlaves_ModExtension">
+                <slavePermitted>Allowed</slavePermitted>
+            </li>
+        </value>
+    </Operation>
+</Patch>
