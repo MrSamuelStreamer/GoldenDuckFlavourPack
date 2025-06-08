@@ -25,4 +25,5 @@
     <GDFP_LoadingBy>Loading content by {0}</GDFP_LoadingBy>
     <GDFP_Postie>Postie's been</GDFP_Postie>
     <GDFP_PostieText>Looks like the postie's just dropped off the post.</GDFP_PostieText>
+    <GDFP_AreYouSure_Label>Are you sure you want to delete {0}?</GDFP_AreYouSure_Label>
 </LanguageData>

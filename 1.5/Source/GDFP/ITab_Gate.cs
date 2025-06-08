@@ -59,8 +59,6 @@ public class ITab_Gate: ITab
 
         try
         {
-            GateAddress deleteMe = null;
-
             foreach (GateAddress address in worldComponent.LearnedAddresses.Where(FindSearchMatch))
             {
                 Rect row = new(5, scrollHeight, viewRect.width - 26f, LineHeight);
@@ -105,17 +103,14 @@ public class ITab_Gate: ITab
                 TooltipHandler.TipRegion(renameRect, "Rename Address");
 
                 Rect buttonRect = new(row.xMax, scrollHeight + 40, 20f, 20f);
-                if (Widgets.ButtonImage(buttonRect, TrashIcon))
+                if (Widgets.ButtonImage(buttonRect, TrashIcon) && Parent.selectedAddress != address && !Parent.IsOpen)
                 {
-                    deleteMe = address;
+                    Find.WindowStack.Add(new Dialog_DeleteGate(address));
                 }
                 TooltipHandler.TipRegion(buttonRect, "Delete Address");
 
                 scrollHeight += LineHeight + 2f;
             }
-
-            if(deleteMe != null && Parent.selectedAddress != deleteMe)
-                worldComponent.LearnedAddresses.Remove(deleteMe);
         }
         catch (Exception e)
         {
