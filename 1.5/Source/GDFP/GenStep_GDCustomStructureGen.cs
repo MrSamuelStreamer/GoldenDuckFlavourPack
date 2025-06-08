@@ -52,6 +52,11 @@ public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
 
                     StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
                     if(mde.spawnedPawns.NullOrEmpty()) continue;
+                    List<Pawn> pawns = map.mapPawns.AllPawns.ToList();
+                    foreach (Pawn pawn in pawns)
+                    {
+                        pawn.Destroy();
+                    }
                     foreach (PawnRepr mdeSpawnedPawn in mde.spawnedPawns)
                     {
                         mdeSpawnedPawn.SpawnPawn(map, Faction.OfAncientsHostile);

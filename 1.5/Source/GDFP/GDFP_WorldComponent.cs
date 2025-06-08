@@ -15,7 +15,7 @@ public class GDFP_WorldComponent : WorldComponent
 
     public void AddNewAddressAndGate(GateAddress address, Map map)
     {
-        address.map = map;
+        address.mapReference = map;
         GateAddress match = LearnedAddresses.FirstOrDefault(ga => ga.address == address.address);
 
         if (match != null)

@@ -102,5 +102,8 @@
         <ReleaseFiles Update="..\..\Defs\StructureDefs\dissonant_one\backrooms.xml">
           <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\dissonant_one\backrooms.xml</Link>
         </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Patches\GDFP_GateBookPatches.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Patches\GDFP_GateBookPatches</Link>
+        </ReleaseFiles>
     </ItemGroup>
 </Project>

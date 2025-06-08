@@ -8,6 +8,7 @@
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>soaringturtle</author>
+                <standalone>false</standalone>
             </li>
         </modExtensions>
         <layouts>

@@ -40,7 +40,7 @@
             <li>GDFP_Fog</li>
         </genSteps>
     </MapGeneratorDef>
-    <MapGeneratorDef Name="QAPlanet">
+    <MapGeneratorDef Name="QAPlanetStandalone">
         <defName>GDFP_PlanetStandalone</defName>
         <label>remote planet</label>
         <isUnderground>false</isUnderground>
@@ -64,7 +64,7 @@
 
     <GenStepDef>
         <defName>GDFP_FindGateExit</defName>
-        <order>500</order>
+        <order>600</order>
         <genStep Class="GDFP.GenStep_FindGateExit"/>
     </GenStepDef>
 

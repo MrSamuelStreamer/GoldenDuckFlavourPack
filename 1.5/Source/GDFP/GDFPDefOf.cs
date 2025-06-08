@@ -16,6 +16,7 @@ public static class GDFPDefOf
 
     public static ThingDef GDFP_QuakkaaiExit;
     public static ThingDef GDFP_StrangeLetter;
+    public static ThingDef GDFP_GateAddressBookSGC;
 
     public static MapGeneratorDef GDFP_Planet;
     public static MapGeneratorDef GDFP_PlanetStandalone;

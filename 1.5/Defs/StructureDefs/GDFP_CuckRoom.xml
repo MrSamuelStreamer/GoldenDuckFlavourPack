@@ -20,7 +20,7 @@
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>keyz</author>
-                <standalone>true</standalone>
+                <standalone>false</standalone>
             </li>
         </modExtensions>
 

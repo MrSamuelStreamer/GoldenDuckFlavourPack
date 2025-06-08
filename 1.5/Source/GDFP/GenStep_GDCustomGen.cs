@@ -7,6 +7,7 @@ using KCSG;
 using RimWorld;
 using RimWorld.BaseGen;
 using Verse;
+using Verse.AI.Group;
 
 namespace GDFP;
 
@@ -34,12 +35,18 @@ public class GenStep_GDCustomGen : GenStep_CustomStructureGen
 
     public override void Generate(Map map, GenStepParams parms)
     {
+        List<CellRect> usedRects;
+        if (!MapGenerator.TryGetVar("UsedRects", out usedRects))
+        {
+            usedRects = new List<CellRect>();
+            MapGenerator.SetVar("UsedRects", usedRects);
+        }
+
         GenOption.customGenExt = new CustomGenOption
         {
             symbolResolvers = symbolResolvers, filthTypes = filthTypes, scatterThings = scatterThings, scatterChance = scatterChance,
         };
 
-        List<CellRect> usedRects = new();
         if (GateAddress.CurrentGateAddress.structureLayouts.Any())
         {
             List<string> authors = [];
@@ -65,11 +72,22 @@ public class GenStep_GDCustomGen : GenStep_CustomStructureGen
 
                     PostGenerate(cellRect, map, parms);
 
+
                     StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
                     if(mde.spawnedPawns.NullOrEmpty()) continue;
+                    List<Pawn> pawns = map.mapPawns.AllPawns.ToList();
+                    foreach (Pawn pawn in pawns)
+                    {
+                        pawn.Destroy();
+                    }
+                    Faction faction = GateAddress.SelectedFaction ?? (mde.anyHostile ? Faction.OfAncientsHostile : Faction.OfAncients);
+
+                    LordJob_DefendBase lordJobDefendBase = new(faction, mde.lordCenter.IsValid ? mde.lordCenter : map.Center, true);
+                    Lord lord = LordMaker.MakeNewLord(faction, lordJobDefendBase, map);
+
                     foreach (PawnRepr mdeSpawnedPawn in mde.spawnedPawns)
                     {
-                        mdeSpawnedPawn.SpawnPawn(map, Faction.OfAncientsHostile);
+                        mdeSpawnedPawn.SpawnPawn(map, faction, lord);
                     }
                 }
                 else

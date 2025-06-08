@@ -5,6 +5,7 @@ using JetBrains.Annotations;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI.Group;
 
 namespace GDFP;
 
@@ -149,7 +150,7 @@ public class PawnRepr : IExposable
         return repr;
     }
 
-    public bool SpawnPawn(Map map, Faction faction)
+    public bool SpawnPawn(Map map, Faction faction, Lord lord = null)
     {
         ModLog.Debug($"Attempring to spawn pawn {nameInt}");
         try
@@ -176,6 +177,8 @@ public class PawnRepr : IExposable
             pawn.style.FaceTattoo = faceTattoo;
             pawn.style.BodyTattoo = bodyTattoo;
 
+            lord?.AddPawn(pawn);
+
             foreach (ThingRepr thingRepr in inventory)
             {
                 Thing thing = thingRepr.ToThing();
@@ -188,7 +191,13 @@ public class PawnRepr : IExposable
                 pawn.equipment.AddEquipment(thing);
             }
 
+            if (!spawnCell.InBounds(map))
+            {
+                RCellFinder.TryFindRandomCellNearWith(map.Center, (_)=>true, map, out spawnCell);
+            }
+
             GenSpawn.Spawn(pawn, spawnCell, map);
+
             return true;
         }catch(Exception e)
         {

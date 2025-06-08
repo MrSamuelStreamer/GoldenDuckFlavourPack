@@ -3159,4 +3159,10 @@
         <defName>VFE_AdvancedBattery_North</defName>
         <thing>VFE_AdvancedBattery</thing>
     </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFES_Turret_SentryGun_Steel</defName>
+        <thing>VFES_Turret_SentryGun</thing>
+        <stuff>Steel</stuff>
+    </KCSG.SymbolDef>
 </Defs>

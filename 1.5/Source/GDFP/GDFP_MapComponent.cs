@@ -25,7 +25,7 @@ public class GDFP_MapComponent : MapComponent
 
     public override void MapComponentTick()
     {
-        if (!StrangeLetterSpawned)
+        if (map.IsPlayerHome && !map.IsPocketMap && !StrangeLetterSpawned)
         {
             StrangeLetterSpawned = true;
             StrangeLetter(map);

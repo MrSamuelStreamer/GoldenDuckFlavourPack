@@ -35,6 +35,7 @@ public class BookOutcomeProperties_LearnGateAddress: BookOutcomeProperties
     [CanBeNull] public string planetName;
     [CanBeNull] public string planetDescription;
     [CanBeNull] public List<GenStepWithChance> extraGenSteps;
+    [CanBeNull] public StructureLayoutDef structure;
 
     public List<GenStepDef> ExtraGenSteps()
     {
@@ -60,7 +61,9 @@ public class BookOutcomeProperties_LearnGateAddress: BookOutcomeProperties
 
     public List<StructureLayoutDef> StructureLayouts()
     {
-        List<StructureLayoutDef> layouts = DefDatabase<StructureLayoutDef>.AllDefsListForReading.Where(sld => sld.HasModExtension<StructureDefModExtension>()).ToList();
+        if(structure != null) return [structure];
+
+        List<StructureLayoutDef> layouts = DefDatabase<StructureLayoutDef>.AllDefsListForReading.Where(sld => sld.HasModExtension<StructureDefModExtension>()).Where(sld=>!sld.GetModExtension<StructureDefModExtension>().excludeFromRandomGen).ToList();
 
         StructureLayoutDef firstChoice = layouts.RandomElementWithFallback();
         if(firstChoice == null) return [];
