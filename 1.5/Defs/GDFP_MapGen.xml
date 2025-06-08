@@ -12,6 +12,7 @@
             <temperature>15</temperature>
         </pocketMapProperties>
         <genSteps>
+            <li>GDFP_Any</li>
             <li>ElevationFertility</li>
             <li>Caves</li>
             <li>Terrain</li>
@@ -35,6 +36,27 @@
             <li>GDFP_FindGateExit</li>
             <li>Plants</li>
             <li>Snow</li>
+            <li>Animals</li>
+            <li>GDFP_Fog</li>
+        </genSteps>
+    </MapGeneratorDef>
+    <MapGeneratorDef Name="QAPlanet">
+        <defName>GDFP_PlanetStandalone</defName>
+        <label>remote planet</label>
+        <isUnderground>false</isUnderground>
+        <forceCaves>false</forceCaves>
+        <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+        <disableCallAid>true</disableCallAid>
+        <pocketMapProperties>
+            <biome>TemperateForest</biome>
+            <temperature>15</temperature>
+        </pocketMapProperties>
+        <genSteps>
+            <li>GDFP_Any</li>
+            <li>ElevationFertility</li>
+            <li>Terrain</li>
+            <li>RocksFromGrid</li>
+            <li>GDFP_FindGateExit</li>
             <li>Animals</li>
             <li>GDFP_Fog</li>
         </genSteps>

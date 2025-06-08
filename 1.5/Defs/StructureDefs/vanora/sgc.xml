@@ -8,6 +8,7 @@
             <structureLayoutDefs>
                 <li>vanora_sgc</li>
             </structureLayoutDefs>
+            <mapSizeOverride>(200,200)</mapSizeOverride>
             <!-- Additional options -->
             <fullClear>true</fullClear> <!-- Clear any impassable in the way -->
             <clearFogInRect>true</clearFogInRect> <!-- Clear fog on the structure -->

@@ -1,20 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
-    <GenStepDef>
-        <defName>GDFP_IsThis</defName>
-        <order>460</order>
-        <genStep Class="GDFP.GenStep_GDCustomStructureGen">
-            <structureLayoutDefs>
-                <li>seanbaeg_is_this</li>
-            </structureLayoutDefs>
-            <!-- Additional options -->
-            <fullClear>true</fullClear> <!-- Clear any impassable in the way -->
-            <clearFogInRect>true</clearFogInRect> <!-- Clear fog on the structure -->
-            <preventBridgeable>true</preventBridgeable> <!-- Prevent lake/river/marsh (bridgeable) -->
-        </genStep>
-    </GenStepDef>
-
     <KCSG.StructureLayoutDef>
         <defName>seanbaeg_is_this</defName>
         <isStorage>true</isStorage>

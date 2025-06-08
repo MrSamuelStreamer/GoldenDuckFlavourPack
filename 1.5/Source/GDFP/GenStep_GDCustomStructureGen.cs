@@ -12,6 +12,8 @@ namespace GDFP;
 
 public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
 {
+    public IntVec2 mapSizeOverride;
+
     Lazy<FieldInfo> SLDSizes = new(()=> AccessTools.Field(typeof(StructureLayoutDef), "sizes"));
 
     public override void Generate(Map map, GenStepParams parms)

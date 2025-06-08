@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
+using KCSG;
 using RimWorld;
 using Verse;
 
@@ -54,6 +56,23 @@ public class BookOutcomeProperties_LearnGateAddress: BookOutcomeProperties
         }
 
         return list;
+    }
+
+    public List<StructureLayoutDef> StructureLayouts()
+    {
+        List<StructureLayoutDef> layouts = DefDatabase<StructureLayoutDef>.AllDefsListForReading.Where(sld => sld.HasModExtension<StructureDefModExtension>()).ToList();
+
+        StructureLayoutDef firstChoice = layouts.RandomElementWithFallback();
+        if(firstChoice == null) return [];
+        List<StructureLayoutDef> choices = [firstChoice];
+
+        if(firstChoice.GetModExtension<StructureDefModExtension>().standalone) return choices;
+
+        List<StructureLayoutDef> standaloneLayouts = layouts.Where(sld => sld.GetModExtension<StructureDefModExtension>().standalone).Except(firstChoice).ToList();
+
+        choices.AddRange(standaloneLayouts.TakeRandomDistinct(new IntRange(1, 3).RandomInRange));
+
+        return choices;
     }
 
     public override Type DoerClass => typeof(BookOutcomeDoerLearnGateAddress);

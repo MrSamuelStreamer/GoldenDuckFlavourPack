@@ -84,5 +84,23 @@
         <ReleaseFiles Update="..\..\Defs\StructureDefs\vanora\sgc.xml">
           <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\vanora\sgc.xml</Link>
         </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\LaecardSeaIceBase.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\LaecardSeaIceBase.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\ingedum\BeeMovie.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\ingedum\BeeMovie.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\vanora\burnedtown.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\vanora\burnedtown.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\dissonant_one\Fleshworld.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\dissonant_one\Fleshworld.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\thatrandomperson_vinelabs.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\thatrandomperson_vinelabs.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\dissonant_one\backrooms.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\dissonant_one\backrooms.xml</Link>
+        </ReleaseFiles>
     </ItemGroup>
 </Project>
