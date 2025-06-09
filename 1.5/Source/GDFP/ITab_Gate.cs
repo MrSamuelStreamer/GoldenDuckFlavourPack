@@ -6,8 +6,13 @@ using Verse;
 
 namespace GDFP;
 
+
+[StaticConstructorOnStartup]
 public class ITab_Gate: ITab
 {
+
+    public static readonly Texture2D TrashIcon = ContentFinder<Texture2D>.Get("UI/GDFP_Trash");
+    public static readonly Texture2D RenameIcon = ContentFinder<Texture2D>.Get("UI/GDFP_Rename");
     public ITab_Gate()
     {
         size = new Vector2(300f, 480f);
@@ -85,9 +90,24 @@ public class ITab_Gate: ITab
                 bool checkOn = Parent.selectedAddress == address;
                 bool flag = checkOn;
 
-                Widgets.Checkbox(new Vector2(name.xMax, scrollHeight), ref flag, 40, paintable: true, disabled: Parent.IsOpen);
+                Widgets.Checkbox(new Vector2(name.xMax, scrollHeight), ref flag, 20, paintable: true, disabled: Parent.IsOpen);
                 if (!Parent.IsOpen && checkOn != flag)
                     Parent.selectedAddress = address;
+                TooltipHandler.TipRegion(new Rect(name.xMax, scrollHeight, 20, 20), "Select Address");
+
+                Rect renameRect = new(row.xMax, scrollHeight + 20, 20f, 20f);
+                if (Widgets.ButtonImage(renameRect, RenameIcon))
+                {
+                    Find.WindowStack.Add(new Dialog_RenameGate(address));
+                }
+                TooltipHandler.TipRegion(renameRect, "Rename Address");
+
+                Rect buttonRect = new(row.xMax, scrollHeight + 40, 20f, 20f);
+                if (Widgets.ButtonImage(buttonRect, TrashIcon) && Parent.selectedAddress != address && !Parent.IsOpen)
+                {
+                    Find.WindowStack.Add(new Dialog_DeleteGate(address));
+                }
+                TooltipHandler.TipRegion(buttonRect, "Delete Address");
 
                 scrollHeight += LineHeight + 2f;
             }

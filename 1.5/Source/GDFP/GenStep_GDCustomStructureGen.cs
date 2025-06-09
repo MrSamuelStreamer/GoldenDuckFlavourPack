@@ -12,6 +12,8 @@ namespace GDFP;
 
 public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
 {
+    public IntVec2 mapSizeOverride;
+
     Lazy<FieldInfo> SLDSizes = new(()=> AccessTools.Field(typeof(StructureLayoutDef), "sizes"));
 
     public override void Generate(Map map, GenStepParams parms)
@@ -50,6 +52,11 @@ public class GenStep_GDCustomStructureGen : GenStep_CustomStructureGen
 
                     StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
                     if(mde.spawnedPawns.NullOrEmpty()) continue;
+                    List<Pawn> pawns = map.mapPawns.AllPawns.ToList();
+                    foreach (Pawn pawn in pawns)
+                    {
+                        pawn.Destroy();
+                    }
                     foreach (PawnRepr mdeSpawnedPawn in mde.spawnedPawns)
                     {
                         mdeSpawnedPawn.SpawnPawn(map, Faction.OfAncientsHostile);

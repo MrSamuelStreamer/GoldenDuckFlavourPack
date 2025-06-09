@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <!-- Orbital_Exotic -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GDFP_GateAddressBook</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="GDFP.StockGenerator_DGC">
+                <chance>0.2</chance>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Base_Outlander_Standard -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GDFP_GateAddressBook</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+        <value>
+            <li Class="GDFP.StockGenerator_DGC">
+                <chance>0.05</chance>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Base_Outlander_Standard -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GDFP_GateAddressBook</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="GDFP.StockGenerator_DGC">
+                <chance>0.1</chance>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Base_Outlander_Standard -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Visitor_Outlander_Standard"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GDFP_GateAddressBook</thingDef>
+                <countRange>1~5</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName = "Visitor_Outlander_Standard"]/stockGenerators</xpath>
+        <value>
+            <li Class="GDFP.StockGenerator_DGC">
+                <chance>0.1</chance>
+            </li>
+        </value>
+    </Operation>
+</Patch>

@@ -23,3 +23,17 @@ Crabgi's as the clergi
 And shrimpvants as simple workers
 And maybe put taff or me in the sarcophagus
 Or the graves
+
+
+## dissonant_one
+genelab - export pawns - hostile
+
+
+## chaosengine
+https://discord.com/channels/480546382130708490/1379501466531790918/1380338582220177468
+ruined city - no loot
+vault - https://discord.com/channels/480546382130708490/1379501466531790918/1380925443774877738
+prefabbed castle - https://discord.com/channels/480546382130708490/1379501466531790918/1380987062726951104
+
+## thatrandomperson
+vinelabs - hostiles

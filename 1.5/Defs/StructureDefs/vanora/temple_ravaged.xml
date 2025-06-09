@@ -8,7 +8,7 @@
         <modExtensions>
             <li Class="GDFP.StructureDefModExtension">
                 <author>vanora</author>
-                <standalone>true</standalone>
+                <standalone>false</standalone>
             </li>
         </modExtensions>
         <layouts>

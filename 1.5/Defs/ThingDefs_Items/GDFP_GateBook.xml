@@ -33,24 +33,7 @@
                         <extraGenSteps>
                             <li>
                                 <step>ItemStash</step>
-                                <chance>0.75</chance>
-                            </li>
-                            <li>
-                                <step>GDFP_Any</step>
-                                <chance>0.75</chance>
-                                <conflictsWith>
-                                    <li>Settlement</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>Settlement</step>
-                                <chance>0.25</chance>
-                                <requires>
-                                    <li>SettlementPower</li>
-                                </requires>
-                                <conflictsWith>
-                                    <li>GenStep_GDCustomGen</li>
-                                </conflictsWith>
+                                <chance>0.35</chance>
                             </li>
                             <li>
                                 <step>AmbushEdge</step>
@@ -64,19 +47,6 @@
                                 <chance>0.2</chance>
                                 <conflictsWith>
                                     <li>AmbushEdge</li>
-                                </conflictsWith>
-                            </li>
-                            <li>
-                                <step>BanditCamp</step>
-                                <requires>
-                                    <li>BanditCampPower</li>
-                                </requires>
-                                <chance>0.2</chance>
-                                <conflictsWith>
-                                    <li>GDFP_Any</li>
-                                    <li>Settlement</li>
-                                    <li>AmbushEdge</li>
-                                    <li>AmbushHidden</li>
                                 </conflictsWith>
                             </li>
                         </extraGenSteps>
@@ -120,18 +90,53 @@
                         <planetTemperature>40</planetTemperature>
                         <planetName>frogge oasis</planetName>
                         <planetDescription>a frogge oasis</planetDescription>
-                        <extraGenSteps>
-                            <li>
-                                <step>GDFP_FroggeOasis</step>
-                                <chance>1</chance>
-                            </li>
-                        </extraGenSteps>
+                        <structure>GDFP_FroggeOasis</structure>
                     </li>
                 </doers>
             </li>
         </comps>
     </ThingDef>
-    <!-- -->
+
+    <ThingDef ParentName="BookBase">
+        <defName>GDFP_GateAddressBookSGC</defName>
+        <label>military documents</label>
+        <description>a set of military documents from an unknown faction</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+        <statBases>
+            <MarketValue>150</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>GDFP_Namer_Gate_SGC</nameMaker>
+                <descriptionMaker>GDFP_Namer_Desc_Gate_SGC</descriptionMaker>
+                <ageYearsRange>0~2</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
+                        <planetName>DGC</planetName>
+                        <planetDescription>Duckgate Command</planetDescription>
+                        <structure>vanora_sgc</structure>
+                        <planetFaction>AncientsHostile</planetFaction>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+
     <!-- <ThingDef ParentName="BookBase"> -->
     <!--     <defName>GDFP_GateAddressBookIsThis</defName> -->
     <!--     <label>ancient isthis tome</label> -->
@@ -166,12 +171,7 @@
     <!--                     <planetTemperature>40</planetTemperature> -->
     <!--                     <planetName>sgc</planetName> -->
     <!--                     <planetDescription>sgc</planetDescription> -->
-    <!--                     <extraGenSteps> -->
-    <!--                         <li> -->
-    <!--                             <step>GDFP_IsThis</step> -->
-    <!--                             <chance>1</chance> -->
-    <!--                         </li> -->
-    <!--                     </extraGenSteps> -->
+    <!--                     <structure>seanbaeg_is_this</structure> -->
     <!--                 </li> -->
     <!--             </doers> -->
     <!--         </li> -->

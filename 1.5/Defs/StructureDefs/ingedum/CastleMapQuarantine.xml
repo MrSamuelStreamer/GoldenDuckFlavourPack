@@ -9,6 +9,7 @@
             <li Class="GDFP.StructureDefModExtension">
                 <author>ingedum</author>
                 <standalone>true</standalone>
+                <anyHostile>true</anyHostile>
             </li>
         </modExtensions>
         <layouts>

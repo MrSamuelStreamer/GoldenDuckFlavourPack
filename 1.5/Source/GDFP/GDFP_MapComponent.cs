@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Xml;
@@ -16,12 +17,19 @@ public class GDFP_MapComponent : MapComponent
     public IntRange TimeBetweenLettersRange = new(GenDate.TicksPerQuadrum, GenDate.TicksPerSeason);
     public int nextLetterTick = -1;
 
+    public bool StrangeLetterSpawned = false;
+
     public GDFP_MapComponent(Map map) : base(map)
     {
     }
 
     public override void MapComponentTick()
     {
+        if (map.IsPlayerHome && !map.IsPocketMap && !StrangeLetterSpawned)
+        {
+            StrangeLetterSpawned = true;
+            StrangeLetter(map);
+        }
         if (nextLetterTick < 0)
         {
             nextLetterTick = Find.TickManager.TicksGame + TimeBetweenLettersRange.RandomInRange;
@@ -185,9 +193,20 @@ public class GDFP_MapComponent : MapComponent
         Find.LetterStack.ReceiveLetter(label, letter, GDFPDefOf.GDFP_DeathQuestionMark, (Thing) duck);
     }
 
+    public static void StrangeLetter(Map map)
+    {
+        if(ThingMaker.MakeThing(GDFPDefOf.GDFP_StrangeLetter) is not ThingWithComps letter) return;
+        RCellFinder.TryFindRandomCellNearTheCenterOfTheMapWith(vec3 => map.thingGrid.ThingsListAt(vec3).Count <= 0, map, out IntVec3 c);
+        GenSpawn.Spawn(letter, c, map);
+        TaggedString label = "GDFP_Postie".Translate();
+        TaggedString letterText = "GDFP_PostieText".Translate();
+        Find.LetterStack.ReceiveLetter(label, letterText, GDFPDefOf.GDFP_PostieLetter, letter);
+    }
+
     public override void ExposeData()
     {
         base.ExposeData();
         Scribe_Values.Look(ref nextLetterTick, "nextLetterTick");
+        Scribe_Values.Look(ref StrangeLetterSpawned, "StrangeLetterSpawned", false);
     }
 }

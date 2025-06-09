@@ -134,7 +134,7 @@ public class Building_Quackaai: MapPortal
     {
         if(planetMap != null) return;
 
-        GateAddress.GenerateNewPlanetMap(this, out planetMap, out exitGate, selectedAddress);
+        GateAddress.GenerateNewPlanetMap_V2(this, out planetMap, out exitGate, selectedAddress);
     }
 
 }

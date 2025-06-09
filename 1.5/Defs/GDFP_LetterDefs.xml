@@ -4,8 +4,67 @@
         <defName>GDFP_DeathQuestionMark</defName>
         <letterClass>GDFP.DeathLetter</letterClass>
     </LetterDef>
+
     <LetterDef ParentName="PositiveEvent">
         <defName>GDFP_MapAuthor</defName>
         <letterClass>GDFP.AuthorLetter</letterClass>
     </LetterDef>
+
+    <LetterDef ParentName="PositiveEvent">
+        <defName>GDFP_PostieLetter</defName>
+    </LetterDef>
+
+    <LetterDef>
+        <defName>GDFP_StrangeLetter</defName>
+        <color>(175, 176, 185)</color>
+        <flashColor>(160, 170, 180)</flashColor>
+        <flashInterval>90</flashInterval>
+        <arriveSound>LetterArrive</arriveSound>
+        <letterClass>GDFP.AuthorLetter</letterClass>
+    </LetterDef>
+
+    <ThingDef>
+        <defName>GDFP_StrangeLetter</defName>
+        <label>strangely official letter</label>
+        <description>A strangely official letter</description>
+
+        <category>Item</category>
+        <thingClass>ThingWithComps</thingClass>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>false</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="MSSFP.Comps.CompProperties_Readable">
+                <letterDef>GDFP_StrangeLetter</letterDef>
+                <letterLabel>Strange official looking letter</letterLabel>
+                <letterText>FAO: The Golden Gods™\n\nDear Gods,\nWe are Cuthbert, Diddle, and Grub Solicitors acting on behalf of Metro Duckwin Mayer (MDM). We are writing to request you take down any and all content related to your "duckgate", which as we're sure you know, our clients hold a copyright on. Perhaps you could rename your duck gate? It's a gate to the stars, so perhaps a "star-gate"?"\n\nShould you fail to comply, this letter will serve as official notification of copyright infringement pursuant to the Digital Billennium Copyright Act (”DBCA”) 17 D.S.C. § 512(c) (3) for materials found in Randorado.\n\nWe are providing this notice in good faith and with the reasonable belief that MDM rights as the exclusive rights holder are being infringed.\n\nIf you wish to discuss this with me please contact me directly using the information below:\n\nName: Cuthbert, Diddle, and Grub Solicitors\nMailing address: CDGSol, Sector 7g, Business District, Rim Segment 14\n\nI appreciate your prompt attention to this matter.</letterText>
+                <buttonLabel>Read</buttonLabel>
+                <buttonDesc>Read the strange letter</buttonDesc>
+                <buttonIcon>MSS_MysteriousLetter</buttonIcon>
+                <destroyOnRead>false</destroyOnRead>
+            </li>
+        </comps>
+
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+
+        <graphicData>
+            <texPath>MSS_MysteriousLetter</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <soundInteract>Standard_Pickup</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <stackLimit>1</stackLimit>
+    </ThingDef>
 </Defs>

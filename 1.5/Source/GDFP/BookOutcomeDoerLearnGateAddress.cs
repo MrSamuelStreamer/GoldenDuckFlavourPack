@@ -39,7 +39,8 @@ public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
             temperature = GateBookProps.planetTemperature ?? Rand.Range(-45, 45),
             name = string.IsNullOrEmpty(GateBookProps.planetName) ? GateAddress.RandomGateName() : GateBookProps.planetName,
             faction = GateBookProps.planetFaction,
-            extraGenSteps = GateBookProps.ExtraGenSteps()
+            extraGenSteps = GateBookProps.ExtraGenSteps(),
+            structureLayouts = GateBookProps.StructureLayouts(),
         };
 
         if (GateBookProps.planetIncident != null)

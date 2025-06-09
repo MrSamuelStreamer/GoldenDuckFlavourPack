@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
     <RulePackDef>
+        <defName>GDFP_Namer_Gate_SGC</defName>
+        <include>
+            <li>ArtNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>title->DGC Surveillance Notes</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+        <defName>GDFP_Namer_Desc_Gate_SGC</defName>
+        <include>
+            <li>ArtNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->An unknown factions notes on a facility they call "DGC" aka Duck Gate Command</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
         <defName>GDFP_Namer_Gate</defName>
         <include>
             <li>ArtNameUtility</li>
