@@ -26,4 +26,8 @@
     <GDFP_Postie>Postie's been</GDFP_Postie>
     <GDFP_PostieText>Looks like the postie's just dropped off the post.</GDFP_PostieText>
     <GDFP_AreYouSure_Label>Are you sure you want to delete {0}?</GDFP_AreYouSure_Label>
+
+    <GDFP_RenameDialog_Label>Rename Address</GDFP_RenameDialog_Label>
+    <GDFP_GenNewRandAddress>New Random Gate Address</GDFP_GenNewRandAddress>
+    <GDFP_GenNewAddress>Select New Gate Address</GDFP_GenNewAddress>
 </LanguageData>

@@ -221,6 +221,14 @@ public class GateAddress: IExposable, ILoadReferenceable
         });
         Find.World.pocketMaps.Add(mapParent);
 
+        planetMap.listerThings.AllThings.ForEach(t =>
+        {
+            if (t.def.CanHaveFaction)
+            {
+                t.SetFaction(SelectedFaction);
+            }
+        });
+
         exitGate = planetMap.listerThings.ThingsOfDef(GDFPDefOf.GDFP_QuakkaaiExit).First() as Building_QuackaaiExit;
         if(exitGate != null)
             exitGate.entryGate = entryGate;
@@ -235,6 +243,23 @@ public class GateAddress: IExposable, ILoadReferenceable
 
         CurrentGateAddress = null;
         SelectedFaction = null;
+    }
+
+    public static List<StructureLayoutDef> GetRandomStructureLayouts()
+    {
+        List<StructureLayoutDef> layouts = DefDatabase<StructureLayoutDef>.AllDefsListForReading.Where(sld => sld.HasModExtension<StructureDefModExtension>()).Where(sld=>!sld.GetModExtension<StructureDefModExtension>().excludeFromRandomGen).ToList();
+
+        StructureLayoutDef firstChoice = layouts.RandomElementWithFallback();
+        if(firstChoice == null) return [];
+        List<StructureLayoutDef> choices = [firstChoice];
+
+        if(firstChoice.GetModExtension<StructureDefModExtension>().standalone) return choices;
+
+        List<StructureLayoutDef> standaloneLayouts = layouts.Where(sld => sld.GetModExtension<StructureDefModExtension>().standalone).Except(firstChoice).ToList();
+
+        choices.AddRange(standaloneLayouts.TakeRandomDistinct(new IntRange(1, 3).RandomInRange));
+
+        return choices;
     }
 
     public string GetUniqueLoadID()

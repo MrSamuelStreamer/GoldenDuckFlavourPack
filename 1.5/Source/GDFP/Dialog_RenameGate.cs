@@ -14,7 +14,7 @@ public class Dialog_RenameGate(GateAddress address, IWindowDrawing customWindowD
         RectDivider window = new(inRect, 25267234);
 
         RectDivider label = window.NewRow(24f);
-        Widgets.Label(label, "MSSFP_RenameDialog_Label".Translate());
+        Widgets.Label(label, "GDFP_RenameDialog_Label".Translate());
 
         RectDivider textArea = window.NewRow(32f);
         _name = Widgets.TextArea(textArea.Rect, _name);

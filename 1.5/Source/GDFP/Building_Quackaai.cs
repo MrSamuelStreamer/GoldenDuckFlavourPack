@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using KCSG;
 using RimWorld;
 using Verse;
 using Verse.Sound;
@@ -135,6 +137,67 @@ public class Building_Quackaai: MapPortal
         if(planetMap != null) return;
 
         GateAddress.GenerateNewPlanetMap_V2(this, out planetMap, out exitGate, selectedAddress);
+    }
+
+    public override IEnumerable<Gizmo> GetGizmos()
+    {
+        foreach (Gizmo gizmo in base.GetGizmos())
+            yield return gizmo;
+
+        if (DebugSettings.ShowDevGizmos)
+        {
+            Command_Action newRandAddress = new Command_Action();
+            newRandAddress.defaultLabel = "GDFP_GenNewRandAddress".Translate();
+            newRandAddress.action = () =>
+            {
+                GateAddress address = new()
+                {
+                    address = GateAddress.RandomGateAddressString(),
+                    biome = GateAddress.GetBiome(),
+                    name = GateAddress.RandomGateName(),
+                    structureLayouts = GateAddress.GetRandomStructureLayouts(),
+                };
+
+                address.description = $"Biome = {address.biome.label}; Avg Temperature: {address.temperature}";
+
+                WorldComponent.LearnedAddresses.Add(address);
+                Messages.Message("GDFP_LearnedAddress".Translate(address.address), MessageTypeDefOf.PositiveEvent);
+            };
+            yield return (Gizmo) newRandAddress;
+
+
+            Command_Action genNewAddress = new Command_Action();
+            genNewAddress.defaultLabel = "GDFP_GenNewAddress".Translate();
+            genNewAddress.action = () =>
+            {
+                List<FloatMenuOption> floatMenuOptionList = new List<FloatMenuOption>();
+                List<StructureLayoutDef> layouts = DefDatabase<StructureLayoutDef>.AllDefsListForReading.Where(sld => sld.HasModExtension<StructureDefModExtension>()).Where(sld=>!sld.GetModExtension<StructureDefModExtension>().excludeFromRandomGen).ToList();
+
+                foreach (StructureLayoutDef layout in layouts)
+                {
+                    floatMenuOptionList.Add(new FloatMenuOption(layout.defName, (Action) (() =>
+                    {
+                        GateAddress address = new()
+                        {
+                            address = GateAddress.RandomGateAddressString(),
+                            biome = GateAddress.GetBiome(),
+                            name = GateAddress.RandomGateName(),
+                            structureLayouts = [layout],
+                        };
+
+                        address.description = $"Biome = {address.biome.label}; Avg Temperature: {address.temperature}";
+
+                        WorldComponent.LearnedAddresses.Add(address);
+                        Messages.Message("GDFP_LearnedAddress".Translate(address.address), MessageTypeDefOf.PositiveEvent);
+                    })));
+                    if (!floatMenuOptionList.Any())
+                        return;
+                    Find.WindowStack.Add(new FloatMenu(floatMenuOptionList));
+                }
+
+            };
+            yield return (Gizmo) genNewAddress;
+        }
     }
 
 }
