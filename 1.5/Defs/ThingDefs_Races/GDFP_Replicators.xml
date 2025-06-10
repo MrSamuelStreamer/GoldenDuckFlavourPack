@@ -53,9 +53,9 @@
             <Flammability>0</Flammability>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
-			<PawnTrapSpringChance>0</PawnTrapSpringChance>
-            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<PawnTrapSpringChance>1</PawnTrapSpringChance>
+            <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.0</ArmorRating_Sharp>
             <MeatAmount>0</MeatAmount>
             <ArmorRating_Heat>2.00</ArmorRating_Heat>
 		</statBases>
@@ -108,7 +108,7 @@
 			</deathAction>
 			<body>Pikeman</body>
 			<baseBodySize>0.5</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
+			<baseHealthScale>0.2</baseHealthScale>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -129,9 +129,9 @@
 	</ThingDef>
 	<PawnKindDef ParentName="VFE_MechanoidKind">
 		<defName>GDFP_Replicator</defName>
-		<label>carpenter</label>
+		<label>replicator</label>
 		<race>GDFP_Replicator</race>
-		<combatPower>400</combatPower>
+		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
