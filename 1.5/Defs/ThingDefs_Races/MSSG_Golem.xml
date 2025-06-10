@@ -12,6 +12,7 @@
             <LeatherAmount>0</LeatherAmount>
             <RoyalFavorValue>5</RoyalFavorValue>
         </statBases>
+
         <tools>
             <li>
                 <label>left fist</label>
@@ -167,6 +168,9 @@
             </mergeCompatibilityTags>
         </ingredient>
         <comps>
+            <li Class="CompProperties">
+                <compClass>GDFP.CompAddAsSlaveToPlayerFaction</compClass>
+            </li>
             <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
                 <baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
                 <getsColdContainmentBonus>true</getsColdContainmentBonus>
