@@ -1,5 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
+    <SoundDef>
+        <defName>GDFP_Replicator</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>GDFP_Replicator</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>20~20</volumeRange>
+                <pitchRange>0.6~0.65</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+    <SoundDef>
+        <defName>GDFP_ReplicatorDeath</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>GDFP_ReplicatorDeath</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>20~20</volumeRange>
+                <pitchRange>0.6~0.65</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
     <ThinkTreeDef>
         <defName>GDFP_Replicator</defName>
         <thinkRoot Class="ThinkNode_Priority">
@@ -103,22 +138,19 @@
             <bloodDef>Filth_MachineBits</bloodDef>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>GDFP_Replicator</thinkTreeMain>
-			<deathAction>
-				<workerClass>DeathActionWorker_BigExplosion</workerClass>
-			</deathAction>
 			<body>Pikeman</body>
 			<baseBodySize>0.5</baseBodySize>
-			<baseHealthScale>0.2</baseHealthScale>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<baseHealthScale>0.05</baseHealthScale>
+			<soundMeleeHitPawn>GDFP_Replicator</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>GDFP_Replicator</soundMeleeHitBuilding>
+			<soundMeleeMiss>GDFP_Replicator</soundMeleeMiss>
 			<lifeStageAges Inherit="False">
 				<li>
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
-					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+					<soundWounded>GDFP_Replicator</soundWounded>
+					<soundDeath>GDFP_ReplicatorDeath</soundDeath>
+					<soundCall>GDFP_Replicator</soundCall>
 				</li>
 			</lifeStageAges>
 		</race>
