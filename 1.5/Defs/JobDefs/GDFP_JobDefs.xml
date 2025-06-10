@@ -6,4 +6,12 @@
         <reportString>absorbing knowledge from TargetA.</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+
+
+    <JobDef>
+        <defName>GDFP_Replicate</defName>
+        <driverClass>GDFP.JobDriver_Replicate</driverClass>
+        <reportString>dissembling TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>

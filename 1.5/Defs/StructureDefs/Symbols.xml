@@ -5004,4 +5004,15 @@
         <thing>Table_Royal1x1c</thing>
         <stuff>Steel</stuff>
     </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>GDFP_Replicator</defName>
+        <pawnKindDef>GDFP_Replicator</pawnKindDef>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>VFEArch_ArmoredWall_Bioferrite</defName>
+        <thing>VFEArch_ArmoredWall</thing>
+        <stuff>Bioferrite</stuff>
+    </KCSG.SymbolDef>
 </Defs>

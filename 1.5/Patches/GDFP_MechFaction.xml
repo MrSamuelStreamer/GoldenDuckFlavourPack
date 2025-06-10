@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers/li/options</xpath>
+        <value>
+            <GDFP_Replicator>2</GDFP_Replicator>
+        </value>
+    </Operation>
+</Patch>
