@@ -72,7 +72,6 @@ public class GenStep_GDCustomGen : GenStep_CustomStructureGen
 
                     PostGenerate(cellRect, map, parms);
 
-
                     StructureDefModExtension mde = structureLayoutDef.GetModExtension<StructureDefModExtension>();
                     if(mde.spawnedPawns.NullOrEmpty()) continue;
                     List<Pawn> pawns = map.mapPawns.AllPawns.ToList();

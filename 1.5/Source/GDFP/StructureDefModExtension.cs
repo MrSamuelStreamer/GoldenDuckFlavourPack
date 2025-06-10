@@ -15,6 +15,7 @@ public class StructureDefModExtension: DefModExtension
     public IntVec2 size;
     public IntVec3 lordCenter = IntVec3.Invalid;
     public FactionDef pawnFaction;
+    public string pawnFactionSearchString;
     public List<PawnRepr> spawnedPawns;
     public List<GenStepDef> extraGenSteps;
 }

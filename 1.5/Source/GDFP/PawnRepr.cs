@@ -72,6 +72,7 @@ public class PawnRepr : IExposable
     public PawnKindDef kindDef;
     public Name nameInt;
     public Gender gender;
+    public bool FactionLeader;
     public int age;
     public List<ThingRepr> inventory;
     public ThingRepr equipment;
@@ -155,22 +156,31 @@ public class PawnRepr : IExposable
         ModLog.Debug($"Attempring to spawn pawn {nameInt}");
         try
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(
-                kindDef,
-                faction,
-                PawnGenerationContext.NonPlayer,
-                forceGenerateNewPawn: true,
-                allowDead: false,
-                allowDowned: false,
-                inhabitant: false,
-                fixedBiologicalAge: age,
-                fixedChronologicalAge: age,
-                fixedGender: gender,
-                forcedEndogenes: genes,
-                forcedXenotype: xenotype,
-                dontGiveWeapon: true);
+            Pawn pawn = null;
+            if (FactionLeader)
+            {
+                pawn = faction.leader;
+            }
+            if(pawn == null)
+            {
+                PawnGenerationRequest request = new(
+                    kindDef,
+                    faction,
+                    PawnGenerationContext.NonPlayer,
+                    forceGenerateNewPawn: true,
+                    allowDead: false,
+                    allowDowned: false,
+                    inhabitant: false,
+                    fixedBiologicalAge: age,
+                    fixedChronologicalAge: age,
+                    fixedGender: gender,
+                    forcedEndogenes: genes,
+                    forcedXenotype: xenotype,
+                    dontGiveWeapon: true);
 
-            Pawn pawn = PawnGenerator.GeneratePawn(request);
+                pawn = PawnGenerator.GeneratePawn(request);
+            }
+
             pawn.Name = nameInt;
 
             pawn.style.beardDef = beardDef;

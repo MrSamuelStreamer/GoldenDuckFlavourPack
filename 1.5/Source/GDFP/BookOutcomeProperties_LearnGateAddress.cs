@@ -30,6 +30,7 @@ public class BookOutcomeProperties_LearnGateAddress: BookOutcomeProperties
     public float? planetTemperature;
     [CanBeNull] public IncidentDef planetIncident;
     public float? planetIncidentChance;
+    [CanBeNull] public string planetFactionSearch;
     [CanBeNull] public FactionDef planetFaction;
     [CanBeNull] public string planetAddress;
     [CanBeNull] public string planetName;

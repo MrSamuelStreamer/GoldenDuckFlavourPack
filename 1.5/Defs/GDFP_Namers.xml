@@ -7,7 +7,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>title->DGC Surveillance Notes</li>
+                <li>title->SGC Surveillance Notes</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -18,7 +18,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>desc->An unknown factions notes on a facility they call "DGC" aka Duck Gate Command</li>
+                <li>desc->An unknown factions notes on a facility they call "SGC" aka Space-Gate Command</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

@@ -127,10 +127,11 @@
                 </verticalGraphic>
                 <doers>
                     <li Class="GDFP.BookOutcomeProperties_LearnGateAddress">
-                        <planetName>DGC</planetName>
-                        <planetDescription>Duckgate Command</planetDescription>
+                        <planetName>SGC</planetName>
+                        <planetDescription>Space-gate Command</planetDescription>
                         <structure>vanora_sgc</structure>
                         <planetFaction>AncientsHostile</planetFaction>
+                        <planetFactionSearch>SGC</planetFactionSearch>
                     </li>
                 </doers>
             </li>

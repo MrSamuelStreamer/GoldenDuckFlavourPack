@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using System.Linq;
+using RimWorld;
 using Verse;
 
 namespace GDFP;
@@ -32,13 +33,23 @@ public class BookOutcomeDoerLearnGateAddress: BookOutcomeDoer
             return;
         }
 
+        FactionDef faction = null;
+
+        if (!string.IsNullOrEmpty(GateBookProps.planetFactionSearch))
+        {
+            faction = Find.FactionManager.AllFactions.FirstOrDefault(fac => fac.Name.ToLower().Contains(GateBookProps.planetFactionSearch.ToLower()))?.def;
+        }
+
+        faction ??= GateBookProps.planetFaction;
+
+
         GateAddress address = new()
         {
             address = string.IsNullOrEmpty(GateBookProps.planetAddress) ? GateAddress.RandomGateAddressString() : GateBookProps.planetAddress,
             biome = GateBookProps.planetBiome ?? GateAddress.GetBiome(),
             temperature = GateBookProps.planetTemperature ?? Rand.Range(-45, 45),
             name = string.IsNullOrEmpty(GateBookProps.planetName) ? GateAddress.RandomGateName() : GateBookProps.planetName,
-            faction = GateBookProps.planetFaction,
+            faction = faction,
             extraGenSteps = GateBookProps.ExtraGenSteps(),
             structureLayouts = GateBookProps.StructureLayouts(),
         };

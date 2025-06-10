@@ -25,7 +25,7 @@
             <li Class="GDFP.StructureDefModExtension">
                 <author>vanora</author>
                 <standalone>true</standalone>
-                <pawnFaction>AncientsHostile</pawnFaction>
+                <pawnFactionSearchString>SG1</pawnFactionSearchString>
                 <lordCenter>(103,0,120)</lordCenter>
             <excludeFromRandomGen>true</excludeFromRandomGen>
             <spawnedPawns>
@@ -33,7 +33,7 @@
                     <kindDef>Colonist</kindDef>
                     <nameInt Class="NameTriple">
                         <first>George</first>
-                        <nick>General</nick>
+                        <nick>General Hammhonk</nick>
                         <last>Hammhonk</last>
                     </nameInt>
                     <gender>Male</gender>
@@ -102,7 +102,7 @@
                     <kindDef>Colonist</kindDef>
                     <nameInt Class="NameTriple">
                         <first>Quack</first>
-                        <nick>Colnel</nick>
+                        <nick>Colonel Quack O'Neill</nick>
                         <last>O'Neill</last>
                     </nameInt>
                     <gender>Female</gender>
@@ -133,7 +133,7 @@
                     <kindDef>Colonist</kindDef>
                     <nameInt Class="NameTriple">
                         <first>Samantha</first>
-                        <nick>Quacker</nick>
+                        <nick>Ducktor Samantha Quacker</nick>
                         <last>Quacker</last>
                     </nameInt>
                     <gender>Female</gender>
@@ -168,7 +168,7 @@
                     <kindDef>Colonist</kindDef>
                     <nameInt Class="NameTriple">
                         <first>Daniel</first>
-                        <nick>Daniel</nick>
+                        <nick>Ducktor Quackson</nick>
                         <last>Quackson</last>
                     </nameInt>
                     <gender>Male</gender>

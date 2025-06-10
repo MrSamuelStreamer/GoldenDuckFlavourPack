@@ -200,6 +200,14 @@ public class GateAddress: IExposable, ILoadReferenceable
             {
                 StructureDefModExtension sde = standalone.GetModExtension<StructureDefModExtension>();
 
+                if (!string.IsNullOrEmpty(sde.pawnFactionSearchString))
+                {
+                    SelectedFaction = Find.FactionManager.AllFactions.FirstOrDefault(fac => fac.Name.ToLower().Contains(sde.pawnFactionSearchString.ToLower()));
+                    if (SelectedFaction == null)
+                    {
+                        SelectedFaction = Find.FactionManager.RandomEnemyFaction();
+                    }
+                }
                 if (sde.pawnFaction != null && Find.FactionManager.FirstFactionOfDef(sde.pawnFaction) != null)
                 {
                     SelectedFaction = Find.FactionManager.FirstFactionOfDef(sde.pawnFaction);

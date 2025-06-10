@@ -159,7 +159,7 @@
 			<Plasteel>10</Plasteel>
 		</butcherProducts>
 	</ThingDef>
-	<PawnKindDef ParentName="VFE_MechanoidKind">
+	<PawnKindDef>
 		<defName>GDFP_Replicator</defName>
 		<label>replicator</label>
 		<race>GDFP_Replicator</race>
