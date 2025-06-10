@@ -9,7 +9,7 @@
                     <treeDef>Downed</treeDef>
                 </li>
                 <li Class="GDFP.JobGiver_GoThroughGate">
-                    <radius>50</radius>
+                    <radius>30</radius>
                 </li>
                 <li Class="GDFP.JobGiver_DisassemblePlayerBuilding">
                     <radius>30</radius>
