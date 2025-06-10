@@ -105,5 +105,41 @@
         <ReleaseFiles Update="..\..\Patches\GDFP_GateBookPatches.xml">
           <Link>GoldenDuckFlavourPack\1.5\Patches\GDFP_GateBookPatches</Link>
         </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\1.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\1.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\2.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\2.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\3.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\3.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\4.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\4.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\5.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\5.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\6.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\6.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\7.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\7.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\8.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\8.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\9.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\9.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\10.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\10.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\11.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\11.xml</Link>
+        </ReleaseFiles>
+        <ReleaseFiles Update="..\..\Defs\StructureDefs\chaosengine\12.xml">
+          <Link>GoldenDuckFlavourPack\1.5\Defs\StructureDefs\chaosengine\12.xml</Link>
+        </ReleaseFiles>
     </ItemGroup>
 </Project>
