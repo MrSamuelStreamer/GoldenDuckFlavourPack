@@ -42,7 +42,7 @@
     <ThingDef ParentName="BasePawn">
 		<defName>GDFP_Replicator</defName>
 		<label>replicator</label>
-		<description>The Replicators were a highly-advanced machine race from P3S-517 in the Milky Way galaxy and are capable of reproducing themselves indefinitely, consuming all available resources in an area to create more of themselves.</description>
+		<description>The Replicators were a highly-advanced machine race from a distant planet out on the rim, and are capable of reproducing themselves indefinitely, consuming all available resources in an area to create more of themselves.</description>
 
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 
