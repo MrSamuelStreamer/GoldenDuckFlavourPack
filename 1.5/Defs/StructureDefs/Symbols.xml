@@ -5015,4 +5015,126 @@
         <thing>VFEArch_ArmoredWall</thing>
         <stuff>Bioferrite</stuff>
     </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+  <defName>RB_GlassWall_Steel</defName>
+  <thing>RB_GlassWall</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_WeaponRack_Steel_North</defName>
+  <thing>Shelf_WeaponRack</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_ReinforcedGlassAutodoor_Steel</defName>
+  <thing>RB_ReinforcedGlassAutodoor</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalWarningGeneric_Scarlet_North</defName>
+  <thing>VFEPD_DecalWarningGeneric</thing>
+  <color>Structure_Scarlet</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalWordStop_Scarlet_North</defName>
+  <thing>VFEPD_DecalWordStop</thing>
+  <color>Structure_Scarlet</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_LargeSecurityDoor_North</defName>
+  <thing>RB_LargeSecurityDoor</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFE_CoffeeTable_WoodLog_North</defName>
+  <thing>VFE_CoffeeTable</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Seat_SquareChair_Steel_North</defName>
+  <thing>Seat_SquareChair</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Seat_SquareChair_Steel_East</defName>
+  <thing>Seat_SquareChair</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Seat_SquareChair_Steel_West</defName>
+  <thing>Seat_SquareChair</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Seat_SquareChair_Steel_South</defName>
+  <thing>Seat_SquareChair</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalSymbolP_Scarlet_East</defName>
+  <thing>VFEPD_DecalSymbolP</thing>
+  <color>Structure_Scarlet</color>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Corpse_MSS_Taff_Mercenary_Slasher_Acidifier</defName>
+  <pawnKindDef>MSS_Taff_Mercenary_Slasher_Acidifier</pawnKindDef>
+  <spawnDead>true</spawnDead>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalSymbolL_Scarlet_East</defName>
+  <thing>VFEPD_DecalSymbolL</thing>
+  <color>Structure_Scarlet</color>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalSymbolE_Scarlet_East</defName>
+  <thing>VFEPD_DecalSymbolE</thing>
+  <color>Structure_Scarlet</color>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEPD_DecalSymbolH_Scarlet_East</defName>
+  <thing>VFEPD_DecalSymbolH</thing>
+  <color>Structure_Scarlet</color>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_LargeSecurityDoor_East</defName>
+  <thing>RB_LargeSecurityDoor</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Joy_ModernComputer_Steel_East</defName>
+  <thing>Joy_ModernComputer</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_WeaponRack_Steel_South</defName>
+  <thing>Shelf_WeaponRack</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
 </Defs>
